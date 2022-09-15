@@ -59,3 +59,5 @@
 - 基于vivado的时序分析
   - 综合时序报告
   - 时序分析实例解
+<img src="./goal1.jpg">
+<img src="./goal.jpg">
