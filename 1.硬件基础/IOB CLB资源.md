@@ -31,7 +31,56 @@ OSERDES ISERDES 串并转换器 单个能实现1to8
 IN_FIFO OUT_FIFO: 可以实现十二个拍延迟 在逻辑单元也有
 
 ## CLB 最小运算单元 configurable logic block
-ug474 ug953
+**ug474clb介绍 ug953查看原语**
 熟悉架构
 熟悉slice结构
 熟悉基本单元 LUT FF 控制信号
+### - 什么是CLB 
+  一个clb里面包括两个slice, 每个slice包括4个lut6 两个进位链，一个多路复选器
+  这是xilinx新架构 zynq7000+
+  sliceM 分布式ram和移位寄存器
+  sliceL 入口是查找表
+    通过474 7seires clb查看 sliceM的数量 
+    对于sliceL其最后一行的DFF，可以被综合成latch锁存器（阻塞，电平敏感）或者寄存器ff（边沿敏感，非阻塞）
+    通过选择器对lut进行级联
+<img src="./sliceL.png">
+sliceL的五个部分
+
+### - CLB的存储和控制线
+  存储 使用最后一排的dff, 
+  控制信号的信号线, 复位信号default为 SRLOW 
+  CLK,SR,CE都链接在一起的 尽量少同时set rst
+  对于DSP和BRAM应该尽量使用内部的FF, 以提高系统的工作频率
+  尽量多使用FF FF比LUT多
+  时钟使能 reset set尽量少用，因为在CLB中是公用的
+  小规模的移位和存储使用CLB实现
+### - 分布式ram MUX 进位链
+  - 分布式ram：仅仅存在于sliceM, 分布式ram可以综合成多种位宽和深度 256位最宽了
+  在ug953中查看，并可以调用。或者使用ipcore进行调用
+  使用ipcore底层还是原语 通过window device查看芯片底层的映射
+  当数据更大时，sliceM的级联导致速度下降 应该使用bram
+
+  - 移位寄存器 数据延迟操作
+ ```
+ reg  d1, d2, d3,d4,d5,d6;
+ always@(posedge clk)
+ begin
+  d1<=d2;
+  d2<=d1;
+  d3<=d2;
+  d4<=d3;
+  d5<=d4;
+end
+```
+延时一个sliceM可以32个clock 可以级联 延迟不大的时候一般使用sliceM 128个时钟只用了一个clb。在ip中使用shiftram 可以看到dimension中的宽度和深度限制
+
+  - MUX multiplexers
+  组合逻辑的深度 通过查找表和mux的方式实现的 深度都是1
+  - 进位链
+  在mux后使用了异或门 可以实现加法（看slice L的五个部分）。可以写一个加法来验证综合后的结果。一个slice中可以实现4bit的加法。多位的加法会导致时序爆炸。
+  故，多位的加法使用dsp资源，专用的加法器和乘法器
+
+### - 布线资源
+stacked silicon interconnect technology SSI 第四代架构的布线资源
+<img src="./ssi.png">
+一般不需要关注,只有静态时序过不去 不停报错的时候 需要去关心
