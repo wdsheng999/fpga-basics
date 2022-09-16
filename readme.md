@@ -65,3 +65,4 @@
  vscode+iverilog+gtkwave
  看这一篇 [用VSCode编辑verilog代码、iverilog编译、自动例化、自动补全、自动格式化等常用插件 - 浮沉野马的文章 - 知乎](
 https://zhuanlan.zhihu.com/p/338497672)
+用知乎搜vscode verilog
