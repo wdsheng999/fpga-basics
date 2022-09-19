@@ -47,6 +47,8 @@ ip:block memory
 输出位宽 可以不同于输入, 进行位宽变换 
 
 **还是要整个看bramtest这个工程**
+在这个工程中，使用一个双端口bram来对三个单端口的不同模式进行写入，查看三种模式的不同表现。通过对三个模块同时写入相同的数据来查看写入模式的影响
+<img src="./bramtest.png">
 
 使用寄存器的方式 pg058 page27
 bram有内置的寄存器 primitives Output Register这个时钟频率比slice中的寄存器要高
