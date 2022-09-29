@@ -8,6 +8,14 @@ synthesis之后的schematic和RTLanalysis的不同
   可以通过floorplaning查看实现网表中的位置
 - 生成bitstream类似于生成gerber
 
+对比一下国产fpga工具 如高云fpga designer
+非常的清晰明了
+<img src="/2.软件基础/gowin.png">
+就是上面的那些网表 对应逻辑 然后 添加约束文件 然后布局布线 结束
+
+sram sdram掉电丢失
+flash掉电不丢失 
+
 TODO：看完minieye建议再去看一下无限次元的视频 
 组合逻辑 不和时间相关 = 阻塞非阻塞
 时序逻辑<=
