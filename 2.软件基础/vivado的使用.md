@@ -19,3 +19,15 @@ flash掉电不丢失
 TODO：看完minieye建议再去看一下无限次元的视频 
 组合逻辑 不和时间相关 = 阻塞非阻塞
 时序逻辑<=
+
+vivado和vscode联合配置 [参考公众号](https://mp.weixin.qq.com/s/Lc5L4OhGJlOeCorP1Jqopg)
+在vivado中选中文本编辑器为vscode
+vscode安装插件 Verilog HDL 
+自动纠错信息 vivado目录下的xvlog 添加到环境变量  vivado的bin文件夹
+vscode中设置 vivado  linter换成xvlog
+
+实例化模块与定义跳转 ctags的配置 本机Desktop未成功
+
+一键生成testbench 插件verilog testbench 
+
+注意vivado本身可以跨平台安装 在linux上的效率会更高
