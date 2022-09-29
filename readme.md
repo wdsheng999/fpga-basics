@@ -1,3 +1,4 @@
+
 # 入门知识
 系列课程来自myminieye，并且带有课件
 还有一门信号处理的课 讨论了矩阵转置等问题
@@ -66,3 +67,7 @@
  看这一篇 [用VSCode编辑verilog代码、iverilog编译、自动例化、自动补全、自动格式化等常用插件 - 浮沉野马的文章 - 知乎](
 https://zhuanlan.zhihu.com/p/338497672)
 用知乎搜vscode verilog
+
+
+公众号 FPGA开源工作室
+[fpga图像处理入门视频课程](https://mp.weixin.qq.com/s/nHuMs8nyalRYxLrFPy2mEA)
