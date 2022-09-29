@@ -31,3 +31,4 @@ vscode中设置 vivado  linter换成xvlog
 一键生成testbench 插件verilog testbench 
 
 注意vivado本身可以跨平台安装 在linux上的效率会更高
+https://www.bilibili.com/read/cv15281388?from=search&spm_id_from=333.337.0.0
