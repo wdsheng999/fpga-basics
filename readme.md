@@ -71,3 +71,5 @@ https://zhuanlan.zhihu.com/p/338497672)
 
 公众号 FPGA开源工作室
 [fpga图像处理入门视频课程](https://mp.weixin.qq.com/s/nHuMs8nyalRYxLrFPy2mEA)
+芯王国
+同样有一些开源项目
