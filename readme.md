@@ -73,3 +73,10 @@ https://zhuanlan.zhihu.com/p/338497672)
 [fpga图像处理入门视频课程](https://mp.weixin.qq.com/s/nHuMs8nyalRYxLrFPy2mEA)
 芯王国
 同样有一些开源项目
+
+数字设计 
+b站王红课程 岩石的书以及课后习题
+Digital Design and Computer Architecture, Second Edition
+
+fpga除了看课程之外 夏雨闻的书 原理与结构这一本方便理解
+设计实战演练 使用quartus进行讲解 大量示例
