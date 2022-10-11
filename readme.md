@@ -73,6 +73,7 @@ https://zhuanlan.zhihu.com/p/338497672)
 [fpga图像处理入门视频课程](https://mp.weixin.qq.com/s/nHuMs8nyalRYxLrFPy2mEA)
 芯王国
 同样有一些开源项目
+知乎专栏 [OpenIC特别兴趣小组](https://www.zhihu.com/column/c_1029044037684183040)
 
 数字设计 
 b站王红课程 岩石的书以及课后习题
