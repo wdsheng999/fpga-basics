@@ -1,3 +1,27 @@
 i.e. 
 在画fpgaPCB时 如何设计我的上电启动时序
 相应器件-官网-关键字 power sequence
+
+如何设计电路? 
+每个器件都有官方评估板 原理图和源码都是开放的
+products-evaluationBoard
+以Ds开头的文档 
+
+如何查找ip的资料
+每个ip左上角 documentation 调用docNav
+并且每个ip会有一个example可以查看 右键 openIPcore example 看sim波形
+以UG开头的文档
+tutorials 以UG开头 有源码 
+XAPP 开发板套件加源码压缩包
+customer noticees XCN客户使用问题
+white paper WP架构 数据 原理上的分析
+Pakage Specification PK
+Errdata 芯片设计中的bug
+
+如何器件选型
+官网 soc
+可以读一下ug1046 开发流程
+
+文档整体搜索 官网-support-documentation
+knowledgebase 按照器件进行分类
+
