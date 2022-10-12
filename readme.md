@@ -76,7 +76,7 @@ https://zhuanlan.zhihu.com/p/338497672)
 知乎专栏 [OpenIC特别兴趣小组](https://www.zhihu.com/column/c_1029044037684183040)
 
 数字设计 
-b站王红课程 岩石的书以及课后习题
+TODO:b站王红课程 岩石的书以及课后习题
 Digital Design and Computer Architecture, Second Edition
 
 fpga除了看课程之外 夏雨闻的书 原理与结构这一本方便理解
