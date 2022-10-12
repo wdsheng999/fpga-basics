@@ -74,7 +74,7 @@ https://zhuanlan.zhihu.com/p/338497672)
 芯王国
 同样有一些开源项目
 知乎专栏 [OpenIC特别兴趣小组](https://www.zhihu.com/column/c_1029044037684183040)
-
+[片上征途](https://www.zhihu.com/column/conquest-on-chip)
 数字设计 
 TODO:b站王红课程 岩石的书以及课后习题
 Digital Design and Computer Architecture, Second Edition
