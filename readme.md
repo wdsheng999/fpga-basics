@@ -84,3 +84,5 @@ fpga除了看课程之外 夏雨闻的书 原理与结构这一本方便理解
 设计实战演练 使用quartus进行讲解 大量示例
 
 [codeleading 代码先锋网](https://www.codeleading.com/article/30332075779/)
+
+TODO:chip verify 内容搬运到博客
