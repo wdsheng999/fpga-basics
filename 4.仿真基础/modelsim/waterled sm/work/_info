@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/backuup/Desktop/waterled sm
+T_opt
+!s110 1665717828
+VSjQ>7E@LInVOZ?ngB=AoU1
+04 11 4 work tb_waterled fast 0
+=1-00d861c22db3-6348d643-31e-6804
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.4;61
+R0
+vbtndeb
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 :b3MT6XAd7QjV<4Q]l8Eg1
+InFJ2:dJGFBZzkROZCPTnj3
+R0
+w1665628061
+8C:/Users/backuup/Desktop/waterled sm/btndeb.v
+FC:/Users/backuup/Desktop/waterled sm/btndeb.v
+Z2 L0 23
+Z3 OL;L;10.4;61
+!s108 1665717756.847000
+!s107 C:/Users/backuup/Desktop/waterled sm/btndeb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/backuup/Desktop/waterled sm/btndeb.v|
+!i113 0
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vtb_waterled
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ;6iGFZZfz0m68hD`Lgl:81
+IJf7f6KP`NIhm8oiefJimF0
+R0
+w1665631892
+8C:/Users/backuup/Desktop/waterled sm/tb_waterled.v
+FC:/Users/backuup/Desktop/waterled sm/tb_waterled.v
+R2
+R3
+!s108 1665717756.912000
+!s107 C:/Users/backuup/Desktop/waterled sm/tb_waterled.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/backuup/Desktop/waterled sm/tb_waterled.v|
+!i113 0
+R4
+vwaterled
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 lnn7]<h5JeYSjMeF=`I:43
+Ijb:m^fF`n[N0J_NZZ3c;]3
+R0
+w1665734058
+8C:\Users\backuup\Desktop\waterled sm\waterled.v
+FC:\Users\backuup\Desktop\waterled sm\waterled.v
+R2
+R3
+!s108 1665734065.940000
+!s107 C:\Users\backuup\Desktop\waterled sm\waterled.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\Users\backuup\Desktop\waterled sm\waterled.v|
+!i113 0
+R4

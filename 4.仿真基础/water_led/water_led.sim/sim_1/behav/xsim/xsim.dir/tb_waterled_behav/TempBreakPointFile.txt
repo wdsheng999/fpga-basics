@@ -1,6 +1,1 @@
 Breakpoint File Version 1.0
-53 true D:/embed/verilogtest/water_led/water_led.srcs/sim_1/new/tb_waterled.v
-64 true D:/embed/verilogtest/water_led/water_led.srcs/sim_1/new/tb_waterled.v
-74 true D:/embed/verilogtest/water_led/water_led.srcs/sim_1/new/tb_waterled.v
-84 true D:/embed/verilogtest/water_led/water_led.srcs/sim_1/new/tb_waterled.v
-94 true D:/embed/verilogtest/water_led/water_led.srcs/sim_1/new/tb_waterled.v

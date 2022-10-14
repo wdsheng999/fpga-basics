@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_waterled_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_waterled" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="851444851020fs"></ZoomEndTime>
+      <Cursor1Time time="1210310000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="group43" type="group">
+      <obj_property name="label">tb</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_waterled/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/rstn" type="logic">
+         <obj_property name="ElementShortName">rstn</obj_property>
+         <obj_property name="ObjectShortName">rstn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/led" type="array">
+         <obj_property name="ElementShortName">led[3:0]</obj_property>
+         <obj_property name="ObjectShortName">led[3:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/CLK_FRE" type="array">
+         <obj_property name="ElementShortName">CLK_FRE[25:0]</obj_property>
+         <obj_property name="ObjectShortName">CLK_FRE[25:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/u_waterled/led_pulse" type="logic">
+         <obj_property name="ElementShortName">led_pulse</obj_property>
+         <obj_property name="ObjectShortName">led_pulse</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider44">
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group54" type="group">
+      <obj_property name="label">waterled</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_waterled/u_waterled/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/u_waterled/rstn" type="logic">
+         <obj_property name="ElementShortName">rstn</obj_property>
+         <obj_property name="ObjectShortName">rstn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/u_waterled/led_pulse" type="logic">
+         <obj_property name="ElementShortName">led_pulse</obj_property>
+         <obj_property name="ObjectShortName">led_pulse</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/u_waterled/led" type="array">
+         <obj_property name="ElementShortName">led[3:0]</obj_property>
+         <obj_property name="ObjectShortName">led[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/u_waterled/water_led_cnt" type="array">
+         <obj_property name="ElementShortName">water_led_cnt[25:0]</obj_property>
+         <obj_property name="ObjectShortName">water_led_cnt[25:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/u_waterled/statue_trig" type="logic">
+         <obj_property name="ElementShortName">statue_trig</obj_property>
+         <obj_property name="ObjectShortName">statue_trig</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/u_waterled/statue_trig_1d" type="logic">
+         <obj_property name="ElementShortName">statue_trig_1d</obj_property>
+         <obj_property name="ObjectShortName">statue_trig_1d</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/u_waterled/statue_trig_2d" type="logic">
+         <obj_property name="ElementShortName">statue_trig_2d</obj_property>
+         <obj_property name="ObjectShortName">statue_trig_2d</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/u_waterled/CLK_FRE" type="array">
+         <obj_property name="ElementShortName">CLK_FRE[25:0]</obj_property>
+         <obj_property name="ObjectShortName">CLK_FRE[25:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider55">
+         <obj_property name="label">New Divider 1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#A52A2A</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group63" type="group">
+      <obj_property name="label">btn</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_waterled/u_waterled/btndeb/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/u_waterled/btndeb/btnin" type="array">
+         <obj_property name="ElementShortName">btnin[0:0]</obj_property>
+         <obj_property name="ObjectShortName">btnin[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/u_waterled/btndeb/btndeb" type="array">
+         <obj_property name="ElementShortName">btndeb[0:0]</obj_property>
+         <obj_property name="ObjectShortName">btndeb[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/u_waterled/btndeb/time_cnt" type="array">
+         <obj_property name="ElementShortName">time_cnt[25:0]</obj_property>
+         <obj_property name="ObjectShortName">time_cnt[25:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/u_waterled/btndeb/CLK_FRE" type="array">
+         <obj_property name="ElementShortName">CLK_FRE[25:0]</obj_property>
+         <obj_property name="ObjectShortName">CLK_FRE[25:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/u_waterled/btndeb/BTN_WIDTH" type="array">
+         <obj_property name="ElementShortName">BTN_WIDTH[3:0]</obj_property>
+         <obj_property name="ObjectShortName">BTN_WIDTH[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_waterled/u_waterled/btndeb/TIME_20MS_CNT" type="array">
+         <obj_property name="ElementShortName">TIME_20MS_CNT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">TIME_20MS_CNT[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

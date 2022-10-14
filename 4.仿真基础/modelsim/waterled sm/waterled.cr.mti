@@ -1,0 +1,22 @@
+{C:/Users/backuup/Desktop/waterled sm/tb_waterled.v} {1 {vlog -work work -vopt -stats=none {C:/Users/backuup/Desktop/waterled sm/tb_waterled.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module tb_waterled
+
+Top level modules:
+	tb_waterled
+
+} {} {}} {C:/Users/backuup/Desktop/waterled sm/btndeb.v} {1 {vlog -work work -vopt -stats=none {C:/Users/backuup/Desktop/waterled sm/btndeb.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module btndeb
+
+Top level modules:
+	btndeb
+
+} {} {}} {C:/Users/backuup/Desktop/waterled sm/waterled.v} {1 {vlog -work work -vopt -stats=none {C:\Users\backuup\Desktop\waterled sm\waterled.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module waterled
+
+Top level modules:
+	waterled
+
+} {} {}}
