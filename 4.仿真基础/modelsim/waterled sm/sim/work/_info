@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/backuup/Desktop/waterled sm/sim
+vbtndeb
+!s10a 1665628061
+Z1 !s110 1665737039
+!i10b 1
+!s100 :b3MT6XAd7QjV<4Q]l8Eg1
+IdQK0dU9IA^zSjV;7J0kJA1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1665628061
+8../src/btndeb.v
+F../src/btndeb.v
+Z3 L0 23
+Z4 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1665737039.334000
+!s107 ../src/btndeb.v|
+!s90 -reportprogress|300|-novopt|-incr|-work|work|../src/btndeb.v|
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vtb_waterled
+!s10a 1665735028
+R1
+!i10b 1
+!s100 n<=IDJ[K2[z4PG:P0?CCF3
+IiXeA=OMdn_o^8>Pl@?JI[2
+R2
+R0
+w1665735028
+8../tb/tb_waterled.v
+F../tb/tb_waterled.v
+R3
+R4
+r1
+!s85 0
+31
+!s108 1665737039.076000
+!s107 ../tb/tb_waterled.v|
+!s90 -reportprogress|300|-novopt|-incr|-work|work|../tb/tb_waterled.v|
+!i113 1
+R5
+vwaterled
+!s10a 1665734058
+R1
+!i10b 1
+!s100 lnn7]<h5JeYSjMeF=`I:43
+IGm5Ik<k:Y<2DzM]LAlgbZ3
+R2
+R0
+w1665734058
+8../src/waterled.v
+F../src/waterled.v
+R3
+R4
+r1
+!s85 0
+31
+!s108 1665737039.231000
+!s107 ../src/waterled.v|
+!s90 -reportprogress|300|-novopt|-incr|-work|work|../src/waterled.v|
+!i113 1
+R5
