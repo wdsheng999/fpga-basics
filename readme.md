@@ -87,3 +87,7 @@ fpga除了看课程之外 夏雨闻的书 原理与结构这一本方便理解
 [codeleading 代码先锋网](https://www.codeleading.com/article/30332075779/)
 
 TODO:chip verify 内容搬运到博客
+
+邸志雄老师 从电路设计的角度入门VerilogHDL
+https://www.bilibili.com/video/BV1PS4y1s7XW/
+https://www.dizhixiong.cn/class6/
