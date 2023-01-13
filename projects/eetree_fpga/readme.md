@@ -4,9 +4,17 @@ https://www.eetree.cn/project/detail/251
 
 21年电赛的综合
 https://www.eetree.cn/project/detail/248
+里边有信号发生器的案例
+https://www.eetree.cn/project/detail/35
 
+DDS wiki 在项目信息页
 
-综合学习资源
+https://www.eetree.cn/doc/detail/2570
+项目综合学习资源
+
+核心板介绍
+https://www.eetree.cn/project/detail/7
+
 <img src="./ksnip_20230112-103640.png">
 
 ## 项目
@@ -34,4 +42,19 @@ PC上的界面显示可以使用Matlab、LabView或开源的串口调试工具
 
 --但是板载有一个32
 
-##
+选择 1994-2021 国赛题目任选一题
+旋转编码器控制设置参数 oled屏幕显示参数打dds信号发生器和采集系统
+
+## 备赛
+入门fpga 2周 课程的免费观看 老师
+针对性训练 参考代码 1月
+准备模块 代码案例 1月
+
+根据不同的性能 换模块 
+
+## 环境配置
+1. stm32G031 完成示波器部分/直播课程/参考项目
+2. fpga wiki页面的项目全做一遍
+
+
+lattice radiant
