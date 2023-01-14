@@ -54,7 +54,29 @@ PC上的界面显示可以使用Matlab、LabView或开源的串口调试工具
 
 ## 环境配置
 1. stm32G031 完成示波器部分/直播课程/参考项目
+下载程序 通过stm32cubemx  通过keil开发
+按住按键进入下载模式 使用cubeprogrammer下载
+
+
+
 2. fpga wiki页面的项目全做一遍
 
 
+
 lattice radiant
+申请license 
+注意下载模式, 由于是虚拟优盘下载, 需要在project-active strategy-bitstream 内选 rbt格式
+
+3. 调试 
+使用adalm2000 + scopy
+
+## stm32部分 
+示波器
+mcu链接的是屏幕 按键 和旋转编码器 通过上班部分完成示波器的代码
+
+## fpga
+数据发生 dds的程序
+
+## mcu-fpga通信 
+通过fpga端编写spi进行通信,将按键的信号发送到fpga
+
