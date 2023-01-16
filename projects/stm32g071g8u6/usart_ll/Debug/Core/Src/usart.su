@@ -1,0 +1,7 @@
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_bus.h:467:22:LL_APB1_GRP1_EnableClock	24	static
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_bus.h:1135:22:LL_IOP_GRP1_EnableClock	24	static
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_usart.h:628:22:LL_USART_Enable	16	static
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_usart.h:2667:22:LL_USART_ConfigAsyncMode	16	static
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_usart.h:3189:26:LL_USART_IsActiveFlag_TEACK	16	static
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_usart.h:3200:26:LL_USART_IsActiveFlag_REACK	16	static
+../Core/Src/usart.c:29:6:MX_USART2_UART_Init	72	static

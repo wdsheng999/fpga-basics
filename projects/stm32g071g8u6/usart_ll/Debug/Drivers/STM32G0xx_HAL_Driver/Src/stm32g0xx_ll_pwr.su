@@ -1,0 +1,3 @@
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_bus.h:676:22:LL_APB1_GRP1_ForceReset	16	static
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_bus.h:742:22:LL_APB1_GRP1_ReleaseReset	16	static
+../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_pwr.c:55:13:LL_PWR_DeInit	8	static

@@ -1,0 +1,16 @@
+../Drivers/CMSIS/Include/core_cm0plus.h:850:22:__NVIC_SetPriority	24	static
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h:1343:22:LL_RCC_HSI_Enable	8	static
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h:1363:26:LL_RCC_HSI_IsReady	8	static
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h:1684:22:LL_RCC_SetSysClkSource	16	static
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h:1699:26:LL_RCC_GetSysClkSource	8	static
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h:1719:22:LL_RCC_SetAHBPrescaler	16	static
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h:1735:22:LL_RCC_SetAPB1Prescaler	16	static
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_bus.h:467:22:LL_APB1_GRP1_EnableClock	24	static
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_bus.h:921:22:LL_APB2_GRP1_EnableClock	24	static
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_usart.h:3019:26:LL_USART_IsActiveFlag_TXE_TXFNF	16	static
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_usart.h:4276:22:LL_USART_TransmitData8	16	static
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_gpio.h:915:22:LL_GPIO_TogglePin	24	static
+../Core/Src/main.c:58:1:__io_putchar	16	static
+../Core/Src/main.c:73:5:main	8	static
+../Core/Src/main.c:126:6:SystemClock_Config	8	static
+../Core/Src/main.c:160:6:Error_Handler	8	static,ignoring_inline_asm

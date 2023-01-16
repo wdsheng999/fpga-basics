@@ -1,14 +1,14 @@
-11:58:35 **** Incremental Build of configuration Debug for project usart ****
+15:45:48 **** Incremental Build of configuration Debug for project usart_ll ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "usart.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/wds/Documents/fpga-basics/projects/stm32g031g8/usart/STM32G031G8UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: usart.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DSTM32G031xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "usart_ll.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/wds/Documents/fpga-basics/projects/stm32g071g8u6/usart_ll/STM32G031G8UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usart_ll.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usart_ll.elf
  
-arm-none-eabi-size   usart.elf 
-arm-none-eabi-objdump -h -S  usart.elf  > "usart.list"
+arm-none-eabi-size   usart_ll.elf 
+arm-none-eabi-objdump -h -S  usart_ll.elf  > "usart_ll.list"
    text	   data	    bss	    dec	    hex	filename
-  12124	    120	   1736	  13980	   369c	usart.elf
+  33692	    480	   1584	  35756	   8bac	usart_ll.elf
 Finished building: default.size.stdout
  
-Finished building: usart.list
+Finished building: usart_ll.list
  
