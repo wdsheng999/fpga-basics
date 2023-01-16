@@ -5,9 +5,11 @@ https://www.eetree.cn/project/detail/251
 21年电赛的综合
 https://www.eetree.cn/project/detail/248
 里边有信号发生器的案例
+
+示波器
 https://www.eetree.cn/project/detail/35
 
-DDS wiki 在项目信息页
+DDS wiki 在项目信息页 小脚丫 stepfpge
 
 https://www.eetree.cn/doc/detail/2570
 项目综合学习资源

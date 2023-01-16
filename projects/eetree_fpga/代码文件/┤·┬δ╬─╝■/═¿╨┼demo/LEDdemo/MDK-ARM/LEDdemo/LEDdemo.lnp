@@ -1,0 +1,27 @@
+--cpu Cortex-M0+
+"leddemo\startup_stm32g031xx.o"
+"leddemo\main.o"
+"leddemo\gpio.o"
+"leddemo\stm32g0xx_it.o"
+"leddemo\stm32g0xx_hal_msp.o"
+"leddemo\stm32g0xx_hal_tim.o"
+"leddemo\stm32g0xx_hal_tim_ex.o"
+"leddemo\stm32g0xx_hal_rcc.o"
+"leddemo\stm32g0xx_hal_rcc_ex.o"
+"leddemo\stm32g0xx_ll_rcc.o"
+"leddemo\stm32g0xx_hal_flash.o"
+"leddemo\stm32g0xx_hal_flash_ex.o"
+"leddemo\stm32g0xx_hal_gpio.o"
+"leddemo\stm32g0xx_hal_dma.o"
+"leddemo\stm32g0xx_hal_dma_ex.o"
+"leddemo\stm32g0xx_ll_dma.o"
+"leddemo\stm32g0xx_hal_pwr.o"
+"leddemo\stm32g0xx_hal_pwr_ex.o"
+"leddemo\stm32g0xx_hal_cortex.o"
+"leddemo\stm32g0xx_hal.o"
+"leddemo\stm32g0xx_hal_exti.o"
+"leddemo\system_stm32g0xx.o"
+--strict --scatter "LEDdemo\LEDdemo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LEDdemo.map" -o LEDdemo\LEDdemo.axf
