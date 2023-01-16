@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.remote.internal.console.TerminalConsoleSettingsDialog">
+		<item key="connectionType" value="org.eclipse.remote.serial.core.connectionType"/>
+		<item key="connectionName" value="usart2"/>
+		<item key="encoding" value="UTF-8"/>
+	</section>
+</section>
