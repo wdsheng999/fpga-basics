@@ -4,6 +4,8 @@ https://www.eetree.cn/project/detail/662
 简易示波器v2
 https://www.eetree.cn/project/detail/35
 
+示波器参考技术资料
+
 
 ## 环境
 cubeIDE 自带了cubemx的界面 可以实现引脚定义

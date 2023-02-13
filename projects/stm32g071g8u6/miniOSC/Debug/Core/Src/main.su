@@ -1,0 +1,9 @@
+main.c:175:6:Update_DDS	56	static
+main.c:795:6:SystemClock_Config	120	static,ignoring_inline_asm
+main.c:222:5:main	200	static,ignoring_inline_asm
+main.c:1296:6:HAL_GPIO_EXTI_Falling_Callback	0	static
+main.c:1325:6:HAL_TIM_PeriodElapsedCallback	8	static
+main.c:1348:6:HAL_ADC_ConvCpltCallback	8	static
+main.c:1378:6:HAL_ADC_ErrorCallback	0	static,ignoring_inline_asm
+main.c:1389:1:__io_putchar	16	static
+main.c:1404:6:Error_Handler	0	static,ignoring_inline_asm

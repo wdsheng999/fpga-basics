@@ -1,0 +1,3 @@
+app1.c:3:6:Spectrum_Init	8	static
+app1.c:10:6:Spectrum_DeInit	8	static
+app1.c:16:9:Spectrum_Loop	8	static

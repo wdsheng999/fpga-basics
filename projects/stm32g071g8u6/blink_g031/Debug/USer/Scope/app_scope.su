@@ -1,0 +1,3 @@
+app_scope.c:3:6:Scope_Init	8	static
+app_scope.c:10:6:Scope_DeInit	8	static
+app_scope.c:17:9:Scope_Loop	8	static

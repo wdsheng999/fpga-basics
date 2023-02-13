@@ -1,0 +1,9 @@
+operate_scope.c:5:21:Get_Max_Voltage	8	static
+operate_scope.c:9:21:Get_Step_Voltage	8	static
+operate_scope.c:13:23:isInt	24	static
+operate_scope.c:19:16:Opt_Tri_Voltage	24	static
+operate_scope.c:40:13:Handle_KEY_L	16	static
+operate_scope.c:85:13:Handle_KEY_R	16	static
+operate_scope.c:130:6:Scope_Operate_Init	8	static
+operate_scope.c:135:6:Scope_Operate_DeInit	8	static
+operate_scope.c:139:6:Scope_Operate_Try_Process	24	static
