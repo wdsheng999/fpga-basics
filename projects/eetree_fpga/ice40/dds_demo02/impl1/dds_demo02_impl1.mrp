@@ -1,0 +1,666 @@
+
+             Lattice Mapping Report File for Design Module 'main'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     dds_demo02_impl1.ngd -o dds_demo02_impl1_map.ncd -pr dds_demo02_impl1.prf
+     -mp dds_demo02_impl1.mrp -lpf
+     C:/Users/10798/Desktop/fpga/dds_demo02/impl1/dds_demo02_impl1.lpf -lpf
+     C:/Users/10798/Desktop/fpga/dds_demo02/dds_demo02.lpf -c 0 -gui -msgset
+     C:/Users/10798/Desktop/fpga/dds_demo02/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.0.111.2
+Mapped on:  02/25/22  14:07:22
+
+Design Summary
+--------------
+
+   Number of registers:    195 out of  4635 (4%)
+      PFU registers:          195 out of  4320 (5%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       180 out of  2160 (8%)
+      SLICEs as Logic/ROM:    180 out of  2160 (8%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:        111 out of  2160 (5%)
+   Number of LUT4s:        353 out of  4320 (8%)
+      Number used as logic LUTs:        131
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      222
+      Number used as shift registers:     0
+   Number of PIO sites used: 24 + 4(JTAG) out of 105 (27%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net clk_c: 61 loads, 61 rising, 0 falling (Driver: PIO clk )
+     Net dac_clk_c: 55 loads, 55 rising, 0 falling (Driver: u_dds_pll/PLLInst_0
+
+                                    Page 1
+
+
+
+
+Design:  main                                          Date:  02/25/22  14:07:22
+
+Design Summary (cont)
+---------------------
+     )
+   Number of Clock Enables:  6
+     Net dds_fm_step_31__N_186: 17 loads, 17 LSLICEs
+     Net u_encoder/cnt_20ms_5__N_129: 5 loads, 5 LSLICEs
+     Net u_encoder/clk_c_enable_2: 1 loads, 1 LSLICEs
+     Net u_encoder/Left_pulse_N_130: 1 loads, 1 LSLICEs
+     Net dds_am_factor_7__N_231: 5 loads, 5 LSLICEs
+     Net u_button/clk_c_enable_3: 1 loads, 1 LSLICEs
+   Number of LSRs:  3
+     Net u_encoder/clk_c_enable_2: 3 loads, 3 LSLICEs
+     Net u_encoder/cnt_12__N_122: 7 loads, 7 LSLICEs
+     Net u_button/cnt_17__N_86: 10 loads, 10 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net enc_pulse_l: 43 loads
+     Net u_dds/u_dds_sin_table/rom_addr0_r_n_10: 33 loads
+     Net u_dds/u_dds_sin_table/rom_addr0_r_n_8: 33 loads
+     Net u_dds/u_dds_sin_table/rom_addr0_r_n_9: 33 loads
+     Net u_dds/u_dds_sin_table/rom_addr0_r_n_7: 32 loads
+     Net curr_wave_st_0: 20 loads
+     Net u_dds/u_dds_sin_table/rom_addr0_r_n_11: 18 loads
+     Net dds_fm_step_31__N_186: 17 loads
+     Net curr_wave_st_1: 16 loads
+     Net enc_pulse_r: 12 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| dac_data[7]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dac_data[8]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dac_data[9]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dac_data[6]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dac_data[5]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dac_data[4]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 2
+
+
+
+
+Design:  main                                          Date:  02/25/22  14:07:22
+
+IO (PIO) Attributes (cont)
+--------------------------
+| dac_data[3]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dac_data[2]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dac_data[1]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dac_data[0]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dac_clk             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led_out[5]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led_out[4]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led_out[3]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led_out[2]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led_out[1]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led_out[0]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rst_n               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key[1]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key[0]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| enc_a               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| enc_b               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| enc_ok              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Signal u_dds/u_dds_sin_table/mx_ctrl_r_inv was merged into signal
+     u_dds/u_dds_sin_table/mx_ctrl_r
+Signal u_dds/u_dds_sin_table/lx_ne0_inv was merged into signal
+     u_dds/u_dds_sin_table/lx_ne0
+Signal u_dds/u_dds_sin_table/rom_dout_inv was merged into signal
+     u_dds/u_dds_sin_table/rom_dout
+Signal u_dds/u_dds_sin_table/rom_dout_1_inv was merged into signal
+     u_dds/u_dds_sin_table/rom_dout_1
+Signal u_dds/u_dds_sin_table/rom_dout_2_inv was merged into signal
+     u_dds/u_dds_sin_table/rom_dout_2
+Signal u_dds/u_dds_sin_table/rom_dout_3_inv was merged into signal
+     u_dds/u_dds_sin_table/rom_dout_3
+Signal u_dds/u_dds_sin_table/rom_dout_4_inv was merged into signal
+     u_dds/u_dds_sin_table/rom_dout_4
+Signal u_dds/u_dds_sin_table/rom_dout_5_inv was merged into signal
+     u_dds/u_dds_sin_table/rom_dout_5
+
+                                    Page 3
+
+
+
+
+Design:  main                                          Date:  02/25/22  14:07:22
+
+Removed logic (cont)
+--------------------
+Signal u_dds/u_dds_sin_table/rom_dout_6_inv was merged into signal
+     u_dds/u_dds_sin_table/rom_dout_6
+Signal u_dds/u_dds_sin_table/rom_dout_7_inv was merged into signal
+     u_dds/u_dds_sin_table/rom_dout_7
+Signal u_dds/u_dds_sin_table/rom_dout_8_inv was merged into signal
+     u_dds/u_dds_sin_table/rom_dout_8
+Signal u_dds/u_dds_sin_table/rom_dout_9_inv was merged into signal
+     u_dds/u_dds_sin_table/rom_dout_9
+Signal u_dds/u_dds_sin_table/rom_addr0_r_inv was merged into signal
+     u_dds/u_dds_sin_table/rom_addr0_r
+Signal u_dds/u_dds_sin_table/rom_addr0_r_1_inv was merged into signal
+     u_dds/u_dds_sin_table/rom_addr0_r_1
+Signal u_dds/u_dds_sin_table/rom_addr0_r_2_inv was merged into signal
+     u_dds/u_dds_sin_table/rom_addr0_r_2
+Signal u_dds/u_dds_sin_table/rom_addr0_r_3_inv was merged into signal
+     u_dds/u_dds_sin_table/rom_addr0_r_3
+Signal u_dds/u_dds_sin_table/rom_addr0_r_5_inv was merged into signal
+     u_dds/u_dds_sin_table/rom_addr0_r_5
+Signal u_dds/u_dds_sin_table/rom_addr0_r_4_inv was merged into signal
+     u_dds/u_dds_sin_table/rom_addr0_r_4
+Signal GND_net undriven or does not drive anything - clipped.
+Signal u_dds/u_dds_sin_table/rom_dout_9_ffin undriven or does not drive anything
+     - clipped.
+Signal u_dds_am/add_219_9/S1 undriven or does not drive anything - clipped.
+Signal u_dds_am/add_219_9/CO undriven or does not drive anything - clipped.
+Signal u_dds_am/add_219_1/S0 undriven or does not drive anything - clipped.
+Signal u_dds_am/add_219_1/CI undriven or does not drive anything - clipped.
+Signal u_button/cnt_220_add_4_19/S1 undriven or does not drive anything -
+     clipped.
+Signal u_button/cnt_220_add_4_19/CO undriven or does not drive anything -
+     clipped.
+Signal u_button/cnt_220_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_button/cnt_220_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_dds/u_dds_sin_table/neg_rom_dout_n_5/S1 undriven or does not drive
+     anything - clipped.
+Signal u_dds/u_dds_sin_table/neg_rom_dout_n_5/COUT undriven or does not drive
+     anything - clipped.
+Signal u_dds/u_dds_sin_table/neg_rom_dout_n_0/S0 undriven or does not drive
+     anything - clipped.
+Signal u_dds/u_dds_sin_table/neg_rom_addr0_r_n_3/S1 undriven or does not drive
+     anything - clipped.
+Signal u_dds/u_dds_sin_table/neg_rom_addr0_r_n_3/COUT undriven or does not drive
+     anything - clipped.
+Signal u_dds/u_dds_sin_table/neg_rom_addr0_r_n_0/S0 undriven or does not drive
+     anything - clipped.
+Signal u_dds/ori_out_9__I_0_add_216_8/CO undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_215_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_215_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_215_cout/S1 undriven or does not drive anything
+     - clipped.
+Signal u_dds/ori_out_9__I_0_add_215_cout/CO undriven or does not drive anything
+
+                                    Page 4
+
+
+
+
+Design:  main                                          Date:  02/25/22  14:07:22
+
+Removed logic (cont)
+--------------------
+     - clipped.
+Signal u_dds/ori_out_9__I_0_add_214_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_214_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_214_cout/S1 undriven or does not drive anything
+     - clipped.
+Signal u_dds/ori_out_9__I_0_add_214_cout/CO undriven or does not drive anything
+     - clipped.
+Signal u_dds/ori_out_9__I_0_add_213_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_213_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_213_cout/S1 undriven or does not drive anything
+     - clipped.
+Signal u_dds/ori_out_9__I_0_add_213_cout/CO undriven or does not drive anything
+     - clipped.
+Signal u_dds/ori_out_9__I_0_add_212_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_212_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_212_cout/S1 undriven or does not drive anything
+     - clipped.
+Signal u_dds/ori_out_9__I_0_add_212_cout/CO undriven or does not drive anything
+     - clipped.
+Signal u_dds/ori_out_9__I_0_add_211_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_211_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_211_cout/S1 undriven or does not drive anything
+     - clipped.
+Signal u_dds/ori_out_9__I_0_add_211_cout/CO undriven or does not drive anything
+     - clipped.
+Signal u_dds/ori_out_9__I_0_add_210_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_210_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_dds/cnt_222_add_4_2/S0 undriven or does not drive anything - clipped.
+Signal u_dds/cnt_222_add_4_2/CI undriven or does not drive anything - clipped.
+Signal u_dds/ori_out_9__I_0_add_210_cout/S1 undriven or does not drive anything
+     - clipped.
+Signal u_dds/ori_out_9__I_0_add_210_cout/CO undriven or does not drive anything
+     - clipped.
+Signal u_dds/cnt_222_add_4_32/CO undriven or does not drive anything - clipped.
+Signal u_dds/ori_out_9__I_0_add_209_1/S1 undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_209_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_209_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_209_3/S1 undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_209_3/S0 undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_209_5/S1 undriven or does not drive anything -
+     clipped.
+
+                                    Page 5
+
+
+
+
+Design:  main                                          Date:  02/25/22  14:07:22
+
+Removed logic (cont)
+--------------------
+Signal u_dds/ori_out_9__I_0_add_209_5/S0 undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_209_7/S1 undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_209_7/S0 undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_209_cout/S1 undriven or does not drive anything
+     - clipped.
+Signal u_dds/ori_out_9__I_0_add_209_cout/CO undriven or does not drive anything
+     - clipped.
+Signal u_dds/ori_out_9__I_0_add_216_2/S0 undriven or does not drive anything -
+     clipped.
+Signal u_dds/ori_out_9__I_0_add_216_2/CI undriven or does not drive anything -
+     clipped.
+Signal u_encoder/cnt_221_add_4_13/CO undriven or does not drive anything -
+     clipped.
+Signal u_encoder/cnt_221_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_encoder/cnt_221_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_dds_fm/add_216_33/S1 undriven or does not drive anything - clipped.
+Signal u_dds_fm/add_216_33/CO undriven or does not drive anything - clipped.
+Signal u_dds_fm/add_216_1/S0 undriven or does not drive anything - clipped.
+Signal u_dds_fm/add_216_1/CI undriven or does not drive anything - clipped.
+Block u_dds/u_dds_sin_table/INV_0 was optimized away.
+Block u_dds/u_dds_sin_table/INV_1 was optimized away.
+Block u_dds/u_dds_sin_table/INV_2 was optimized away.
+Block u_dds/u_dds_sin_table/INV_3 was optimized away.
+Block u_dds/u_dds_sin_table/INV_4 was optimized away.
+Block u_dds/u_dds_sin_table/INV_5 was optimized away.
+Block u_dds/u_dds_sin_table/INV_6 was optimized away.
+Block u_dds/u_dds_sin_table/INV_7 was optimized away.
+Block u_dds/u_dds_sin_table/INV_8 was optimized away.
+Block u_dds/u_dds_sin_table/INV_9 was optimized away.
+Block u_dds/u_dds_sin_table/INV_10 was optimized away.
+Block u_dds/u_dds_sin_table/INV_11 was optimized away.
+Block u_dds/u_dds_sin_table/INV_12 was optimized away.
+Block u_dds/u_dds_sin_table/INV_13 was optimized away.
+Block u_dds/u_dds_sin_table/INV_14 was optimized away.
+Block u_dds/u_dds_sin_table/INV_15 was optimized away.
+Block u_dds/u_dds_sin_table/INV_17 was optimized away.
+Block u_dds/u_dds_sin_table/INV_16 was optimized away.
+Block i1 was optimized away.
+Block u_dds/u_dds_sin_table/triglut_1_0_9 was optimized away.
+
+Memory Usage
+------------
+
+
+     
+
+PLL/DLL Summary
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                u_dds_pll/PLLInst_0
+
+                                    Page 6
+
+
+
+
+Design:  main                                          Date:  02/25/22  14:07:22
+
+PLL/DLL Summary (cont)
+----------------------
+  PLL Type:                                         EHXPLLJ
+  Input Clock:                             PIN      clk_c
+  Output Clock(P):                         PIN,NODE dac_clk_c
+  Output Clock(S):                                  NONE
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     dac_clk_c
+  Reset Signal:                                     NONE
+  M Divider Reset Signal:                           NONE
+  C Divider Reset Signal:                           NONE
+  D Divider Reset Signal:                           NONE
+  Standby Signal:                                   NONE
+  PLL LOCK signal:                                  NONE
+  PLL Data bus CLK Signal:                          NONE
+  PLL Data bus Strobe Signal:                       NONE
+  PLL Data bus Reset Signal:                        NONE
+  PLL Data bus Write Enable Signal:                 NONE
+  PLL Data bus Address0:                            NONE
+  PLL Data bus Address1:                            NONE
+  PLL Data bus Address2:                            NONE
+  PLL Data bus Address3:                            NONE
+  PLL Data bus Address4:                            NONE
+  PLL Data In bus Data0:                            NONE
+  PLL Data In bus Data1:                            NONE
+  PLL Data In bus Data2:                            NONE
+  PLL Data In bus Data3:                            NONE
+  PLL Data In bus Data4:                            NONE
+  PLL Data In bus Data5:                            NONE
+  PLL Data In bus Data6:                            NONE
+  PLL Data In bus Data7:                            NONE
+  PLL Data bus Acknowledge:                         NONE
+  PLL Data Out bus Data0:                           NONE
+  PLL Data Out bus Data1:                           NONE
+  PLL Data Out bus Data2:                           NONE
+  PLL Data Out bus Data3:                           NONE
+  PLL Data Out bus Data4:                           NONE
+  PLL Data Out bus Data5:                           NONE
+  PLL Data Out bus Data6:                           NONE
+  PLL Data Out bus Data7:                           NONE
+  Input Clock Frequency (MHz):                      12.0000
+  Output Clock(P) Frequency (MHz):                  120.0000
+  Output Clock(S) Frequency (MHz):                  NA
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              VCO_PHASE
+  Pre Divider B Input:                              VCO_PHASE
+  Pre Divider C Input:                              VCO_PHASE
+  Pre Divider D Input:                              VCO_PHASE
+  VCO Bypass A Input:                               VCO_PHASE
+  VCO Bypass B Input:                               VCO_PHASE
+  VCO Bypass C Input:                               VCO_PHASE
+  VCO Bypass D Input:                               VCO_PHASE
+
+                                    Page 7
+
+
+
+
+Design:  main                                          Date:  02/25/22  14:07:22
+
+PLL/DLL Summary (cont)
+----------------------
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    10
+  CLKOP Divider:                                    4
+  CLKOS Divider:                                    1
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             0
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 RISING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                0
+  CLKOS Trim Option Rising/Falling:                 FALLING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS3 Desired Phase Shift(degree):               0
+
+ASIC Components
+---------------
+
+Instance Name: u_dds_pll/PLLInst_0
+         Type: EHXPLLJ
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'rst_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'rst_n_c' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 62 
+
+     Type and instance name of component: 
+   Register : u_dds/ori_out_i9
+   Register : u_dds/ori_out_i8
+   Register : u_dds/ori_out_i7
+   Register : u_dds/ori_out_i6
+   Register : u_dds/ori_out_i5
+   Register : u_dds/ori_out_i4
+   Register : u_dds/ori_out_i3
+   Register : u_dds/ori_out_i2
+   Register : u_dds/ori_out_i1
+
+                                    Page 8
+
+
+
+
+Design:  main                                          Date:  02/25/22  14:07:22
+
+GSR Usage (cont)
+----------------
+   Register : u_dds/ori_out_i0
+   Register : u_dds/am_out_i1
+   Register : u_dds/dds_out_i1
+   Register : u_dds/cnt_222__i0
+   Register : u_dds/cnt_222__i31
+   Register : u_dds/cnt_222__i30
+   Register : u_dds/cnt_222__i29
+   Register : u_dds/cnt_222__i28
+   Register : u_dds/cnt_222__i27
+   Register : u_dds/cnt_222__i26
+   Register : u_dds/cnt_222__i25
+   Register : u_dds/cnt_222__i24
+   Register : u_dds/cnt_222__i23
+   Register : u_dds/cnt_222__i22
+   Register : u_dds/cnt_222__i21
+   Register : u_dds/cnt_222__i20
+   Register : u_dds/cnt_222__i19
+   Register : u_dds/cnt_222__i18
+   Register : u_dds/cnt_222__i17
+   Register : u_dds/cnt_222__i16
+   Register : u_dds/cnt_222__i15
+   Register : u_dds/cnt_222__i14
+   Register : u_dds/cnt_222__i13
+   Register : u_dds/cnt_222__i12
+   Register : u_dds/cnt_222__i11
+   Register : u_dds/cnt_222__i10
+   Register : u_dds/cnt_222__i9
+   Register : u_dds/cnt_222__i8
+   Register : u_dds/cnt_222__i7
+   Register : u_dds/cnt_222__i6
+   Register : u_dds/cnt_222__i5
+   Register : u_dds/cnt_222__i4
+   Register : u_dds/cnt_222__i3
+   Register : u_dds/cnt_222__i2
+   Register : u_dds/cnt_222__i1
+   Register : u_dds/dds_out_i10
+   Register : u_dds/dds_out_i9
+   Register : u_dds/dds_out_i8
+   Register : u_dds/dds_out_i7
+   Register : u_dds/dds_out_i6
+   Register : u_dds/dds_out_i5
+   Register : u_dds/dds_out_i4
+   Register : u_dds/dds_out_i3
+   Register : u_dds/dds_out_i2
+   Register : u_dds/am_out_i10
+   Register : u_dds/am_out_i9
+   Register : u_dds/am_out_i8
+   Register : u_dds/am_out_i7
+   Register : u_dds/am_out_i6
+   Register : u_dds/am_out_i5
+   Register : u_dds/am_out_i4
+   Register : u_dds/am_out_i3
+   Register : u_dds/am_out_i2
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+                                    Page 9
+
+
+
+
+Design:  main                                          Date:  02/25/22  14:07:22
+
+GSR Usage (cont)
+----------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'rst_n_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 36 
+
+     Type and instance name of component: 
+   Register : u_encoder/cnt_221__i0
+   Register : u_encoder/cnt_221__i12
+   Register : u_encoder/cnt_221__i11
+   Register : u_encoder/cnt_221__i10
+   Register : u_encoder/cnt_221__i9
+   Register : u_encoder/cnt_221__i8
+   Register : u_encoder/cnt_221__i7
+   Register : u_encoder/cnt_221__i6
+   Register : u_encoder/cnt_221__i5
+   Register : u_encoder/cnt_221__i4
+   Register : u_encoder/cnt_221__i3
+   Register : u_encoder/cnt_221__i2
+   Register : u_encoder/cnt_221__i1
+   Register : u_encoder/cnt_20ms__i5
+   Register : u_encoder/cnt_20ms__i4
+   Register : u_encoder/cnt_20ms__i3
+   Register : u_encoder/cnt_20ms__i2
+   Register : u_encoder/cnt_20ms__i1
+   Register : u_button/cnt_220__i0
+   Register : u_button/cnt_220__i17
+   Register : u_button/cnt_220__i16
+   Register : u_button/cnt_220__i15
+   Register : u_button/cnt_220__i14
+   Register : u_button/cnt_220__i13
+   Register : u_button/cnt_220__i12
+   Register : u_button/cnt_220__i11
+   Register : u_button/cnt_220__i10
+   Register : u_button/cnt_220__i9
+   Register : u_button/cnt_220__i8
+   Register : u_button/cnt_220__i7
+   Register : u_button/cnt_220__i6
+   Register : u_button/cnt_220__i5
+   Register : u_button/cnt_220__i4
+   Register : u_button/cnt_220__i3
+   Register : u_button/cnt_220__i2
+   Register : u_button/cnt_220__i1
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 52 MB
+        
+
+
+
+                                   Page 10
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

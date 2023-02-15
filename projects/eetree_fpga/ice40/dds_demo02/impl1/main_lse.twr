@@ -1,0 +1,391 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Fri Feb 25 14:07:15 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     main
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets dac_clk_c]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 10.139ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \u_dds/u_dds_sin_table/FF_29  (from dac_clk_c +)
+   Destination:    FD1P3DX    D              \u_dds/u_dds_sin_table/FF_10  (to dac_clk_c +)
+
+   Delay:                  14.979ns  (30.8% logic, 69.2% route), 10 logic levels.
+
+ Constraint Details:
+
+     14.979ns data_path \u_dds/u_dds_sin_table/FF_29 to \u_dds/u_dds_sin_table/FF_10 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 10.139ns
+
+ Path Details: \u_dds/u_dds_sin_table/FF_29 to \u_dds/u_dds_sin_table/FF_10
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \u_dds/u_dds_sin_table/FF_29 (from dac_clk_c)
+Route         2   e 1.198                                  \u_dds/u_dds_sin_table/rom_addr0_r
+LUT4        ---     0.493              A to Z              \u_dds/u_dds_sin_table/INV_12
+Route         1   e 0.941                                  \u_dds/u_dds_sin_table/rom_addr0_r_inv
+LUT4        ---     0.493                to                \u_dds/u_dds_sin_table/neg_rom_addr0_r_n_0
+Route         1   e 0.941                                  \u_dds/u_dds_sin_table/co0
+LUT4        ---     0.493                to                \u_dds/u_dds_sin_table/neg_rom_addr0_r_n_1
+Route         1   e 0.941                                  \u_dds/u_dds_sin_table/rom_addr0_r_4_inv
+LUT4        ---     0.493                to                \u_dds/u_dds_sin_table/neg_rom_addr0_r_n_2
+Route         1   e 0.941                                  \u_dds/u_dds_sin_table/rom_addr0_r_n_3
+MUXL5       ---     0.233             D0 to Z              \u_dds/u_dds_sin_table/muxb_22
+Route        11   e 1.632                                  \u_dds/u_dds_sin_table/rom_addr0_r_n_9
+LUT4        ---     0.493          AD[4] to DO0            \u_dds/u_dds_sin_table/LUT4_1
+Route         1   e 0.941                                  \u_dds/u_dds_sin_table/func_or_inet
+LUT4        ---     0.493          AD[4] to DO0            \u_dds/u_dds_sin_table/LUT4_0
+Route         1   e 0.941                                  \u_dds/u_dds_sin_table/lx_ne0
+LUT4        ---     0.493              A to Z              \u_dds/u_dds_sin_table/INV_1
+Route         1   e 0.941                                  \u_dds/u_dds_sin_table/lx_ne0_inv
+LUT4        ---     0.493              B to Z              \u_dds/u_dds_sin_table/AND2_t0
+Route         1   e 0.941                                  \u_dds/u_dds_sin_table/out_sel_i
+                  --------
+                   14.979  (30.8% logic, 69.2% route), 10 logic levels.
+
+
+Error:  The following path violates requirements by 10.139ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \u_dds/u_dds_sin_table/FF_29  (from dac_clk_c +)
+   Destination:    FD1P3DX    D              \u_dds/u_dds_sin_table/FF_10  (to dac_clk_c +)
+
+   Delay:                  14.979ns  (30.8% logic, 69.2% route), 10 logic levels.
+
+ Constraint Details:
+
+     14.979ns data_path \u_dds/u_dds_sin_table/FF_29 to \u_dds/u_dds_sin_table/FF_10 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 10.139ns
+
+ Path Details: \u_dds/u_dds_sin_table/FF_29 to \u_dds/u_dds_sin_table/FF_10
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \u_dds/u_dds_sin_table/FF_29 (from dac_clk_c)
+Route         2   e 1.198                                  \u_dds/u_dds_sin_table/rom_addr0_r
+LUT4        ---     0.493              A to Z              \u_dds/u_dds_sin_table/INV_12
+Route         1   e 0.941                                  \u_dds/u_dds_sin_table/rom_addr0_r_inv
+LUT4        ---     0.493                to                \u_dds/u_dds_sin_table/neg_rom_addr0_r_n_0
+Route         1   e 0.941                                  \u_dds/u_dds_sin_table/co0
+LUT4        ---     0.493                to                \u_dds/u_dds_sin_table/neg_rom_addr0_r_n_1
+Route         1   e 0.941                                  \u_dds/u_dds_sin_table/rom_addr0_r_4_inv
+LUT4        ---     0.493                to                \u_dds/u_dds_sin_table/neg_rom_addr0_r_n_2
+Route         1   e 0.941                                  \u_dds/u_dds_sin_table/co2
+LUT4        ---     0.493                to                \u_dds/u_dds_sin_table/neg_rom_addr0_r_n_3
+Route         1   e 0.941                                  \u_dds/u_dds_sin_table/rom_addr0_r_n_5
+MUXL5       ---     0.233             D0 to Z              \u_dds/u_dds_sin_table/muxb_20
+Route        11   e 1.632                                  \u_dds/u_dds_sin_table/rom_addr0_r_n_11
+LUT4        ---     0.493          AD[4] to DO0            \u_dds/u_dds_sin_table/LUT4_0
+Route         1   e 0.941                                  \u_dds/u_dds_sin_table/lx_ne0
+LUT4        ---     0.493              A to Z              \u_dds/u_dds_sin_table/INV_1
+Route         1   e 0.941                                  \u_dds/u_dds_sin_table/lx_ne0_inv
+LUT4        ---     0.493              B to Z              \u_dds/u_dds_sin_table/AND2_t0
+Route         1   e 0.941                                  \u_dds/u_dds_sin_table/out_sel_i
+                  --------
+                   14.979  (30.8% logic, 69.2% route), 10 logic levels.
+
+
+Error:  The following path violates requirements by 9.759ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \u_dds/ori_out_i1  (from dac_clk_c +)
+   Destination:    FD1S3AX    D              \u_dds/am_out_i10  (to dac_clk_c +)
+
+   Delay:                  14.599ns  (70.5% logic, 29.5% route), 17 logic levels.
+
+ Constraint Details:
+
+     14.599ns data_path \u_dds/ori_out_i1 to \u_dds/am_out_i10 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 9.759ns
+
+ Path Details: \u_dds/ori_out_i1 to \u_dds/am_out_i10
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \u_dds/ori_out_i1 (from dac_clk_c)
+Route         8   e 1.598                                  \u_dds/ori_out[1]
+A1_TO_FCO   ---     0.827           C[2] to COUT           \u_dds/ori_out_9__I_0_add_215_1
+Route         1   e 0.020                                  \u_dds/n1399
+FCI_TO_F    ---     0.598            CIN to S[2]           \u_dds/ori_out_9__I_0_add_215_3
+Route         1   e 0.020                                  \u_dds/n80
+A1_TO_F     ---     0.493           C[2] to S[2]           \u_dds/ori_out_9__I_0_add_214_3
+Route         1   e 0.020                                  \u_dds/n77
+A1_TO_FCO   ---     0.827           C[2] to COUT           \u_dds/ori_out_9__I_0_add_213_3
+Route         1   e 0.020                                  \u_dds/n1410
+FCI_TO_F    ---     0.598            CIN to S[2]           \u_dds/ori_out_9__I_0_add_213_5
+Route         1   e 0.020                                  \u_dds/n134_adj_320
+A1_TO_FCO   ---     0.827           C[2] to COUT           \u_dds/ori_out_9__I_0_add_212_5
+Route         1   e 0.020                                  \u_dds/n1416
+FCI_TO_F    ---     0.598            CIN to S[2]           \u_dds/ori_out_9__I_0_add_212_7
+Route         1   e 0.020                                  \u_dds/n191
+A1_TO_FCO   ---     0.827           C[2] to COUT           \u_dds/ori_out_9__I_0_add_211_7
+Route         1   e 0.020                                  \u_dds/n1422
+FCI_TO_F    ---     0.598            CIN to S[2]           \u_dds/ori_out_9__I_0_add_211_9
+Route         1   e 0.020                                  \u_dds/n248
+A1_TO_F     ---     0.493           C[2] to S[2]           \u_dds/ori_out_9__I_0_add_210_9
+Route         1   e 0.020                                  \u_dds/n245
+A1_TO_FCO   ---     0.827           C[2] to COUT           \u_dds/ori_out_9__I_0_add_209_9
+Route         1   e 0.020                                  \u_dds/n1433
+FCI_TO_F    ---     0.598            CIN to S[2]           \u_dds/ori_out_9__I_0_add_209_cout
+Route         2   e 1.486                                  \u_dds/n273
+A1_TO_FCO   ---     0.827           B[2] to COUT           \u_dds/ori_out_9__I_0_add_216_2
+Route         1   e 0.020                                  \u_dds/n1396
+FCI_TO_FCO  ---     0.157            CIN to COUT           \u_dds/ori_out_9__I_0_add_216_4
+Route         1   e 0.020                                  \u_dds/n1397
+FCI_TO_FCO  ---     0.157            CIN to COUT           \u_dds/ori_out_9__I_0_add_216_6
+Route         1   e 0.020                                  \u_dds/n1398
+FCI_TO_F    ---     0.598            CIN to S[2]           \u_dds/ori_out_9__I_0_add_216_8
+Route         1   e 0.941                                  \u_dds/am_out_17__N_240[17]
+                  --------
+                   14.599  (70.5% logic, 29.5% route), 17 logic levels.
+
+Warning: 15.139 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            1069 items scored, 1069 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 5.341ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \u_encoder/cnt_221__i0  (from clk_c +)
+   Destination:    FD1S3AY    D              \u_encoder/cnt_20ms__i0  (to clk_c +)
+
+   Delay:                  10.181ns  (28.6% logic, 71.4% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.181ns data_path \u_encoder/cnt_221__i0 to \u_encoder/cnt_20ms__i0 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 5.341ns
+
+ Path Details: \u_encoder/cnt_221__i0 to \u_encoder/cnt_20ms__i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \u_encoder/cnt_221__i0 (from clk_c)
+Route         3   e 1.315                                  \u_encoder/cnt[0]
+LUT4        ---     0.493              A to Z              \u_encoder/i995_4_lut
+Route         1   e 0.941                                  \u_encoder/n1525
+LUT4        ---     0.493              A to Z              \u_encoder/i1001_4_lut
+Route         1   e 0.941                                  \u_encoder/n1531
+LUT4        ---     0.493              D to Z              \u_encoder/i1050_4_lut
+Route        11   e 1.632                                  \u_encoder/cnt_20ms_5__N_129
+LUT4        ---     0.493              D to Z              \u_encoder/i2_4_lut
+Route         7   e 1.502                                  \u_encoder/clk_c_enable_2
+LUT4        ---     0.493              B to Z              \u_encoder/i689_3_lut
+Route         1   e 0.941                                  \u_encoder/n18
+                  --------
+                   10.181  (28.6% logic, 71.4% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 5.341ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \u_encoder/cnt_221__i12  (from clk_c +)
+   Destination:    FD1S3AY    D              \u_encoder/cnt_20ms__i0  (to clk_c +)
+
+   Delay:                  10.181ns  (28.6% logic, 71.4% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.181ns data_path \u_encoder/cnt_221__i12 to \u_encoder/cnt_20ms__i0 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 5.341ns
+
+ Path Details: \u_encoder/cnt_221__i12 to \u_encoder/cnt_20ms__i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \u_encoder/cnt_221__i12 (from clk_c)
+Route         3   e 1.315                                  \u_encoder/cnt[12]
+LUT4        ---     0.493              C to Z              \u_encoder/i995_4_lut
+Route         1   e 0.941                                  \u_encoder/n1525
+LUT4        ---     0.493              A to Z              \u_encoder/i1001_4_lut
+Route         1   e 0.941                                  \u_encoder/n1531
+LUT4        ---     0.493              D to Z              \u_encoder/i1050_4_lut
+Route        11   e 1.632                                  \u_encoder/cnt_20ms_5__N_129
+LUT4        ---     0.493              D to Z              \u_encoder/i2_4_lut
+Route         7   e 1.502                                  \u_encoder/clk_c_enable_2
+LUT4        ---     0.493              B to Z              \u_encoder/i689_3_lut
+Route         1   e 0.941                                  \u_encoder/n18
+                  --------
+                   10.181  (28.6% logic, 71.4% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 5.341ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \u_encoder/cnt_221__i10  (from clk_c +)
+   Destination:    FD1S3AY    D              \u_encoder/cnt_20ms__i0  (to clk_c +)
+
+   Delay:                  10.181ns  (28.6% logic, 71.4% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.181ns data_path \u_encoder/cnt_221__i10 to \u_encoder/cnt_20ms__i0 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 5.341ns
+
+ Path Details: \u_encoder/cnt_221__i10 to \u_encoder/cnt_20ms__i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \u_encoder/cnt_221__i10 (from clk_c)
+Route         3   e 1.315                                  \u_encoder/cnt[10]
+LUT4        ---     0.493              B to Z              \u_encoder/i997_4_lut
+Route         1   e 0.941                                  \u_encoder/n1527
+LUT4        ---     0.493              C to Z              \u_encoder/i1001_4_lut
+Route         1   e 0.941                                  \u_encoder/n1531
+LUT4        ---     0.493              D to Z              \u_encoder/i1050_4_lut
+Route        11   e 1.632                                  \u_encoder/cnt_20ms_5__N_129
+LUT4        ---     0.493              D to Z              \u_encoder/i2_4_lut
+Route         7   e 1.502                                  \u_encoder/clk_c_enable_2
+LUT4        ---     0.493              B to Z              \u_encoder/i689_3_lut
+Route         1   e 0.941                                  \u_encoder/n18
+                  --------
+                   10.181  (28.6% logic, 71.4% route), 6 logic levels.
+
+Warning: 10.341 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets dac_clk_c]               |     5.000 ns|    15.139 ns|    10 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|    10.341 ns|     6 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\u_dds/n1396                            |       1|    4030|     78.03%
+                                        |        |        |
+\u_dds/n273                             |       2|    3966|     76.79%
+                                        |        |        |
+\u_dds/n1433                            |       1|    3966|     76.79%
+                                        |        |        |
+\u_dds/n245                             |       1|    3130|     60.60%
+                                        |        |        |
+\u_dds/n1397                            |       1|    3072|     59.48%
+                                        |        |        |
+\u_dds/n1399                            |       1|    2080|     40.27%
+                                        |        |        |
+\u_dds/n80                              |       1|    2040|     39.50%
+                                        |        |        |
+\u_dds/n1398                            |       1|    1980|     38.33%
+                                        |        |        |
+\u_dds/n77                              |       1|    1810|     35.04%
+                                        |        |        |
+\u_dds/ori_out[1]                       |       8|    1780|     34.46%
+                                        |        |        |
+\u_dds/n134_adj_320                     |       1|    1702|     32.95%
+                                        |        |        |
+\u_dds/n188                             |       1|    1691|     32.74%
+                                        |        |        |
+\u_dds/n191                             |       1|    1679|     32.51%
+                                        |        |        |
+\u_dds/n248                             |       1|    1631|     31.58%
+                                        |        |        |
+\u_dds/ori_out[0]                       |       7|    1556|     30.13%
+                                        |        |        |
+\u_dds/n1427                            |       1|    1479|     28.64%
+                                        |        |        |
+\u_dds/n137_adj_321                     |       1|    1448|     28.03%
+                                        |        |        |
+\u_dds/n131                             |       1|    1223|     23.68%
+                                        |        |        |
+\u_dds/n1405                            |       1|    1120|     21.68%
+                                        |        |        |
+\u_dds/n194                             |       1|    1081|     20.93%
+                                        |        |        |
+\u_dds/am_out_17__N_240[16]             |       1|     990|     19.17%
+                                        |        |        |
+\u_dds/am_out_17__N_240[17]             |       1|     990|     19.17%
+                                        |        |        |
+\u_dds/n1410                            |       1|     986|     19.09%
+                                        |        |        |
+\u_dds/n1416                            |       1|     982|     19.01%
+                                        |        |        |
+\u_dds/n1421                            |       1|     887|     17.17%
+                                        |        |        |
+\u_dds/n1422                            |       1|     873|     16.90%
+                                        |        |        |
+\u_dds/n74                              |       1|     835|     16.17%
+                                        |        |        |
+\u_dds/n1411                            |       1|     777|     15.04%
+                                        |        |        |
+\u_dds/n1400                            |       1|     720|     13.94%
+                                        |        |        |
+\u_dds/n1404                            |       1|     701|     13.57%
+                                        |        |        |
+\u_dds/n251                             |       1|     686|     13.28%
+                                        |        |        |
+\u_dds/n140_adj_322                     |       1|     620|     12.00%
+                                        |        |        |
+\u_dds/n1432                            |       1|     604|     11.69%
+                                        |        |        |
+\u_dds/n1415                            |       1|     547|     10.59%
+                                        |        |        |
+\u_dds/am_out_17__N_240[14]             |       1|     546|     10.57%
+                                        |        |        |
+\u_dds/am_out_17__N_240[15]             |       1|     546|     10.57%
+                                        |        |        |
+\u_dds/n185                             |       1|     544|     10.53%
+                                        |        |        |
+\u_dds_fm/n1353                         |       1|     531|     10.28%
+                                        |        |        |
+\u_dds_fm/n1352                         |       1|     525|     10.16%
+                                        |        |        |
+\u_dds_fm/n1354                         |       1|     519|     10.05%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 5165  Score: 36011486
+
+Constraints cover  145015 paths, 601 nets, and 1171 connections (81.3% coverage)
+
+
+Peak memory: 74776576 bytes, TRCE: 13127680 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

@@ -1,0 +1,20 @@
+Results of NGD DRC are available in dds_main_drc.log.
+Loading NGL library 'D:/Program Files/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/Program Files/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/Program Files/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/Program Files/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'enc_a' has no load.
+WARNING - synthesis: input pad net 'enc_a' has no legal load.
+WARNING - synthesis: logical net 'enc_b' has no load.
+WARNING - synthesis: input pad net 'enc_b' has no legal load.
+WARNING - synthesis: DRC complete with 4 warnings.
+
+Design Results:
+    148 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file dds_demo02_impl1.ngd.

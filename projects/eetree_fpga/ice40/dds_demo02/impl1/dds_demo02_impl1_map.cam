@@ -1,0 +1,119 @@
+[ START MERGED ]
+u_dds/u_dds_sin_table/rom_addr0_r_inv u_dds/u_dds_sin_table/rom_addr0_r
+u_dds/u_dds_sin_table/rom_addr0_r_1_inv u_dds/u_dds_sin_table/rom_addr0_r_1
+u_dds/u_dds_sin_table/rom_addr0_r_2_inv u_dds/u_dds_sin_table/rom_addr0_r_2
+u_dds/u_dds_sin_table/rom_addr0_r_3_inv u_dds/u_dds_sin_table/rom_addr0_r_3
+u_dds/u_dds_sin_table/rom_addr0_r_4_inv u_dds/u_dds_sin_table/rom_addr0_r_4
+u_dds/u_dds_sin_table/rom_addr0_r_5_inv u_dds/u_dds_sin_table/rom_addr0_r_5
+u_dds/u_dds_sin_table/rom_dout_inv u_dds/u_dds_sin_table/rom_dout
+u_dds/u_dds_sin_table/rom_dout_1_inv u_dds/u_dds_sin_table/rom_dout_1
+u_dds/u_dds_sin_table/rom_dout_2_inv u_dds/u_dds_sin_table/rom_dout_2
+u_dds/u_dds_sin_table/rom_dout_3_inv u_dds/u_dds_sin_table/rom_dout_3
+u_dds/u_dds_sin_table/rom_dout_4_inv u_dds/u_dds_sin_table/rom_dout_4
+u_dds/u_dds_sin_table/rom_dout_5_inv u_dds/u_dds_sin_table/rom_dout_5
+u_dds/u_dds_sin_table/rom_dout_6_inv u_dds/u_dds_sin_table/rom_dout_6
+u_dds/u_dds_sin_table/rom_dout_7_inv u_dds/u_dds_sin_table/rom_dout_7
+u_dds/u_dds_sin_table/rom_dout_8_inv u_dds/u_dds_sin_table/rom_dout_8
+u_dds/u_dds_sin_table/rom_dout_9_inv u_dds/u_dds_sin_table/rom_dout_9
+u_dds/u_dds_sin_table/lx_ne0_inv u_dds/u_dds_sin_table/lx_ne0
+u_dds/u_dds_sin_table/mx_ctrl_r_inv u_dds/u_dds_sin_table/mx_ctrl_r
+[ END MERGED ]
+[ START CLIPPED ]
+GND_net
+u_dds/u_dds_sin_table/rom_dout_9_ffin
+u_dds_am/add_219_9/S1
+u_dds_am/add_219_9/CO
+u_dds_am/add_219_1/S0
+u_dds_am/add_219_1/CI
+u_button/cnt_220_add_4_19/S1
+u_button/cnt_220_add_4_19/CO
+u_button/cnt_220_add_4_1/S0
+u_button/cnt_220_add_4_1/CI
+u_dds/u_dds_sin_table/neg_rom_dout_n_5/S1
+u_dds/u_dds_sin_table/neg_rom_dout_n_5/COUT
+u_dds/u_dds_sin_table/neg_rom_dout_n_0/S0
+u_dds/u_dds_sin_table/neg_rom_addr0_r_n_3/S1
+u_dds/u_dds_sin_table/neg_rom_addr0_r_n_3/COUT
+u_dds/u_dds_sin_table/neg_rom_addr0_r_n_0/S0
+u_dds/ori_out_9__I_0_add_216_8/CO
+u_dds/ori_out_9__I_0_add_215_1/S0
+u_dds/ori_out_9__I_0_add_215_1/CI
+u_dds/ori_out_9__I_0_add_215_cout/S1
+u_dds/ori_out_9__I_0_add_215_cout/CO
+u_dds/ori_out_9__I_0_add_214_1/S0
+u_dds/ori_out_9__I_0_add_214_1/CI
+u_dds/ori_out_9__I_0_add_214_cout/S1
+u_dds/ori_out_9__I_0_add_214_cout/CO
+u_dds/ori_out_9__I_0_add_213_1/S0
+u_dds/ori_out_9__I_0_add_213_1/CI
+u_dds/ori_out_9__I_0_add_213_cout/S1
+u_dds/ori_out_9__I_0_add_213_cout/CO
+u_dds/ori_out_9__I_0_add_212_1/S0
+u_dds/ori_out_9__I_0_add_212_1/CI
+u_dds/ori_out_9__I_0_add_212_cout/S1
+u_dds/ori_out_9__I_0_add_212_cout/CO
+u_dds/ori_out_9__I_0_add_211_1/S0
+u_dds/ori_out_9__I_0_add_211_1/CI
+u_dds/ori_out_9__I_0_add_211_cout/S1
+u_dds/ori_out_9__I_0_add_211_cout/CO
+u_dds/ori_out_9__I_0_add_210_1/S0
+u_dds/ori_out_9__I_0_add_210_1/CI
+u_dds/cnt_222_add_4_2/S0
+u_dds/cnt_222_add_4_2/CI
+u_dds/ori_out_9__I_0_add_210_cout/S1
+u_dds/ori_out_9__I_0_add_210_cout/CO
+u_dds/cnt_222_add_4_32/CO
+u_dds/ori_out_9__I_0_add_209_1/S1
+u_dds/ori_out_9__I_0_add_209_1/S0
+u_dds/ori_out_9__I_0_add_209_1/CI
+u_dds/ori_out_9__I_0_add_209_3/S1
+u_dds/ori_out_9__I_0_add_209_3/S0
+u_dds/ori_out_9__I_0_add_209_5/S1
+u_dds/ori_out_9__I_0_add_209_5/S0
+u_dds/ori_out_9__I_0_add_209_7/S1
+u_dds/ori_out_9__I_0_add_209_7/S0
+u_dds/ori_out_9__I_0_add_209_cout/S1
+u_dds/ori_out_9__I_0_add_209_cout/CO
+u_dds/ori_out_9__I_0_add_216_2/S0
+u_dds/ori_out_9__I_0_add_216_2/CI
+u_encoder/cnt_221_add_4_13/CO
+u_encoder/cnt_221_add_4_1/S0
+u_encoder/cnt_221_add_4_1/CI
+u_dds_fm/add_216_33/S1
+u_dds_fm/add_216_33/CO
+u_dds_fm/add_216_1/S0
+u_dds_fm/add_216_1/CI
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.10.0.111.2 -- WARNING: Map write only section -- Fri Feb 25 14:07:22 2022
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "dac_data[7]" SITE "J14" ;
+LOCATE COMP "dac_data[8]" SITE "J13" ;
+LOCATE COMP "dac_data[9]" SITE "H12" ;
+LOCATE COMP "dac_data[6]" SITE "K12" ;
+LOCATE COMP "dac_data[5]" SITE "K14" ;
+LOCATE COMP "dac_data[4]" SITE "K13" ;
+LOCATE COMP "dac_data[3]" SITE "J12" ;
+LOCATE COMP "dac_data[2]" SITE "P3" ;
+LOCATE COMP "dac_data[1]" SITE "M4" ;
+LOCATE COMP "dac_data[0]" SITE "N4" ;
+LOCATE COMP "dac_clk" SITE "P13" ;
+LOCATE COMP "led_out[5]" SITE "M3" ;
+LOCATE COMP "led_out[4]" SITE "N3" ;
+LOCATE COMP "led_out[3]" SITE "P4" ;
+LOCATE COMP "led_out[2]" SITE "M2" ;
+LOCATE COMP "led_out[1]" SITE "N2" ;
+LOCATE COMP "led_out[0]" SITE "P2" ;
+LOCATE COMP "clk" SITE "C1" ;
+LOCATE COMP "rst_n" SITE "L14" ;
+LOCATE COMP "key[1]" SITE "H3" ;
+LOCATE COMP "key[0]" SITE "G3" ;
+LOCATE COMP "enc_a" SITE "C8" ;
+LOCATE COMP "enc_b" SITE "B8" ;
+LOCATE COMP "enc_ok" SITE "F3" ;
+FREQUENCY NET "clk_c" 12.000000 MHz ;
+FREQUENCY NET "dac_clk_c" 120.000000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

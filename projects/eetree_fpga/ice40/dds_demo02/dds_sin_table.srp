@@ -1,0 +1,35 @@
+SCUBA, Version Diamond (64-bit) 3.10.0.111.2
+Thu Feb 24 17:09:37 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : D:\Program Files\lscc\diamond\3.10_x64\ispfpga\bin\nt64\scuba.exe -w -n dds_sin_table -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type cosine -addr_width 8 -width 10 -pfu -input_reg -mode 0 -output_reg -area -pipeline 1 
+    Circuit name     : dds_sin_table
+    Module type      : cosine
+    Module Version   : 1.6
+    Ports            : 
+	Inputs       : Clock, ClkEn, Reset, Theta[7:0]
+	Outputs      : Sine[9:0]
+    I/O buffer       : not inserted
+    EDIF output      : dds_sin_table.edn
+    Verilog output   : dds_sin_table.v
+    Verilog template : dds_sin_table_tmpl.v
+    Verilog testbench: tb_dds_sin_table_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : dds_sin_table.srp
+    Element Usage    :
+           AND2 : 1
+         FADD2B : 10
+        FD1P3DX : 30
+            INV : 18
+          MUX21 : 26
+       ROM16X1A : 2
+       ROM64X1A : 10
+    Estimated Resource Usage:
+            LUT : 69
+            Reg : 30

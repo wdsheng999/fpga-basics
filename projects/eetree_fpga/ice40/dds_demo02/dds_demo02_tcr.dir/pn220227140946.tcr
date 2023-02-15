@@ -1,0 +1,4 @@
+#Start recording tcl command: 2/27/2022 13:11:21
+#Project Location: C:/Users/10798/Desktop/fpga/dds_demo02; Project name: dds_demo02
+prj_project open "C:/Users/10798/Desktop/fpga/dds_demo02/dds_demo02.ldf"
+#Stop recording: 2/27/2022 14:09:46

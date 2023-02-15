@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="dds_sin_table" module="Sin-Cos_Table" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2022 02 24 17:09:39.396" version="1.6" type="Module" synthesis="lse" source_format="Verilog">
+  <Package>
+		<File name="dds_sin_table.lpc" type="lpc" modified="2022 02 24 17:09:37.394"/>
+		<File name="dds_sin_table.v" type="top_level_verilog" modified="2022 02 24 17:09:37.426"/>
+		<File name="dds_sin_table_tmpl.v" type="template_verilog" modified="2022 02 24 17:09:37.426"/>
+		<File name="tb_dds_sin_table_tmpl.v" type="testbench_verilog" modified="2022 02 24 17:09:37.441"/>
+  </Package>
+</DiamondModule>

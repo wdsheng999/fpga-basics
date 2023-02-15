@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "C:/Users/10798/Desktop/fpga/dds_demo02"  

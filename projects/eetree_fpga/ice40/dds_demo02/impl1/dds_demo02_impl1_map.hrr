@@ -1,0 +1,78 @@
+---------------------------------------------------
+Report for cell main
+   Instance path: main
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     180.00        100.0
+                                  LUT4	     131.00        100.0
+                                 IOBUF	         24        100.0
+                                PFUREG	        195        100.0
+                                RIPPLE	        111        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               encoder	          1        11.9
+                               dds_pll	          1         0.0
+                                dds_fm	          1         9.4
+                                   dds	          1        60.5
+                                dds_am	          1         2.8
+                       button(N=2'b10)	          1         9.7
+---------------------------------------------------
+Report for cell dds_fm
+   Instance path: main/u_dds_fm
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      17.00         9.4
+                                PFUREG	         32        16.4
+                                RIPPLE	         17        15.3
+---------------------------------------------------
+Report for cell encoder
+   Instance path: main/u_encoder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      21.33        11.9
+                                  LUT4	      26.00        19.8
+                                PFUREG	         28        14.4
+                                RIPPLE	          7         6.3
+---------------------------------------------------
+Report for cell dds
+   Instance path: main/u_dds
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     108.83        60.5
+                                  LUT4	      74.00        56.5
+                                PFUREG	         92        47.2
+                                RIPPLE	         72        64.9
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                         dds_sin_table	          1        20.7
+---------------------------------------------------
+Report for cell dds_sin_table
+   Instance path: main/u_dds/u_dds_sin_table
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      37.33        20.7
+                                  LUT4	      52.00        39.7
+                                PFUREG	         30        15.4
+                                RIPPLE	         10         9.0
+---------------------------------------------------
+Report for cell button(N=2'b10)
+   Instance path: main/u_button
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      17.50         9.7
+                                  LUT4	      11.00         8.4
+                                PFUREG	         26        13.3
+                                RIPPLE	         10         9.0
+---------------------------------------------------
+Report for cell dds_pll
+   Instance path: main/u_dds_pll
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell dds_am
+   Instance path: main/u_dds_am
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.00         2.8
+                                PFUREG	          8         4.1
+                                RIPPLE	          5         4.5

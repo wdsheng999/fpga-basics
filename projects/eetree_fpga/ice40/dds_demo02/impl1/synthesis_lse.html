@@ -1,0 +1,291 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Feb 25 14:07:15 2022
+
+
+Command Line:  synthesis -f dds_demo02_impl1_lattice.synproj -gui -msgset C:/Users/10798/Desktop/fpga/dds_demo02/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = main.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/10798/Desktop/fpga/dds_demo02 (searchpath added)
+-p D:/Program Files/lscc/diamond/3.10_x64/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/10798/Desktop/fpga/dds_demo02/impl1 (searchpath added)
+-p C:/Users/10798/Desktop/fpga/dds_demo02 (searchpath added)
+Verilog design file = C:/Users/10798/Desktop/fpga/dds_demo02/main.v
+Verilog design file = C:/Users/10798/Desktop/fpga/dds_demo02/button.v
+Verilog design file = C:/Users/10798/Desktop/fpga/dds_demo02/encoder.v
+Verilog design file = C:/Users/10798/Desktop/fpga/dds_demo02/dds.v
+Verilog design file = C:/Users/10798/Desktop/fpga/dds_demo02/dds_sin_table.v
+Verilog design file = C:/Users/10798/Desktop/fpga/dds_demo02/dds_pll.v
+Verilog design file = C:/Users/10798/Desktop/fpga/dds_demo02/dds_am.v
+Verilog design file = C:/Users/10798/Desktop/fpga/dds_demo02/dds_fm.v
+NGD file = dds_demo02_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/10798/desktop/fpga/dds_demo02/main.v. VERI-1482
+Analyzing Verilog file c:/users/10798/desktop/fpga/dds_demo02/button.v. VERI-1482
+Analyzing Verilog file c:/users/10798/desktop/fpga/dds_demo02/encoder.v. VERI-1482
+Analyzing Verilog file c:/users/10798/desktop/fpga/dds_demo02/dds.v. VERI-1482
+Analyzing Verilog file c:/users/10798/desktop/fpga/dds_demo02/dds_sin_table.v. VERI-1482
+Analyzing Verilog file c:/users/10798/desktop/fpga/dds_demo02/dds_pll.v. VERI-1482
+Analyzing Verilog file c:/users/10798/desktop/fpga/dds_demo02/dds_am.v. VERI-1482
+Analyzing Verilog file c:/users/10798/desktop/fpga/dds_demo02/dds_fm.v. VERI-1482
+Analyzing Verilog file D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): main
+INFO - synthesis: c:/users/10798/desktop/fpga/dds_demo02/main.v(1): compiling module main. VERI-1018
+INFO - synthesis: c:/users/10798/desktop/fpga/dds_demo02/button.v(1): compiling module button(N=2'b10). VERI-1018
+INFO - synthesis: c:/users/10798/desktop/fpga/dds_demo02/encoder.v(1): compiling module encoder. VERI-1018
+INFO - synthesis: c:/users/10798/desktop/fpga/dds_demo02/dds_fm.v(1): compiling module dds_fm. VERI-1018
+INFO - synthesis: c:/users/10798/desktop/fpga/dds_demo02/dds_am.v(1): compiling module dds_am. VERI-1018
+INFO - synthesis: c:/users/10798/desktop/fpga/dds_demo02/dds_pll.v(8): compiling module dds_pll. VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): compiling module VLO. VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKFB_DIV=10,CLKOP_DIV=4,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE="DISABLED",CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=3,CLKOS_TRIM_POL="FALLING"). VERI-1018
+INFO - synthesis: c:/users/10798/desktop/fpga/dds_demo02/dds.v(1): compiling module dds. VERI-1018
+INFO - synthesis: c:/users/10798/desktop/fpga/dds_demo02/dds_sin_table.v(8): compiling module dds_sin_table. VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(563): compiling module INV. VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1051): compiling module ROM16X1A(initval=16'b1111111111111110). VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): compiling module AND2. VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187): compiling module FD1P3DX. VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(723): compiling module MUX21. VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): compiling module FADD2B. VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A. VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b0111). VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b01111111111111111111111111111111111111111000). VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b0111111111110000000000000111111111111111111111111111000). VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b011111000001111110000001111111000000000111111111111111111000). VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b011100111001110001110001110001111000011111000000111111111111000). VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b0101101011010010110110110110010011001100111000111000011111111000). VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b1100111001100110010011010010110101010101011011011001100011111000). VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b1010110101010101001010011001100001111100001101101010101100111000). VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b0111100000000000011100101010101110000011001011011111100101011000). VERI-1018
+INFO - synthesis: D:/Program Files/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): compiling module VHI. VERI-1018
+Loading NGL library 'D:/Program Files/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/Program Files/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/Program Files/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/Program Files/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: D:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = main.
+WARNING - synthesis: c:/users/10798/desktop/fpga/dds_demo02/main.v(159): Register led_out[5]_66 is stuck at One. VDB-5014
+
+
+
+WARNING - synthesis: Bit 0 of Register curr_enc_st is stuck at One
+GSR instance connected to net rst_n_c.
+Duplicate register/latch removal. led_out[4]_67 is a one-to-one match with curr_enc_st_i2.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in main_drc.log.
+Loading NGL library 'D:/Program Files/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/Program Files/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/Program Files/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/Program Files/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file dds_demo02_impl1.ngd.
+
+################### Begin Area Report (main)######################
+Number of register bits => 195 of 4635 (4 % )
+AND2 => 1
+CCU2D => 101
+EHXPLLJ => 1
+FADD2B => 10
+FD1P3AX => 17
+FD1P3AY => 31
+FD1P3DX => 30
+FD1P3IX => 5
+FD1S3AX => 67
+FD1S3AY => 14
+FD1S3IX => 31
+GSR => 1
+IB => 7
+INV => 18
+LUT4 => 78
+MUX21 => 26
+OB => 17
+PFUMX => 1
+ROM16X1A => 2
+ROM64X1A => 10
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : clk_c, loads : 104
+  Net : u_dds_pll/dac_clk_c, loads : 94
+Clock Enable Nets
+Number of Clock Enables: 6
+Top 6 highest fanout Clock Enables:
+  Net : u_encoder/cnt_20ms_5__N_129, loads : 11
+  Net : u_encoder/clk_c_enable_2, loads : 7
+  Net : u_button/clk_c_enable_3, loads : 2
+  Net : u_encoder/Left_pulse_N_130, loads : 1
+  Net : dds_fm_step_31__N_186, loads : 1
+  Net : dds_am_factor_7__N_231, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : u_encoder/enc_pulse_l, loads : 42
+  Net : dds_fm_step_31__N_186, loads : 32
+  Net : curr_wave_st_0, loads : 20
+  Net : u_button/cnt_17__N_86, loads : 18
+  Net : curr_wave_st_1, loads : 16
+  Net : u_encoder/cnt_12__N_122, loads : 13
+  Net : u_dds/cnt_31, loads : 12
+  Net : u_encoder/enc_pulse_r, loads : 11
+  Net : curr_wave_st_2, loads : 11
+  Net : u_encoder/cnt_20ms_5__N_129, loads : 11
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets dac_clk_c]               |  200.000 MHz|   66.055 MHz|    10 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|   96.702 MHz|     6 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+
+Peak Memory Usage: 71.641  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.766  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

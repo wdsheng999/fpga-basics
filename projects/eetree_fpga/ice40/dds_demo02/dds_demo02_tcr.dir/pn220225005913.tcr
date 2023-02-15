@@ -1,0 +1,39 @@
+#Start recording tcl command: 2/24/2022 23:25:52
+#Project Location: C:/Users/10798/Desktop/fpga/dds_demo02; Project name: dds_demo02
+prj_project open "C:/Users/10798/Desktop/fpga/dds_demo02/dds_demo02.ldf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1 -task MapTrace
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1 -task MapTrace
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1 -task MapTrace
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1 -task MapTrace
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1 -task MapTrace
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1 -task MapTrace
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1 -task MapTrace
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1 -task MapTrace
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1 -task MapTrace
+prj_run Export -impl impl1 -task Jedecgen
+prj_src add "C:/Users/10798/Desktop/fpga/dds_demo02/fm.v"
+prj_src add -exclude "C:/Users/10798/Desktop/fpga/dds_demo02/am.ldc"
+prj_src enable "C:/Users/10798/Desktop/fpga/dds_demo02/am.ldc"
+prj_src remove "C:/Users/10798/Desktop/fpga/dds_demo02/am.ldc"
+prj_src add "C:/Users/10798/Desktop/fpga/dds_demo02/am.v"
+prj_src remove "C:/Users/10798/Desktop/fpga/dds_demo02/fm.v"
+prj_src remove "C:/Users/10798/Desktop/fpga/dds_demo02/am.v"
+prj_src add "C:/Users/10798/Desktop/fpga/dds_demo02/dds_am.v" "C:/Users/10798/Desktop/fpga/dds_demo02/dds_fm.v"
+#Stop recording: 2/25/2022 00:59:13

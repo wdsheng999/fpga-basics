@@ -1,0 +1,418 @@
+
+Loading design for application trce from file dds_demo02_impl1_map.ncd.
+Design name: main
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: D:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Fri Feb 25 14:07:23 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o dds_demo02_impl1.tw1 -gui -msgset C:/Users/10798/Desktop/fpga/dds_demo02/promote.xml dds_demo02_impl1_map.ncd dds_demo02_impl1.prf 
+Design file:     dds_demo02_impl1_map.ncd
+Preference file: dds_demo02_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_c" 12.000000 MHz ;
+            2160 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 75.203ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_encoder/cnt_221__i3  (from clk_c +)
+   Destination:    FF         Data in        u_encoder/key_ok_r_61  (to clk_c +)
+
+   Delay:               7.848ns  (31.0% logic, 69.0% route), 5 logic levels.
+
+ Constraint Details:
+
+      7.848ns physical path delay u_encoder/SLICE_17 to SLICE_164 meets
+     83.333ns delay constraint less
+      0.282ns CE_SET requirement (totaling 83.051ns) by 75.203ns
+
+ Physical Path Details:
+
+      Data path u_encoder/SLICE_17 to SLICE_164:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452 */SLICE_17.CLK to *r/SLICE_17.Q0 u_encoder/SLICE_17 (from clk_c)
+ROUTE         3   e 1.234 *r/SLICE_17.Q0 to */SLICE_165.D1 u_encoder/cnt_3
+CTOF_DEL    ---     0.495 */SLICE_165.D1 to */SLICE_165.F1 u_encoder/SLICE_165
+ROUTE         1   e 1.234 */SLICE_165.F1 to */SLICE_175.A1 u_encoder/n1525
+CTOF_DEL    ---     0.495 */SLICE_175.A1 to */SLICE_175.F1 u_encoder/SLICE_175
+ROUTE         1   e 0.480 */SLICE_175.F1 to */SLICE_175.D0 u_encoder/n1531
+CTOF_DEL    ---     0.495 */SLICE_175.D0 to */SLICE_175.F0 u_encoder/SLICE_175
+ROUTE         7   e 1.234 */SLICE_175.F0 to */SLICE_158.D1 u_encoder/cnt_20ms_5__N_129
+CTOF_DEL    ---     0.495 */SLICE_158.D1 to */SLICE_158.F1 u_encoder/SLICE_158
+ROUTE         5   e 1.234 */SLICE_158.F1 to   SLICE_164.CE u_encoder/clk_c_enable_2 (to clk_c)
+                  --------
+                    7.848   (31.0% logic, 69.0% route), 5 logic levels.
+
+Report:  123.001MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "dac_clk_c" 120.000000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 10.556ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_dds_am/dds_am_factor_i7  (from clk_c +)
+   Destination:    FF         Data in        u_dds/am_out_i10  (to dac_clk_c +)
+
+   Delay:              18.723ns  (47.2% logic, 52.8% route), 15 logic levels.
+
+ Constraint Details:
+
+     18.723ns physical path delay u_dds_am/SLICE_108 to u_dds/SLICE_82 exceeds
+      8.333ns delay constraint less
+      0.166ns DIN_SET requirement (totaling 8.167ns) by 10.556ns
+
+ Physical Path Details:
+
+      Data path u_dds_am/SLICE_108 to u_dds/SLICE_82:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452 *SLICE_108.CLK to */SLICE_108.Q0 u_dds_am/SLICE_108 (from clk_c)
+ROUTE        11   e 1.234 */SLICE_108.Q0 to *s/SLICE_81.B1 dds_am_factor_7
+C1TOFCO_DE  ---     0.889 *s/SLICE_81.B1 to */SLICE_81.FCO u_dds/SLICE_81
+ROUTE         1   e 0.001 */SLICE_81.FCO to */SLICE_80.FCI u_dds/n1399
+FCITOF0_DE  ---     0.585 */SLICE_80.FCI to *s/SLICE_80.F0 u_dds/SLICE_80
+ROUTE         1   e 1.234 *s/SLICE_80.F0 to *s/SLICE_74.C1 u_dds/n80
+C1TOFCO_DE  ---     0.889 *s/SLICE_74.C1 to */SLICE_74.FCO u_dds/SLICE_74
+ROUTE         1   e 0.001 */SLICE_74.FCO to */SLICE_73.FCI u_dds/n1405
+FCITOF0_DE  ---     0.585 */SLICE_73.FCI to *s/SLICE_73.F0 u_dds/SLICE_73
+ROUTE         1   e 1.234 *s/SLICE_73.F0 to *s/SLICE_62.C1 u_dds/n137_adj_321
+CTOF_DEL    ---     0.495 *s/SLICE_62.C1 to *s/SLICE_62.F1 u_dds/SLICE_62
+ROUTE         1   e 1.234 *s/SLICE_62.F1 to *s/SLICE_55.C0 u_dds/n164_adj_319
+CTOF_DEL    ---     0.495 *s/SLICE_55.C0 to *s/SLICE_55.F0 u_dds/SLICE_55
+ROUTE         1   e 1.234 *s/SLICE_55.F0 to *s/SLICE_49.C1 u_dds/n191
+CTOF_DEL    ---     0.495 *s/SLICE_49.C1 to *s/SLICE_49.F1 u_dds/SLICE_49
+ROUTE         1   e 1.234 *s/SLICE_49.F1 to *s/SLICE_40.C0 u_dds/n218
+CTOF_DEL    ---     0.495 *s/SLICE_40.C0 to *s/SLICE_40.F0 u_dds/SLICE_40
+ROUTE         1   e 1.234 *s/SLICE_40.F0 to *s/SLICE_29.C1 u_dds/n245
+C1TOFCO_DE  ---     0.889 *s/SLICE_29.C1 to */SLICE_29.FCO u_dds/SLICE_29
+ROUTE         1   e 0.001 */SLICE_29.FCO to */SLICE_28.FCI u_dds/n1433
+FCITOF0_DE  ---     0.585 */SLICE_28.FCI to *s/SLICE_28.F0 u_dds/SLICE_28
+ROUTE         2   e 1.234 *s/SLICE_28.F0 to *s/SLICE_26.B0 u_dds/n273
+C0TOFCO_DE  ---     1.023 *s/SLICE_26.B0 to */SLICE_26.FCO u_dds/SLICE_26
+ROUTE         1   e 0.001 */SLICE_26.FCO to */SLICE_25.FCI u_dds/n1396
+FCITOFCO_D  ---     0.162 */SLICE_25.FCI to */SLICE_25.FCO u_dds/SLICE_25
+ROUTE         1   e 0.001 */SLICE_25.FCO to */SLICE_85.FCI u_dds/n1397
+FCITOFCO_D  ---     0.162 */SLICE_85.FCI to */SLICE_85.FCO u_dds/SLICE_85
+ROUTE         1   e 0.001 */SLICE_85.FCO to */SLICE_82.FCI u_dds/n1398
+FCITOF1_DE  ---     0.643 */SLICE_82.FCI to *s/SLICE_82.F1 u_dds/SLICE_82
+ROUTE         1   e 0.001 *s/SLICE_82.F1 to */SLICE_82.DI1 u_dds/am_out_17_N_240_17 (to dac_clk_c)
+                  --------
+                   18.723   (47.2% logic, 52.8% route), 15 logic levels.
+
+Warning:  52.941MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_c" 12.000000 MHz ;   |   12.000 MHz|  123.001 MHz|   5  
+                                        |             |             |
+FREQUENCY NET "dac_clk_c" 120.000000    |             |             |
+MHz ;                                   |  120.000 MHz|   52.941 MHz|  15 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+u_dds/n1396                             |       1|    3656|     89.26%
+                                        |        |        |
+u_dds/n1397                             |       1|    2756|     67.29%
+                                        |        |        |
+u_dds/n1433                             |       1|    2473|     60.38%
+                                        |        |        |
+u_dds/n273                              |       2|    2473|     60.38%
+                                        |        |        |
+u_dds/n245                              |       1|    1945|     47.49%
+                                        |        |        |
+u_dds/n1398                             |       1|    1548|     37.79%
+                                        |        |        |
+u_dds/n191                              |       1|    1514|     36.96%
+                                        |        |        |
+u_dds/n134_adj_320                      |       1|    1492|     36.43%
+                                        |        |        |
+u_dds/n218                              |       1|    1436|     35.06%
+                                        |        |        |
+u_dds/n77                               |       1|    1372|     33.50%
+                                        |        |        |
+u_dds/n50                               |       1|    1260|     30.76%
+                                        |        |        |
+u_dds/n248                              |       1|    1204|     29.39%
+                                        |        |        |
+u_dds/n1428                             |       1|    1175|     28.69%
+                                        |        |        |
+u_dds/n276                              |       1|    1175|     28.69%
+                                        |        |        |
+u_dds/n107                              |       1|    1146|     27.98%
+                                        |        |        |
+u_dds/n80                               |       1|    1113|     27.17%
+                                        |        |        |
+u_dds/n161_adj_318                      |       1|    1108|     27.05%
+                                        |        |        |
+u_dds/n188                              |       1|    1044|     25.49%
+                                        |        |        |
+u_dds/ori_out_1                         |       8|     989|     24.15%
+                                        |        |        |
+u_dds/n1399                             |       1|     956|     23.34%
+                                        |        |        |
+dds_am_factor_6                         |      11|     954|     23.29%
+                                        |        |        |
+u_dds/n164_adj_319                      |       1|     906|     22.12%
+                                        |        |        |
+u_dds/ori_out_0                         |       7|     899|     21.95%
+                                        |        |        |
+u_dds/n104                              |       1|     866|     21.14%
+                                        |        |        |
+u_dds/n1416                             |       1|     856|     20.90%
+                                        |        |        |
+u_dds/am_out_17_N_240_17                |       1|     820|     20.02%
+                                        |        |        |
+u_dds/n1427                             |       1|     820|     20.02%
+                                        |        |        |
+u_dds/n1410                             |       1|     806|     19.68%
+                                        |        |        |
+u_dds/n137_adj_321                      |       1|     748|     18.26%
+                                        |        |        |
+u_dds/n131                              |       1|     734|     17.92%
+                                        |        |        |
+u_dds/am_out_17_N_240_16                |       1|     728|     17.77%
+                                        |        |        |
+u_dds/n1422                             |       1|     700|     17.09%
+                                        |        |        |
+dds_am_factor_7                         |      11|     647|     15.80%
+                                        |        |        |
+u_dds/am_out_17_N_240_15                |       1|     624|     15.23%
+                                        |        |        |
+u_dds/n1404                             |       1|     620|     15.14%
+                                        |        |        |
+u_dds/n47                               |       1|     604|     14.75%
+                                        |        |        |
+u_dds/n1405                             |       1|     588|     14.36%
+                                        |        |        |
+u_dds/am_out_17_N_240_14                |       1|     584|     14.26%
+                                        |        |        |
+u_dds/n1421                             |       1|     558|     13.62%
+                                        |        |        |
+u_dds/n221                              |       1|     516|     12.60%
+                                        |        |        |
+u_dds/am_out_17_N_240_13                |       1|     510|     12.45%
+                                        |        |        |
+u_dds/am_out_17_N_240_12                |       1|     490|     11.96%
+                                        |        |        |
+u_dds/n215                              |       1|     480|     11.72%
+                                        |        |        |
+u_dds/n74                               |       1|     448|     10.94%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: dac_clk_c   Source: u_dds_pll/PLLInst_0.CLKOP   Loads: 56
+   Covered under: FREQUENCY NET "dac_clk_c" 120.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: clk_c   Source: clk.PAD
+      Covered under: FREQUENCY NET "dac_clk_c" 120.000000 MHz ;   Transfers: 43
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 61
+   Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4096  Score: 35351192
+Cumulative negative slack: 35351192
+
+Constraints cover 70148 paths, 2 nets, and 1323 connections (94.43% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Fri Feb 25 14:07:23 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o dds_demo02_impl1.tw1 -gui -msgset C:/Users/10798/Desktop/fpga/dds_demo02/promote.xml dds_demo02_impl1_map.ncd dds_demo02_impl1.prf 
+Design file:     dds_demo02_impl1_map.ncd
+Preference file: dds_demo02_impl1.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_c" 12.000000 MHz ;
+            2160 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.351ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_encoder/key_a_r_56  (from clk_c +)
+   Destination:    FF         Data in        u_encoder/key_a_r1_57  (to clk_c +)
+
+   Delay:               0.332ns  (40.1% logic, 59.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.332ns physical path delay SLICE_162 to SLICE_162 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.019ns) by 0.351ns
+
+ Physical Path Details:
+
+      Data path SLICE_162 to SLICE_162:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133  SLICE_162.CLK to   SLICE_162.Q0 SLICE_162 (from clk_c)
+ROUTE         2   e 0.199   SLICE_162.Q0 to   SLICE_162.M1 u_encoder/key_a_r (to clk_c)
+                  --------
+                    0.332   (40.1% logic, 59.9% route), 1 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "dac_clk_c" 120.000000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.447ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_dds/cnt_222__i21  (from dac_clk_c +)
+   Destination:    FF         Data in        u_dds/cnt_222__i21  (to dac_clk_c +)
+
+   Delay:               0.434ns  (53.9% logic, 46.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.434ns physical path delay u_dds/SLICE_69 to u_dds/SLICE_69 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.447ns
+
+ Physical Path Details:
+
+      Data path u_dds/SLICE_69 to u_dds/SLICE_69:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 */SLICE_69.CLK to *s/SLICE_69.Q1 u_dds/SLICE_69 (from dac_clk_c)
+ROUTE         2   e 0.199 *s/SLICE_69.Q1 to *s/SLICE_69.B1 u_dds/cnt_21
+CTOF_DEL    ---     0.101 *s/SLICE_69.B1 to *s/SLICE_69.F1 u_dds/SLICE_69
+ROUTE         1   e 0.001 *s/SLICE_69.F1 to */SLICE_69.DI1 u_dds/n144 (to dac_clk_c)
+                  --------
+                    0.434   (53.9% logic, 46.1% route), 2 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_c" 12.000000 MHz ;   |     0.000 ns|     0.351 ns|   1  
+                                        |             |             |
+FREQUENCY NET "dac_clk_c" 120.000000    |             |             |
+MHz ;                                   |     0.000 ns|     0.447 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: dac_clk_c   Source: u_dds_pll/PLLInst_0.CLKOP   Loads: 56
+   Covered under: FREQUENCY NET "dac_clk_c" 120.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: clk_c   Source: clk.PAD
+      Covered under: FREQUENCY NET "dac_clk_c" 120.000000 MHz ;   Transfers: 43
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 61
+   Covered under: FREQUENCY NET "clk_c" 12.000000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 70148 paths, 2 nets, and 1370 connections (97.79% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4096 (setup), 0 (hold)
+Score: 35351192 (setup), 0 (hold)
+Cumulative negative slack: 35351192 (35351192+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,115 @@
+----------------------------------------------------------------------
+Report for cell main.TECH
+Register bits:  195 of 4635 (4.207%)
+I/O cells:      24
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2         1          100.0
+                              CCU2D       101          100.0
+                            EHXPLLJ         1          100.0
+                             FADD2B        10          100.0
+                            FD1P3AX        17          100.0
+                            FD1P3AY        31          100.0
+                            FD1P3DX        30          100.0
+                            FD1P3IX         5          100.0
+                            FD1S3AX        67          100.0
+                            FD1S3AY        14          100.0
+                            FD1S3IX        31          100.0
+                                GSR         1          100.0
+                                 IB         7          100.0
+                                INV        18          100.0
+                               LUT4        78          100.0
+                              MUX21        26          100.0
+                                 OB        17          100.0
+                              PFUMX         1          100.0
+                           ROM16X1A         2          100.0
+                           ROM64X1A        10          100.0
+SUB MODULES
+                    button(N=2'b10)         1
+                                dds         1
+                             dds_am         1
+                             dds_fm         1
+                            dds_pll         1
+                      dds_sin_table         1
+                            encoder         1
+                              TOTAL       475
+----------------------------------------------------------------------
+Report for cell dds_fm.v1
+Instance Path : u_dds_fm
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17           16.8
+                            FD1P3AX        16           94.1
+                            FD1P3AY        16           51.6
+                              TOTAL        49
+----------------------------------------------------------------------
+Report for cell encoder.v1
+Instance Path : u_encoder
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         7            6.9
+                            FD1P3AX         1            5.9
+                            FD1P3AY         5           16.1
+                            FD1P3IX         5          100.0
+                            FD1S3AX         1            1.5
+                            FD1S3AY         3           21.4
+                            FD1S3IX        13           41.9
+                               LUT4        26           33.3
+                              TOTAL        61
+----------------------------------------------------------------------
+Report for cell dds.v1
+Instance Path : u_dds
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2         1          100.0
+                              CCU2D        62           61.4
+                             FADD2B        10          100.0
+                            FD1P3DX        30          100.0
+                            FD1S3AX        62           92.5
+                                INV        18          100.0
+                               LUT4        22           28.2
+                              MUX21        26          100.0
+                           ROM16X1A         2          100.0
+                           ROM64X1A        10          100.0
+SUB MODULES
+                      dds_sin_table         1
+                              TOTAL       244
+----------------------------------------------------------------------
+Report for cell dds_sin_table.v1
+Instance Path : u_dds.u_dds_sin_table
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2         1          100.0
+                             FADD2B        10          100.0
+                            FD1P3DX        30          100.0
+                                INV        18          100.0
+                              MUX21        26          100.0
+                           ROM16X1A         2          100.0
+                           ROM64X1A        10          100.0
+                              TOTAL        97
+----------------------------------------------------------------------
+Report for cell button(N=2'b10).v1
+Instance Path : u_button
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        10            9.9
+                            FD1P3AY         2            6.5
+                            FD1S3AY         6           42.9
+                            FD1S3IX        18           58.1
+                               LUT4        11           14.1
+                              TOTAL        47
+----------------------------------------------------------------------
+Report for cell dds_pll.v1
+Instance Path : u_dds_pll
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            EHXPLLJ         1          100.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell dds_am.v1
+Instance Path : u_dds_am
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5            5.0
+                            FD1P3AY         8           25.8
+                              TOTAL        13

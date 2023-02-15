@@ -1,0 +1,40 @@
+#Start recording tcl command: 2/24/2022 16:03:24
+#Project Location: C:/Users/10798/Desktop/fpga/dds_demo02; Project name: dds_demo02
+prj_project new -name "dds_demo02" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+prj_project save
+prj_src add "C:/Users/10798/Desktop/fpga/dds_demo02/top.v"
+prj_src exclude "C:/Users/10798/Desktop/fpga/dds_demo02/top.v"
+prj_src enable "C:/Users/10798/Desktop/fpga/dds_demo02/top.v"
+prj_src syn_sim -src "C:/Users/10798/Desktop/fpga/dds_demo02/top.v" SimulateOnly
+prj_src syn_sim -src "C:/Users/10798/Desktop/fpga/dds_demo02/top.v" SynthesisAndSimulate
+prj_src remove "C:/Users/10798/Desktop/fpga/dds_demo02/top.v"
+prj_src add "C:/Users/10798/Desktop/fpga/dds_demo02/main.v"
+prj_src add "C:/Users/10798/Desktop/fpga/dds_demo02/button.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1 -task MapTrace
+prj_run Map -impl impl1 -task MapTrace
+prj_run Export -impl impl1 -task Jedecgen
+prj_src add "C:/Users/10798/Desktop/fpga/dds_demo02/encoder.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1 -task MapTrace
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1 -task MapTrace
+prj_run Export -impl impl1 -task Jedecgen
+prj_src add "C:/Users/10798/Desktop/fpga/dds_demo02/dds.v"
+prj_src add "C:/Users/10798/Desktop/fpga/dds_demo02/dds_sin_table.ipx"
+prj_src add "C:/Users/10798/Desktop/fpga/dds_demo02/dds_pll.ipx"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1 -task MapTrace
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1 -task MapTrace
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1 -task MapTrace
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1 -task MapTrace
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Map -impl impl1 -task MapTrace
+prj_run Export -impl impl1 -task Jedecgen
+#Stop recording: 2/24/2022 18:22:28

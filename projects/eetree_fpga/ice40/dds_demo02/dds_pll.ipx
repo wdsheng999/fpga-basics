@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="dds_pll" module="PLL" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2022 02 24 17:14:02.234" version="5.8" type="Module" synthesis="lse" source_format="Verilog">
+  <Package>
+		<File name="dds_pll.lpc" type="lpc" modified="2022 02 24 17:14:00.568"/>
+		<File name="dds_pll.v" type="top_level_verilog" modified="2022 02 24 17:14:00.608"/>
+		<File name="dds_pll_tmpl.v" type="template_verilog" modified="2022 02 24 17:14:00.608"/>
+  </Package>
+</DiamondModule>

@@ -1,0 +1,335 @@
+
+mpartrce -p "dds_demo02_impl1.p2t" -f "dds_demo02_impl1.p3t" -tf "dds_demo02_impl1.pt" "dds_demo02_impl1_map.ncd" "dds_demo02_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "dds_demo02_impl1_map.ncd"
+Fri Feb 25 14:07:25 2022
+
+PAR: Place And Route Diamond (64-bit) 3.10.0.111.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/10798/Desktop/fpga/dds_demo02/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF dds_demo02_impl1_map.ncd dds_demo02_impl1.dir/5_1.ncd dds_demo02_impl1.prf
+Preference file: dds_demo02_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file dds_demo02_impl1_map.ncd.
+Design name: main
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application par from file 'xo2c4000.nph' in environment: D:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   24+4(JTAG)/280     10% used
+                  24+4(JTAG)/105     27% bonded
+
+   SLICE            180/2160          8% used
+
+   GSR                1/1           100% used
+   PLL                1/2            50% used
+
+
+Number of Signals: 610
+Number of Connections: 1401
+    <postMsg mid="61001101" type="Warning" dynamic="0" navigation="0"  />
+
+Pin Constraint Summary:
+   24 out of 24 pins locked (100% locked).
+
+The following 2 signals are selected to use the primary clock routing resources:
+    dac_clk_c (driver: u_dds_pll/PLLInst_0, clk load #: 54)
+    clk_c (driver: clk, clk load #: 61)
+
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="clk_c" arg1="Primary" arg2="clk" arg3="C1" arg4="Primary"  />
+
+The following 2 signals are selected to use the secondary clock routing resources:
+    dds_fm_step_31__N_186 (driver: SLICE_191, clk load #: 0, sr load #: 0, ce load #: 17)
+    u_button/cnt_17__N_86 (driver: SLICE_163, clk load #: 0, sr load #: 10, ce load #: 0)
+
+Signal rst_n_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+...........
+Finished Placer Phase 0.  REAL time: 8 secs 
+
+Starting Placer Phase 1.
+..........
+Placer score = 4969895.
+Finished Placer Phase 1.  REAL time: 10 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  4793881
+Finished Placer Phase 2.  REAL time: 10 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 1 out of 280 (0%)
+  PLL        : 1 out of 2 (50%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "dac_clk_c" from CLKOP on comp "u_dds_pll/PLLInst_0" on PLL site "LPLL", clk load = 54
+  PRIMARY "clk_c" from comp "clk" on PIO site "C1 (PL4A)", clk load = 61
+  SECONDARY "dds_fm_step_31__N_186" from F0 on comp "SLICE_191" on site "R12C15A", clk load = 0, ce load = 17, sr load = 0
+  SECONDARY "u_button/cnt_17__N_86" from F1 on comp "SLICE_163" on site "R12C17B", clk load = 0, ce load = 0, sr load = 10
+
+  PRIMARY  : 2 out of 8 (25%)
+  SECONDARY: 2 out of 8 (25%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   24 + 4(JTAG) out of 280 (10.0%) PIO sites used.
+   24 + 4(JTAG) out of 105 (26.7%) bonded PIO sites used.
+   Number of PIO comps: 24; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 2 / 26 (  7%) | 2.5V       | -         |
+| 1        | 8 / 26 ( 30%) | 2.5V       | -         |
+| 2        | 9 / 28 ( 32%) | 2.5V       | -         |
+| 3        | 1 / 7 ( 14%)  | 2.5V       | -         |
+| 4        | 3 / 8 ( 37%)  | 2.5V       | -         |
+| 5        | 1 / 10 ( 10%) | 2.5V       | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 9 secs 
+
+Dumping design to file dds_demo02_impl1.dir/5_1.ncd.
+
+0 connections routed; 1401 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 15 secs 
+
+Start NBR router at 14:07:41 02/25/22
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 14:07:41 02/25/22
+
+Start NBR section for initial routing at 14:07:41 02/25/22
+Level 1, iteration 1
+9(0.00%) conflicts; 950(67.81%) untouched conns; 1167535 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -9.301ns/-1167.536ns; real time: 17 secs 
+Level 2, iteration 1
+26(0.01%) conflicts; 759(54.18%) untouched conns; 1207198 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -9.408ns/-1207.198ns; real time: 17 secs 
+Level 3, iteration 1
+25(0.01%) conflicts; 441(31.48%) untouched conns; 1227240 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -9.408ns/-1227.241ns; real time: 17 secs 
+Level 4, iteration 1
+26(0.01%) conflicts; 0(0.00%) untouched conn; 1246438 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -9.414ns/-1246.438ns; real time: 18 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 14:07:43 02/25/22
+Level 4, iteration 1
+18(0.01%) conflicts; 0(0.00%) untouched conn; 2201334 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -13.878ns/-2201.335ns; real time: 18 secs 
+Level 4, iteration 2
+16(0.01%) conflicts; 0(0.00%) untouched conn; 2201947 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -13.878ns/-2201.948ns; real time: 19 secs 
+Level 4, iteration 3
+8(0.00%) conflicts; 0(0.00%) untouched conn; 2207806 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -13.878ns/-2207.807ns; real time: 19 secs 
+Level 4, iteration 4
+6(0.00%) conflicts; 0(0.00%) untouched conn; 2207806 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -13.878ns/-2207.807ns; real time: 19 secs 
+Level 4, iteration 5
+4(0.00%) conflicts; 0(0.00%) untouched conn; 2216398 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -13.992ns/-2216.399ns; real time: 20 secs 
+Level 4, iteration 6
+5(0.00%) conflicts; 0(0.00%) untouched conn; 2216398 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -13.992ns/-2216.399ns; real time: 20 secs 
+Level 4, iteration 7
+4(0.00%) conflicts; 0(0.00%) untouched conn; 2216398 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -13.992ns/-2216.399ns; real time: 20 secs 
+Level 4, iteration 8
+4(0.00%) conflicts; 0(0.00%) untouched conn; 2216398 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -13.992ns/-2216.399ns; real time: 20 secs 
+Level 4, iteration 9
+1(0.00%) conflict; 0(0.00%) untouched conn; 2220975 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -13.908ns/-2220.976ns; real time: 21 secs 
+Level 4, iteration 10
+0(0.00%) conflict; 0(0.00%) untouched conn; 2220975 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -13.908ns/-2220.976ns; real time: 21 secs 
+
+Start NBR section for performance tuning (iteration 1) at 14:07:46 02/25/22
+Level 4, iteration 1
+1(0.00%) conflict; 0(0.00%) untouched conn; 2220516 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -13.908ns/-2220.517ns; real time: 21 secs 
+Level 4, iteration 2
+0(0.00%) conflict; 0(0.00%) untouched conn; 2222008 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -13.908ns/-2222.009ns; real time: 21 secs 
+
+Start NBR section for re-routing at 14:07:46 02/25/22
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 2214746 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -13.908ns/-2214.747ns; real time: 22 secs 
+
+Start NBR section for post-routing at 14:07:47 02/25/22
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 380 (27.12%)
+  Estimated worst slack<setup> : -13.908ns
+  Timing score<setup> : 47774520
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 23 secs 
+Total REAL time: 25 secs 
+Completely routed.
+End of route.  1401 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 47774520 
+
+Dumping design to file dds_demo02_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Success
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -13.908
+PAR_SUMMARY::Timing score<setup/<ns>> = 47774.520
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.304
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 23 secs 
+Total REAL time to completion: 25 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+bitgen -f "dds_demo02_impl1.t2b" -w "dds_demo02_impl1.ncd" -jedec "dds_demo02_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file dds_demo02_impl1.ncd.
+Design name: main
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: D:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from dds_demo02_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "dds_demo02_impl1.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        767 Pages (128*767 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  767 Pages (Page 0 to Page 766).
+Initialized UFM Pages:                     0 Page.
+ 
