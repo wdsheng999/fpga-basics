@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.2" radiant="2022.1.0.52.3" title="counter" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" default_implementation="impl1">
+    <Options VerilogStandard="Verilog 2001"/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="count"/>
+        <Source name="source/count_attr.v" type="Verilog" type_short="Verilog">
+            <Options top_module="count"/>
+        </Source>
+        <Source name="source/impl1.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
+        <Source name="source/impl1.sdc" type="Pre-Synthesis Constraints File" type_short="SDC">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="counter1.sty"/>
+</RadiantProject>

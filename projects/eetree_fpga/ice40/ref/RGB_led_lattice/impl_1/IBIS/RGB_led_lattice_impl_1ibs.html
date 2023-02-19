@@ -1,0 +1,404 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<link href="file:///C:/lscc/radiant/2022.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2022.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+|************************************************************************
+| IBIS Models Generator: Lattice Radiant Software (64-bit) 3.0.0.24.1
+| Report Generate Date: Jan  16:17:50 2023
+| Report Generate Time: 9
+|************************************************************************
+|IBIS file ice40up.ibs   
+|Lattice Semiconductor Corporation   
+|************************************************************************
+[IBIS ver]       4.2
+[File Name]      RGB_led_lattice_impl_1.ibs
+[File Rev]       2.0
+[Date]           1/26/2018
+[Source]         Simulation
+[Notes]          Final IBIS models
+                 The data below was generated using simulation of the
+                 input/output model files for the silicon.  Therefore,
+                 the data below is for reference and initial design
+                 purposes only.
+|
+|                The model applies to iCE40 ULTRA PLUS.
+|
+                 Lattice Semiconductor grants permission to use this
+                 data for use in printed circuit design using this
+                 Lattice programmable logic device.  Other use of this
+                 code, including the selling or duplication of any
+                 portion is strictly prohibited.
+|
+|                NAMING CONVENTION
+| 
+        The IBIS [Model] header is limited by the specification to a
+        total of characters.  With such a set of characters available
+        for naming models it becomes important to attempt to
+        meaningfully encode the IO standards so they fit within the
+        twenty character limit.  It would seem that twenty characters
+        would provide room enough for describing IO's.  However, the
+        PLD IO structure continues to grow more and more complex.  The
+        complexity is making the twenty characters insuffiently
+        descriptive.  In order to overcome this issue the naming
+        convention described below is implemented to resolve the issue.
+|
+The twenty character space is managed as follows:
+                 bbbvvvsdddprtaaaoixx
+|
+                 b = standard
+                 v = voltage (x.xx V)
+                 s = slew code
+                 d = drive (xx.x ma)
+                 p = pullmode code
+                 r = impedance  
+                 t = mipi hard dphy mode
+                 o = diff resistor code
+                 i = diff  current code
+                 x = reserved
+|
+|
+                 standard
+|
+                 LVCMOS                   lvc
+                 lvdse                    lve
+|
+|
+                 slew
+                 na                       a
+                 fast                     f
+                 slow                     s
+|
+                 pullmode
+                 off                      a
+                 100k                     b 
+                 3p3k                     i 
+                 6p8k                     j 
+                 10k                      k 
+|
+                 impedance
+                 off                      a
+|
+                 mipi hard dphy mode
+                 off                      a
+                 lp                       l
+                 hs                       h
+|
+                 differential resistor
+                 off                      a
+                 100                      b
+|
+                 differential current
+                 NA                       a
+                 3.5                      c
+|
+                 Reserved                 IO type
+                 in                       input only (mipi: rx)
+                 ou                       output (mipi: tx)
+                 io                       I/O
+                 od                       Open drain
+                 on                       Inverting differential I/O
+                                          (signal name only)
+                 op                       Non-Inverting differential I/O
+                                          (signal name only)
+|
+|
+                
+|
+|
+|
+                 Lattice Semiconductor Corporation
+                 5555 NE Moore Court
+                 Hillsboro, OR 97214
+                 U.S.A
+|
+                 TEL: 1-800-Lattice (USA and Canada)
+                      408-826-6000 (other locations)
+|
+                 web: http://www.latticesemi.com/
+                 email: techsupport@latticesemi.com
+|
+[Disclaimer]     This IBIS source code is intended as a design reference
+   which illustrates how the Lattice Semiconductor device operates.
+   It is the user's responsibility to verify their design for
+   consistency and functionality through the use of formal
+   verification methods.  Lattice Semiconductor provides no warranty
+   regarding the use or functionality of this data.
+|
+[Copyright]      Copyright 2018 by Lattice Semiconductor Corporation
+|
+|************************************************************************
+|                          Component ice40_ultra_plus 
+|************************************************************************
+|
+[Component]      ice40_ultra_plus 
+[Manufacturer]   UMC
+[Package]
+| SG48
+| variable      Typ             Min             Max
+R_pkg          294.15m         225.91m         395.17m
+L_pkg          2.652nH         1.989nH         3.504nH
+C_pkg          0.2807pF        0.2236pF        0.3481pF
+|
+[Pin]  signal_name          model_name           R_pin     L_pin     C_pin
+44            clk                  lvc330axxxbaaaaaaain
+43            rst                  lvc330axxxbaaaaaaain
+|************************************************************************
+[Model] lvc330axxxbaaaaaaain
+Model_type Input
+Polarity       Non-Inverting
+Vinl =  0.800V
+Vinh =  2.000V
+C_comp   3.30pF           3.17pF             3.43pF
+| 
+[Temperature Range]   25.000            0.125k              -40.000
+[Voltage Range]        3.300V            3.140V              3.470V
+[GND_clamp] 
+|Voltage   I(typ)              I(min)              I(max)
+| 
+-3.30V   -1.7099A          -1.2577A            -2.3492A
+-3.23V   -1.6573A          -1.2202A            -2.2755A
+-3.16V   -1.6047A          -1.1827A            -2.2019A
+-3.09V   -1.5522A          -1.1453A            -2.1282A
+-3.02V   -1.4997A          -1.1079A            -2.0546A
+-2.95V   -1.4471A          -1.0704A            -1.9809A
+-2.88V   -1.3946A          -1.0330A            -1.9073A
+-2.81V   -1.3421A          -0.9956A            -1.8336A
+-2.74V   -1.2896A          -0.9583A            -1.7600A
+-2.67V   -1.2372A          -0.9209A            -1.6864A
+-2.60V   -1.1847A          -0.8836A            -1.6128A
+-2.53V   -1.1323A          -0.8463A            -1.5393A
+-2.46V   -1.0799A          -0.8090A            -1.4657A
+-2.39V   -1.0275A          -0.7718A            -1.3922A
+-2.32V   -0.9752A          -0.7346A            -1.3188A
+-2.25V   -0.9229A          -0.6975A            -1.2453A
+-2.18V   -0.8706A          -0.6604A            -1.1720A
+-2.11V   -0.8184A          -0.6233A            -1.0987A
+-2.04V   -0.7663A          -0.5863A            -1.0256A
+-1.97V   -0.7143A          -0.5494A            -0.9526A
+-1.90V   -0.6624A          -0.5126A            -0.8798A
+-1.83V   -0.6107A          -0.4759A            -0.8074A
+-1.76V   -0.5592A          -0.4393A            -0.7354A
+-1.69V   -0.5081A          -0.4029A            -0.6640A
+-1.62V   -0.4573A          -0.3667A            -0.5930A
+-1.55V   -0.4069A          -0.3307A            -0.5224A
+-1.48V   -0.3570A          -0.2951A            -0.4524A
+-1.41V   -0.3077A          -0.2598A            -0.3830A
+-1.34V   -0.2590A          -0.2250A            -0.3145A
+-1.27V   -0.2111A          -0.1908A            -0.2474A
+-1.20V   -0.1644A          -0.1573A            -0.1823A
+-1.13V   -0.1194A          -0.1247A            -0.1203A
+-1.06V   -76.8834mA        -93.3737mA          -64.3888mA
+-0.99V   -40.3470mA        -63.6521mA          -35.6194mA
+-0.92V   -22.5965mA        -36.0705mA          -23.3845mA
+-0.85V   -14.1370mA        -18.1401mA          -17.7863mA
+-0.78V   -9.9085mA         -9.7391mA           -13.4132mA
+-0.71V   -6.8942mA         -5.6033mA           -9.5014mA
+-0.64V   -4.4284mA         -3.3815mA           -6.1384mA
+-0.57V   -2.5162mA         -1.9298mA           -3.4824mA
+-0.50V   -1.1983mA         -0.9469mA           -1.6478mA
+-0.43V   -0.4365mA         -0.3650mA           -0.5826mA
+-0.36V   -0.1083mA         -0.1016mA           -0.1310mA
+-0.29V   -17.1991uA        -20.2680uA          -19.2776uA
+-0.22V   -1.6644uA         -3.0465uA           -1.5047uA
+-0.15V   -0.1022uA         -0.3242uA           -53.1800nA
+-80.00mV   0.0A              0.0A                0.0A
+3.30V   0.0A              0.0A                0.0A
+| 
+[POWER_clamp] 
+|Voltage   I(typ)              I(min)              I(max)
+| 
+-3.30V   2.1012A           1.7584A             3.7570A
+-3.21V   2.0130A           1.6886A             3.5894A
+-3.14V   1.9447A           1.6324A             3.4595A
+-3.07V   1.8767A           1.5763A             3.3302A
+-3.00V   1.8090A           1.5207A             3.2013A
+-2.93V   1.7416A           1.4654A             3.0730A
+-2.86V   1.6746A           1.4106A             2.9453A
+-2.79V   1.6079A           1.3561A             2.8181A
+-2.72V   1.5416A           1.3019A             2.6916A
+-2.65V   1.4756A           1.2482A             2.5660A
+-2.58V   1.4100A           1.1949A             2.4413A
+-2.51V   1.3449A           1.1420A             2.3175A
+-2.44V   1.2802A           1.0895A             2.1947A
+-2.37V   1.2161A           1.0375A             2.0729A
+-2.30V   1.1525A           0.9859A             1.9521A
+-2.23V   1.0895A           0.9348A             1.8324A
+-2.16V   1.0271A           0.8842A             1.7138A
+-2.09V   0.9652A           0.8341A             1.5964A
+-2.02V   0.9039A           0.7847A             1.4802A
+-1.95V   0.8431A           0.7358A             1.3654A
+-1.88V   0.7830A           0.6875A             1.2520A
+-1.81V   0.7234A           0.6397A             1.1403A
+-1.74V   0.6644A           0.5925A             1.0302A
+-1.67V   0.6061A           0.5460A             0.9225A
+-1.60V   0.5485A           0.5000A             0.8165A
+-1.53V   0.4917A           0.4548A             0.7129A
+-1.46V   0.4357A           0.4103A             0.6121A
+-1.39V   0.3808A           0.3666A             0.5145A
+-1.32V   0.3271A           0.3238A             0.4209A
+-1.25V   0.2748A           0.2820A             0.3322A
+-1.18V   0.2242A           0.2414A             0.2497A
+-1.11V   0.1759A           0.2023A             0.1750A
+-1.04V   0.1306A           0.1648A             0.1108A
+-0.97V   89.4651mA         0.1295A             60.8003mA
+-0.90V   54.3203mA         97.1531mA           26.5580mA
+-0.83V   26.3300mA         68.2156mA           16.6808mA
+-0.76V   11.1296mA         42.9552mA           12.4591mA
+-0.69V   7.0472mA          22.0037mA           8.8423mA
+-0.62V   4.5687mA          7.4453mA            5.7743mA
+-0.55V   2.6611mA          2.9686mA            3.3419mA
+-0.48V   1.3114mA          1.3749mA            1.6310mA
+-0.41V   0.5133mA          0.5882mA            0.6263mA
+-0.34V   0.1458mA          0.2058mA            0.1608mA
+-0.27V   38.1269uA         60.4101uA           39.1293uA
+-0.20V   15.9032uA         19.2081uA           18.6155uA
+-0.13V   8.9292uA          7.8181uA            11.3339uA
+-60.00mV   3.9894uA          3.0597uA            5.1866uA
+10.00mV   -0.6445uA         -0.3661uA           -0.8287uA
+80.00mV   -5.1360uA         -3.4888uA           -6.7084uA
+0.15V   -9.4917uA         -6.4873uA           -12.4174uA
+0.22V   -13.7128uA        -9.3876uA           -17.9562uA
+0.29V   -17.7995uA        -12.1935uA          -23.3251uA
+0.36V   -21.7518uA        -14.9053uA          -28.5245uA
+0.43V   -25.5697uA        -17.5232uA          -33.5547uA
+0.50V   -29.2532uA        -20.0471uA          -38.4159uA
+0.57V   -32.8025uA        -22.4769uA          -43.1086uA
+0.64V   -36.2175uA        -24.8126uA          -47.6330uA
+0.71V   -39.4983uA        -27.0542uA          -51.9894uA
+0.78V   -42.6451uA        -29.2016uA          -56.1781uA
+0.85V   -45.6580uA        -31.2549uA          -60.1994uA
+0.92V   -48.5370uA        -33.2140uA          -64.0536uA
+0.99V   -51.2823uA        -35.0789uA          -67.7411uA
+1.06V   -53.8941uA        -36.8497uA          -71.2620uA
+1.13V   -56.3724uA        -38.5265uA          -74.6169uA
+1.20V   -58.7175uA        -40.1091uA          -77.8060uA
+1.27V   -60.9295uA        -41.5977uA          -80.8296uA
+1.34V   -63.0086uA        -42.9922uA          -83.6882uA
+1.41V   -64.9550uA        -44.2929uA          -86.3820uA
+1.48V   -66.7689uA        -45.4997uA          -88.9116uA
+1.55V   -68.4506uA        -46.6126uA          -91.2771uA
+1.62V   -70.0001uA        -47.6319uA          -93.4792uA
+1.69V   -71.4179uA        -48.5576uA          -95.5181uA
+1.76V   -72.7041uA        -49.3898uA          -97.3943uA
+1.83V   -73.8591uA        -50.1286uA          -99.1082uA
+1.90V   -74.8832uA        -50.7744uA          -0.1007mA
+1.97V   -75.7769uA        -51.3275uA          -0.1021mA
+2.04V   -76.5410uA        -51.7886uA          -0.1033mA
+2.11V   -77.1767uA        -52.1592uA          -0.1044mA
+2.18V   -77.6867uA        -52.4428uA          -0.1053mA
+2.25V   -78.0773uA        -52.6475uA          -0.1060mA
+2.32V   -78.3626uA        -52.7896uA          -0.1066mA
+2.39V   -78.5675uA        -52.8909uA          -0.1071mA
+2.46V   -78.7205uA        -52.9691uA          -0.1074mA
+2.53V   -78.8419uA        -53.0341uA          -0.1077mA
+2.60V   -78.9432uA        -53.0904uA          -0.1079mA
+2.67V   -79.0308uA        -53.1406uA          -0.1080mA
+2.74V   -79.1081uA        -53.1860uA          -0.1082mA
+2.81V   -79.1774uA        -53.2276uA          -0.1083mA
+2.88V   -79.2402uA        -53.2660uA          -0.1084mA
+2.95V   -79.2977uA        -53.3016uA          -0.1085mA
+3.02V   -79.3507uA        -53.3351uA          -0.1086mA
+3.09V   -79.3997uA        -53.3675uA          -0.1086mA
+3.16V   -79.4455uA        -53.3998uA          -0.1087mA
+3.23V   -79.4883uA        -53.4322uA          -0.1088mA
+6.60V   -81.4335uA        -54.9904uA          -0.1117mA
+| 
+| End [Model] lvc330axxxbaaaaaaain
+|************************************************************************
+| End [Component]
+[End]
+
+
+</PRE></DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

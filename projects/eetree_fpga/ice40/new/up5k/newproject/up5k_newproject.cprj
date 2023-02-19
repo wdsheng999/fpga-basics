@@ -1,0 +1,7 @@
+-ver "C:/lscc/radiant/2022.1/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "C:/lscc/radiant/2022.1/ip/pmi/pmi_iCE40UP.vhd"
+-ver "E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/up5k/source/newproject/button.v" "E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/up5k/source/newproject/dds.v" "E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/up5k/source/newproject/dds_am.v" "E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/up5k/source/newproject/dds_fm.v" "E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/up5k/source/newproject/dds_pll.v" "E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/up5k/source/newproject/dds_pll_tmpl.v" "E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/up5k/source/newproject/dds_sin_table.v" "E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/up5k/source/newproject/dds_sin_table_tmpl.v" "E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/up5k/source/newproject/encoder.v" "E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/up5k/source/newproject/main.v" "E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/up5k/source/newproject/tb_dds_sin_table_tmpl.v"
+-path "E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/up5k"
+-top tb
+-isTop
+-a "iCE40UP"

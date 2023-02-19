@@ -1,0 +1,5 @@
+#Start recording tcl command: 2/15/2023 17:38:44
+#Project Location: E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/counter; Project name: counter
+prj_archive -dir "E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/counter" -extract "C:/lscc/radiant/2022.1/examples/counter.zip"
+prj_close
+#Stop recording: 2/15/2023 17:41:17

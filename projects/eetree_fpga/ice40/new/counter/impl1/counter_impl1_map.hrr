@@ -1,0 +1,9 @@
+---------------------------------------------------
+Report for cell count
+   Instance path: count
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          3        100.0
+                               LUTGATE	          3        100.0
+                                 IOBUF	          5        100.0
+                                PFUREG	          3        100.0

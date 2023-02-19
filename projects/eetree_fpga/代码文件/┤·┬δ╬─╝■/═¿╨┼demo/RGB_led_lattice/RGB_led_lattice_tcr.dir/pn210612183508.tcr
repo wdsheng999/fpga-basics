@@ -1,0 +1,13 @@
+#Start recording tcl command: 6/12/2021 15:59:45
+#Project Location: E:/Verilog/RGB_led_lattice; Project name: RGB_led_lattice
+prj_create -name "RGB_led_lattice" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_save 
+prj_add_source "E:/Verilog/RGB_led_lattice/source/impl_1/PWM_loop.v"
+prj_add_source "E:/Verilog/RGB_led_lattice/source/impl_1/LED_top.v"
+prj_add_source "E:/Verilog/RGB_led_lattice/source/impl_1/constraint.pdc"
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy Strategy1 bit_out_format=rbt
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 6/12/2021 18:35:08

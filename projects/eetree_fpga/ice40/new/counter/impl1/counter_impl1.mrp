@@ -1,0 +1,140 @@
+                         Lattice Mapping Report File
+Design:  count
+Family:  iCE40UP
+Device:  iCE40UP3K
+Package: UWG30
+Performance Grade:  High-Performance_1.2V
+
+Mapper:    version Radiant Software (64-bit) 2022.1.0.52.3
+Mapped on: Wed Feb 15 21:21:13 2023
+
+Design Information
+------------------
+
+Command line:   map -i counter_impl1_syn.udb -pdc E:/embeded/fpga learning/fpga-
+     basics/projects/eetree_fpga/ice40/new/counter/source/impl1.pdc -o
+     counter_impl1_map.udb -mp counter_impl1.mrp -hierrpt -inferGSR -gui
+
+Design Summary
+--------------
+
+   Number of slice registers:   3 out of  2800 (<1%)
+   Number of I/O registers:      0 out of    63 (0%)
+   Number of LUT4s:             3 out of  2800 (<1%)
+      Number of logic LUT4s:               3
+      Number of ripple logic:              0 (0 LUT4s)
+   Number of IO sites used:   5 out of 21 (24%)
+      Number of IO sites used for general PIO: 5
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 5 out of 18 (28%)
+      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 5 out of 21 (24%)
+   Number of DSPs:             0 out of 4 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  0 out of 1 (0%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             0 out of 20 (0%)
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  1
+      Net clk_c: 3 loads, 3 rising, 0 falling (Driver: Port clk)
+   Number of Clock Enables:  0
+   Number of LSRs:  1
+      Pin rst: 3 loads, 3 SLICEs (Net: rst_c)
+   Top 10 highest fanout non-clock nets:
+      Net c_c_0: 4 loads
+      Net c_c_1: 3 loads
+      Net rst_c: 3 loads
+      Net c_c_2: 2 loads
+      Net n18: 1 loads
+      Net n19: 1 loads
+      Net n20: 1 loads
+
+
+
+                                    Page 1
+
+
+
+
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| c[2]                | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| c[1]                | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| c[0]                | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| clk                 | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rst                 | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+Removed logic
+-------------
+
+Block clk_pad.vlo_inst was optimized away.
+Block i37 was optimized away.
+
+Constraint Summary
+------------------
+
+   Total number of constraints: 0
+   Total number of constraints dropped: 0
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs
+   Total REAL Time: 2 secs
+   Peak Memory Usage: 55 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 2
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2022 Lattice Semiconductor
+     Corporation,  All rights reserved.

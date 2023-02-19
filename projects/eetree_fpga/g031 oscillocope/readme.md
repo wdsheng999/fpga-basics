@@ -6,6 +6,8 @@ https://www.eetree.cn/project/detail/35
 
 示波器参考技术资料
 
+下载，boot模式
+
 
 ## 环境
 cubeIDE 自带了cubemx的界面 可以实现引脚定义
@@ -19,4 +21,43 @@ HAL库的资源占用严重 考虑到后续的驱动屏幕和fourier变换
 
 
 如果与上位机进行通讯 需要配置收发
+
+文件结构
+```
+./
+ -communication
+ -example
+ -leddemo
+ ```
+
+在communication中， 配置了uart2，led，和spi1
+
+
+uart2是可以用来做上位机通讯
+
+通讯部分完成后，可以考虑使用板子上的按键控制，或者用上位机控制，scopy
+
+传输 很多例程参考
+```c
+ while (1)
+  {
+    /* USER CODE END WHILE */
+	  int8_t buff=0;
+	  HAL_SPI_Receive(&hspi1,&buff,2,-1);
+	//printf()
+	  HAL_UART_Transmit(&huart2,&buff,20,1000);
+    /* USER CODE BEGIN 3 */
+  }
+```
+
+使用chatgpt生成了将spi接受的数据传输到uart
+
+```c
+uint8_t rx_buffer[10];
+  HAL_SPI_Receive(&hspi1, rx_buffer, 10, HAL_MAX_DELAY);
+
+  HAL_UART_Transmit(&huart2, rx_buffer, 10, HAL_MAX_DELAY);
+
+  while (1)
+  ```
 

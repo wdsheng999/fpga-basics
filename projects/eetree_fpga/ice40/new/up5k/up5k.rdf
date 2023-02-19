@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.2" radiant="2022.1.0.52.3" title="up5k" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" default_implementation="newproject">
+    <Options/>
+    <Implementation title="newproject" dir="newproject" description="newproject" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="tb"/>
+        <Source name="source/newproject/button.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/newproject/dds.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/newproject/dds_am.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/newproject/dds_fm.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/newproject/dds_pll/dds_pll.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="source/newproject/dds_pll.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/newproject/dds_pll_tmpl.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/newproject/dds_sin_table/dds_sin_table.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="source/newproject/dds_sin_table.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/newproject/dds_sin_table_tmpl.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/newproject/encoder.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/newproject/main.v" type="Verilog" type_short="Verilog">
+            <Options top_module="main"/>
+        </Source>
+        <Source name="source/newproject/tb_dds_sin_table_tmpl.v" type="Verilog" type_short="Verilog">
+            <Options top_module="tb"/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="up5k1.sty"/>
+</RadiantProject>

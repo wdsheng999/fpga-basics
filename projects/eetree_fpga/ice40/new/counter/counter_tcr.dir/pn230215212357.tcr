@@ -1,0 +1,11 @@
+#Start recording tcl command: 2/15/2023 21:20:30
+#Project Location: E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/counter; Project name: counter
+prj_open "E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/counter/counter.rdf"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_set_device -part iCE40UP5K-SG48I -performance "High-Performance_1.2V"
+prj_save 
+prj_close
+#Stop recording: 2/15/2023 21:23:57

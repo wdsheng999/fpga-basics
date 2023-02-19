@@ -1,0 +1,23 @@
+----------------------------------------------------------------------
+Report for cell RGB_LED.TECH
+Register bits:  29 of 5280 (0.549%)
+I/O cells:      5
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        15          100.0
+                            FD1P3XZ        29          100.0
+                                 IB         2          100.0
+                               LUT4        27          100.0
+                                 OB         3          100.0
+SUB MODULES
+                           PWM_loop         1
+                              TOTAL        77
+----------------------------------------------------------------------
+Report for cell PWM_loop.v1
+Instance Path : pwm
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        15          100.0
+                            FD1P3XZ        29          100.0
+                               LUT4        27          100.0
+                              TOTAL        71

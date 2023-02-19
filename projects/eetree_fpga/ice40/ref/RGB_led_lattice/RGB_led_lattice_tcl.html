@@ -1,0 +1,171 @@
+<HTML>
+<HEAD>
+<TITLE>Lattice TCL Log</TITLE>
+<link href="file:///C:/lscc/radiant/2022.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2022.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="pn210612183508"></A><B><U><big>pn210612183508</big></U></B>
+#Start recording tcl command: 6/12/2021 15:59:45
+#Project Location: E:/Verilog/RGB_led_lattice; Project name: RGB_led_lattice
+prj_create -name "RGB_led_lattice" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_save 
+prj_add_source "E:/Verilog/RGB_led_lattice/source/impl_1/PWM_loop.v"
+prj_add_source "E:/Verilog/RGB_led_lattice/source/impl_1/LED_top.v"
+prj_add_source "E:/Verilog/RGB_led_lattice/source/impl_1/constraint.pdc"
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy Strategy1 bit_out_format=rbt
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 6/12/2021 18:35:08
+
+
+
+<A name="pn210612190516"></A><B><U><big>pn210612190516</big></U></B>
+#Start recording tcl command: 6/12/2021 18:38:56
+#Project Location: E:/Verilog/RGB_led_lattice; Project name: RGB_led_lattice
+prj_open "E:/Verilog/RGB_led_lattice/RGB_led_lattice.rdf"
+#Stop recording: 6/12/2021 19:05:16
+
+
+
+<A name="pn220505152057"></A><B><U><big>pn220505152057</big></U></B>
+#Start recording tcl command: 5/5/2022 13:44:43
+#Project Location: E:/fpgaproject/ice40/RGB_led_lattice; Project name: RGB_led_lattice
+prj_open "E:/fpgaproject/ice40/RGB_led_lattice/RGB_led_lattice.rdf"
+#Stop recording: 5/5/2022 15:20:57
+
+
+
+<A name="pn220701151015"></A><B><U><big>pn220701151015</big></U></B>
+#Start recording tcl command: 7/1/2022 15:08:00
+#Project Location: E:/fpgaproject/ice40/RGB_led_lattice; Project name: RGB_led_lattice
+E:/fpgaproject/ice40/led
+led
+#Start recording tcl command: 7/1/2022 15:10:15
+#Project Location: E:/fpgaproject/ice40/led; Project name: led
+prj_open "E:/fpgaproject/ice40/RGB_led_lattice/RGB_led_lattice.rdf"
+prj_close
+prj_open "E:/fpgaproject/ice40/led/led.rdf"
+#Stop recording: 7/1/2022 15:10:15
+
+
+
+<A name="pn230109142911"></A><B><U><big>pn230109142911</big></U></B>
+#Start recording tcl command: 1/9/2023 14:29:10
+#Project Location: E:/back/fpgaproject/ice40/RGB_led_lattice; Project name: RGB_led_lattice
+prj_open "E:/back/fpgaproject/ice40/RGB_led_lattice/RGB_led_lattice.rdf"
+#Stop recording: 1/9/2023 14:29:11
+
+
+
+<A name="pn230109161321"></A><B><U><big>pn230109161321</big></U></B>
+#Start recording tcl command: 1/9/2023 16:13:21
+#Project Location: E:/back/fpgaproject/ice40/RGB_led_lattice; Project name: RGB_led_lattice
+prj_open "E:/back/fpgaproject/ice40/RGB_led_lattice/RGB_led_lattice.rdf"
+#Stop recording: 1/9/2023 16:13:21
+
+
+
+</PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#pn210612183508>pn210612183508</A></LI>
+<LI><A href=#pn210612190516>pn210612190516</A></LI>
+<LI><A href=#pn220505152057>pn220505152057</A></LI>
+<LI><A href=#pn220701151015>pn220701151015</A></LI>
+<LI><A href=#pn230109142911>pn230109142911</A></LI>
+<LI><A href=#pn230109161321>pn230109161321</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

@@ -1,0 +1,4 @@
+#Start recording tcl command: 5/5/2022 13:44:43
+#Project Location: E:/fpgaproject/ice40/RGB_led_lattice; Project name: RGB_led_lattice
+prj_open "E:/fpgaproject/ice40/RGB_led_lattice/RGB_led_lattice.rdf"
+#Stop recording: 5/5/2022 15:20:57

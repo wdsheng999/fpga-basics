@@ -1,0 +1,23 @@
+SLICE/CIN1 input pwm.SLICE_4 has no outgoing device arc
+SLICE/COUT0 GND  pwm.SLICE_3
+     *** pwm.SLICE_3/D1 is driven by constant or a pin on an incomplete path
+     *** pwm.SLICE_3/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/D1 input pwm.SLICE_7 has no outgoing device arc
+SLICE/CIN1 input pwm.SLICE_7 has no outgoing device arc
+     ** pwm.SLICE_7/COUT0 is driving a pin on an incomplete path
+SLICE/C0 input pwm.SLICE_7 is on an incomplete path
+SLICE/CIN0 input pwm.SLICE_7 is on an incomplete path
+SLICE/D1 input pwm.SLICE_14 has no outgoing device arc
+SLICE/CIN1 input pwm.SLICE_14 has no outgoing device arc
+     ** pwm.SLICE_14/COUT0 is driving a pin on an incomplete path
+SLICE/C0 input pwm.SLICE_14 is on an incomplete path
+SLICE/CIN0 input pwm.SLICE_14 is on an incomplete path
+SLICE/COUT0 GND  pwm.SLICE_11
+     *** pwm.SLICE_11/D1 is driven by constant or a pin on an incomplete path
+     *** pwm.SLICE_11/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/COUT0 GND  pwm.SLICE_13
+     *** pwm.SLICE_13/D1 is driven by constant or a pin on an incomplete path
+     *** pwm.SLICE_13/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/F1 VCC  pwm.SLICE_25
+     *** pwm.SLICE_11/B1 is driven by constant or a pin on an incomplete path
+     *** pwm.SLICE_13/B1 is driven by constant or a pin on an incomplete path

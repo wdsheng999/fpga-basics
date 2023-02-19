@@ -1,0 +1,5 @@
+#Start recording tcl command: 2/15/2023 21:32:13
+#Project Location: E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/ref/dds_demo; Project name: dds_demo02
+prj_import_diamond -dev iCE40UP5K-SG48I -performance {High-Performance_1.2V} -save_to {E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/ref/dds_demo/dds_demo.rdf} -copy_src {E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/ref/dds_demo02/dds_demo02.ldf}
+prj_close
+#Stop recording: 2/15/2023 21:33:21

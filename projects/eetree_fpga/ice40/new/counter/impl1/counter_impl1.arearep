@@ -1,0 +1,11 @@
+----------------------------------------------------------------------
+Report for cell count.TECH
+Register bits:  3 of 2800 (0.107%)
+I/O cells:      5
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         3          100.0
+                                 IB         2          100.0
+                               LUT4         3          100.0
+                                 OB         3          100.0
+                              TOTAL        11

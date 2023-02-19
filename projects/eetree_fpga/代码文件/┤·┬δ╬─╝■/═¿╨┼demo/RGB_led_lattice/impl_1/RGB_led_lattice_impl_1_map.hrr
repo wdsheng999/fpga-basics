@@ -1,0 +1,18 @@
+---------------------------------------------------
+Report for cell RGB_LED
+   Instance path: RGB_LED
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         59        100.0
+                                 IOBUF	          5        100.0
+                                PFUREG	         29        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                              PWM_loop	          1        96.6
+---------------------------------------------------
+Report for cell PWM_loop
+   Instance path: RGB_LED/pwm
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         57        96.6
+                                PFUREG	         29        100.0

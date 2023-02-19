@@ -1,0 +1,389 @@
+<HTML>
+<HEAD>
+<TITLE>Synthesis Report</TITLE>
+<link href="file:///D:/lscc/radiant/3.0/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///D:/lscc/radiant/3.0/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="Syn"></A><B><U><big>Synthesis Report</big></U></B>
+synthesis:  version Radiant Software (64-bit) 3.0.0.24.1
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Jan  9 16:14:15 2023
+
+
+Command Line:  D:\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f RGB_led_lattice_impl_1_lattice.synproj -gui -msgset E:/back/fpgaproject/ice40/RGB_led_lattice/promote.xml 
+
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+                                                          
+
+
+##########################################################
+
+
+### Lattice Family     : iCE40UP
+
+
+### Device             : iCE40UP5K
+
+
+### Package            : SG48
+
+
+### Performance Grade  : High-Performance_1.2V
+
+
+                                                         
+
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Area
+Top-level module name = RGB_LED.
+Target frequency = 1.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output HDL file name = RGB_led_lattice_impl_1.vm.
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-path D:/lscc/radiant/3.0/ispfpga/ice40tp/data (searchpath added)
+-path E:/back/fpgaproject/ice40/RGB_led_lattice (searchpath added)
+-path E:/back/fpgaproject/ice40/RGB_led_lattice/impl_1 (searchpath added)
+Mixed language design
+Verilog design file = D:/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v
+Verilog design file = E:/back/fpgaproject/ice40/RGB_led_lattice/source/impl_1/PWM_loop.v
+Verilog design file = E:/back/fpgaproject/ice40/RGB_led_lattice/source/impl_1/LED_top.v
+VHDL library = pmi
+VHDL design file = D:/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Compile design.
+Compile Design Begin
+Analyzing Verilog file d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v. VERI-1482
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(1): analyzing included file d:/lscc/radiant/3.0/ip/pmi/pmi_addsub.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_addsub.v(40): analyzing included file d:/lscc/radiant/3.0/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(2): analyzing included file d:/lscc/radiant/3.0/ip/pmi/pmi_add.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_add.v(50): analyzing included file d:/lscc/radiant/3.0/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(3): analyzing included file d:/lscc/radiant/3.0/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_complex_mult.v(52): analyzing included file d:/lscc/radiant/3.0/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(4): analyzing included file d:/lscc/radiant/3.0/ip/pmi/pmi_counter.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_counter.v(39): analyzing included file d:/lscc/radiant/3.0/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(5): analyzing included file d:/lscc/radiant/3.0/ip/pmi/pmi_fifo.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_fifo.v(44): analyzing included file d:/lscc/radiant/3.0/ip/pmi/../common/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(6): analyzing included file d:/lscc/radiant/3.0/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_fifo_dc.v(47): analyzing included file d:/lscc/radiant/3.0/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(7): analyzing included file d:/lscc/radiant/3.0/ip/pmi/pmi_mac.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_mac.v(52): analyzing included file d:/lscc/radiant/3.0/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(8): analyzing included file d:/lscc/radiant/3.0/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file d:/lscc/radiant/3.0/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(9): analyzing included file d:/lscc/radiant/3.0/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_multaddsub.v(52): analyzing included file d:/lscc/radiant/3.0/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(10): analyzing included file d:/lscc/radiant/3.0/ip/pmi/pmi_mult.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_mult.v(51): analyzing included file d:/lscc/radiant/3.0/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(11): analyzing included file d:/lscc/radiant/3.0/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ram_dp.v(48): analyzing included file d:/lscc/radiant/3.0/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(12): analyzing included file d:/lscc/radiant/3.0/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ram_dq.v(45): analyzing included file d:/lscc/radiant/3.0/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(13): analyzing included file d:/lscc/radiant/3.0/ip/pmi/pmi_rom.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_rom.v(45): analyzing included file d:/lscc/radiant/3.0/ip/pmi/../common/rom/rtl/lscc_rom.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(14): analyzing included file d:/lscc/radiant/3.0/ip/pmi/pmi_sub.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_sub.v(50): analyzing included file d:/lscc/radiant/3.0/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(15): analyzing included file d:/lscc/radiant/3.0/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file d:/lscc/radiant/3.0/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(16): analyzing included file d:/lscc/radiant/3.0/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file d:/lscc/radiant/3.0/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(17): analyzing included file d:/lscc/radiant/3.0/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file e:/back/fpgaproject/ice40/rgb_led_lattice/source/impl_1/pwm_loop.v. VERI-1482
+Analyzing Verilog file e:/back/fpgaproject/ice40/rgb_led_lattice/source/impl_1/led_top.v. VERI-1482
+Analyzing VHDL file d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd. VHDL-1481
+Analyzing VHDL file d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd
+
+INFO - synthesis: d:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+unit RGB_LED is not yet analyzed. VHDL-1485
+INFO - synthesis: The default VHDL library search path is now "E:/back/fpgaproject/ice40/RGB_led_lattice/impl_1". VHDL-1504
+Top module language type = Verilog.
+Top module name (Verilog, mixed language): RGB_LED
+INFO - synthesis: e:/back/fpgaproject/ice40/rgb_led_lattice/source/impl_1/led_top.v(1): compiling module RGB_LED. VERI-1018
+INFO - synthesis: e:/back/fpgaproject/ice40/rgb_led_lattice/source/impl_1/pwm_loop.v(1): compiling module PWM_loop. VERI-1018
+WARNING - synthesis: e:/back/fpgaproject/ice40/rgb_led_lattice/source/impl_1/pwm_loop.v(37): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING - synthesis: e:/back/fpgaproject/ice40/rgb_led_lattice/source/impl_1/pwm_loop.v(41): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: e:/back/fpgaproject/ice40/rgb_led_lattice/source/impl_1/pwm_loop.v(46): expression size 32 truncated to fit in target size 9. VERI-1209
+WARNING - synthesis: e:/back/fpgaproject/ice40/rgb_led_lattice/source/impl_1/pwm_loop.v(51): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: e:/back/fpgaproject/ice40/rgb_led_lattice/source/impl_1/led_top.v(24): pwm_wave should be on the sensitivity list. VERI-1221
+WARNING - synthesis: e:/back/fpgaproject/ice40/rgb_led_lattice/source/impl_1/led_top.v(25): pwm_wave should be on the sensitivity list. VERI-1221
+WARNING - synthesis: e:/back/fpgaproject/ice40/rgb_led_lattice/source/impl_1/led_top.v(31): pwm_wave should be on the sensitivity list. VERI-1221
+WARNING - synthesis: e:/back/fpgaproject/ice40/rgb_led_lattice/source/impl_1/led_top.v(32): pwm_wave should be on the sensitivity list. VERI-1221
+WARNING - synthesis: e:/back/fpgaproject/ice40/rgb_led_lattice/source/impl_1/led_top.v(36): pwm_wave should be on the sensitivity list. VERI-1221
+WARNING - synthesis: e:/back/fpgaproject/ice40/rgb_led_lattice/source/impl_1/led_top.v(38): pwm_wave should be on the sensitivity list. VERI-1221
+                                                         
+
+
+### Number of Logic Cells: 5280
+
+
+### Number of RAM Blocks: 30
+
+
+### Number of DSP Blocks: 8
+
+
+### Number of PLLs: 1
+
+
+### Number of IO Pins: 56
+
+
+##########################################################
+
+
+                                                         
+
+
+INFO - synthesis: Extracted state machine for register '\pwm/state' with one-hot encoding
+State machine has 4 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+ 11 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 0001
+
+ 01 -> 0010
+
+ 10 -> 0100
+
+ 11 -> 1000
+
+
+
+
+WARNING - synthesis: e:/back/fpgaproject/ice40/rgb_led_lattice/source/impl_1/pwm_loop.v(37): Register \pwm/state_FSM_i0_i3 is stuck at Zero. VDB-5013
+
+
+<A name="lse_area"></A><B><U><big>Area Report</big></U></B>
+
+################### Begin Area Report (RGB_LED)######################
+Number of register bits => 29 of 5280 (0 % )
+CCU2 => 15
+FD1P3XZ => 29
+IB => 2
+LUT4 => 27
+OB => 3
+################### End Area Report ##################
+Number of odd-length carry chains : 1
+Number of even-length carry chains : 2
+
+
+<A name="lse_clock"></A><B><U><big>Clock Report</big></U></B>
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : pwm/rst_N_6, loads : 20
+  Net : pwm/n178, loads : 10
+  Net : pwm/n234, loads : 9
+  Net : pwm/n21, loads : 6
+  Net : pwm/counter_7__N_40, loads : 4
+  Net : pwm/n22, loads : 4
+  Net : pwm/times[8], loads : 4
+  Net : pwm/n38, loads : 3
+  Net : pwm/high[5], loads : 3
+  Net : pwm/high[6], loads : 3
+################### End Clock Report ##################
+
+Peak Memory Usage: 74 MB
+
+--------------------------------------------------------------
+Total CPU Time: 0 secs 
+Total REAL Time: 2 secs 
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#Syn>Top</A></LI>
+<LI><A href=#lse_area>Area Report</A></LI>
+<LI><A href=#lse_clock>Clock Report</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

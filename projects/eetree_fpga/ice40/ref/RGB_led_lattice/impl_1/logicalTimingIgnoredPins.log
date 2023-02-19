@@ -1,0 +1,99 @@
+FA2/A0 input counter_73_add_4_9is connected to a constant net
+FA2/A1 input counter_73_add_4_9is connected to a constant net
+FA2/B1 input counter_73_add_4_9is connected to a constant net
+FA2/C1 input counter_73_add_4_9is connected to a constant net
+FA2/D1 input counter_73_add_4_9 has no outgoing device arc
+FA2/CI1 input counter_73_add_4_9 has no outgoing device arc
+     ** pwm/counter_73_add_4_9/CO0 is driving a pin on an incomplete path
+FA2/B0 input counter_73_add_4_9is connected to a constant net
+FA2/C0 input counter_73_add_4_9 is on an incomplete path
+FA2/CI0 input counter_73_add_4_9 is on an incomplete path
+FA2/A0 input counter_73_add_4_7is connected to a constant net
+FA2/A1 input counter_73_add_4_7is connected to a constant net
+FA2/A0 input counter_73_add_4_5is connected to a constant net
+FA2/A1 input counter_73_add_4_5is connected to a constant net
+FA2/A0 input counter_73_add_4_3is connected to a constant net
+FA2/A1 input counter_73_add_4_3is connected to a constant net
+FA2/A0 input counter_73_add_4_1is connected to a constant net
+FA2/A1 input counter_73_add_4_1is connected to a constant net
+FA2/A0 input times_72_add_4_1is connected to a constant net
+FA2/A1 input times_72_add_4_1is connected to a constant net
+FA2/A0 input high_71_add_4_9is connected to a constant net
+FA2/A1 input high_71_add_4_9is connected to a constant net
+FA2/B1 input high_71_add_4_9is connected to a constant net
+FA2/C1 input high_71_add_4_9is connected to a constant net
+FA2/D1 input high_71_add_4_9 has no outgoing device arc
+FA2/CI1 input high_71_add_4_9 has no outgoing device arc
+     ** pwm/high_71_add_4_9/CO0 is driving a pin on an incomplete path
+FA2/B0 input high_71_add_4_9is connected to a constant net
+FA2/C0 input high_71_add_4_9 is on an incomplete path
+FA2/CI0 input high_71_add_4_9 is on an incomplete path
+FA2/A0 input times_72_add_4_7is connected to a constant net
+FA2/A1 input times_72_add_4_7is connected to a constant net
+VHI/Z VCC  rgb_led_pad[0].vhi_inst
+     *** pwm/high_71__i0/SP is driven by constant or a pin on an incomplete path
+     *** pwm/high_71__i7/SP is driven by constant or a pin on an incomplete path
+     *** pwm/pwm/SP is driven by constant or a pin on an incomplete path
+     *** pwm/high_71__i6/SP is driven by constant or a pin on an incomplete path
+     *** pwm/high_71__i5/SP is driven by constant or a pin on an incomplete path
+     *** pwm/high_71__i4/SP is driven by constant or a pin on an incomplete path
+     *** pwm/high_71__i3/SP is driven by constant or a pin on an incomplete path
+     *** pwm/high_71__i2/SP is driven by constant or a pin on an incomplete path
+     *** pwm/high_71__i1/SP is driven by constant or a pin on an incomplete path
+     *** pwm/counter_73__i7/SP is driven by constant or a pin on an incomplete path
+     *** pwm/counter_73__i6/SP is driven by constant or a pin on an incomplete path
+     *** pwm/counter_73__i5/SP is driven by constant or a pin on an incomplete path
+     *** pwm/counter_73__i4/SP is driven by constant or a pin on an incomplete path
+     *** pwm/counter_73__i3/SP is driven by constant or a pin on an incomplete path
+     *** pwm/counter_73__i2/SP is driven by constant or a pin on an incomplete path
+     *** pwm/counter_73__i1/SP is driven by constant or a pin on an incomplete path
+     *** pwm/counter_73__i0/SP is driven by constant or a pin on an incomplete path
+     *** pwm/counter_73_add_4_1/B1 is driven by constant or a pin on an incomplete path
+     *** pwm/times_72_add_4_1/B1 is driven by constant or a pin on an incomplete path
+     *** rgb_led_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** rgb_led_pad[1].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** rgb_led_pad[2].bb_inst/T_N is driven by constant or a pin on an incomplete path
+FA2/A0 input times_72_add_4_3is connected to a constant net
+FA2/A1 input times_72_add_4_3is connected to a constant net
+FA2/A0 input high_71_add_4_1is connected to a constant net
+FA2/A1 input high_71_add_4_1is connected to a constant net
+FA2/A0 input times_72_add_4_9is connected to a constant net
+FA2/A1 input times_72_add_4_9is connected to a constant net
+FA2/CI1 input times_72_add_4_9 has no outgoing device arc
+FA2/A0 input times_72_add_4_5is connected to a constant net
+FA2/A1 input times_72_add_4_5is connected to a constant net
+FA2/A0 input high_71_add_4_5is connected to a constant net
+FA2/A1 input high_71_add_4_5is connected to a constant net
+FA2/A0 input high_71_add_4_7is connected to a constant net
+FA2/A1 input high_71_add_4_7is connected to a constant net
+VLO/Z GND  i1
+     *** pwm/high_71_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** pwm/high_71_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** pwm/high_71_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** pwm/high_71_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** pwm/high_71_add_4_3/A0 is driven by constant or a pin on an incomplete path
+     *** pwm/high_71_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** pwm/high_71_add_4_3/A1 is driven by constant or a pin on an incomplete path
+     *** pwm/high_71_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** pwm/high_71_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** pwm/high_71_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** pwm/times_72_add_4_9/B0 is driven by constant or a pin on an incomplete path
+     *** pwm/times_72_add_4_9/B1 is driven by constant or a pin on an incomplete path
+     *** pwm/times_72_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** pwm/times_72_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** pwm/times_72_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** pwm/times_72_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** pwm/counter_73_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** pwm/counter_73_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** pwm/counter_73_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** pwm/counter_73_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** pwm/counter_73_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** pwm/counter_73_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** pwm/counter_73_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** pwm/counter_73_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** pwm/times_72_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** pwm/times_72_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** pwm/times_72_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** pwm/times_72_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** clk_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** rst_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path

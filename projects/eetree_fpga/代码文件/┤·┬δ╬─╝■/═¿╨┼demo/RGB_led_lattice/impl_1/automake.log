@@ -1,0 +1,462 @@
+
+map "RGB_led_lattice_impl_1_syn.udb" "E:/back/fpgaproject/ice40/RGB_led_lattice/source/impl_1/constraint.pdc" -o "RGB_led_lattice_impl_1_map.udb" -mp "RGB_led_lattice_impl_1.mrp" -hierrpt     
+map:  version Radiant Software (64-bit) 3.0.0.24.1
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:   map RGB_led_lattice_impl_1_syn.udb E:/back/fpgaproject/ice40/RGB_led_lattice/source/impl_1/constraint.pdc -o RGB_led_lattice_impl_1_map.udb -mp RGB_led_lattice_impl_1.mrp -hierrpt -gui 
+
+Loading device for application GENERIC from file 'itpa08.nph' in environment: D:/lscc/radiant/3.0/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+
+
+
+   Remove unused logic
+
+   Do not produce over sized UDBs.
+
+INFO - Port 'rgb_led[2]' is located on BB_OD pad '41'. Its IO buffer is mapped to BB_OD accordingly. Please notice PULLMODE is not applicable to BB_OD.INFO - Port 'rgb_led[1]' is located on BB_OD pad '40'. Its IO buffer is mapped to BB_OD accordingly. Please notice PULLMODE is not applicable to BB_OD.INFO - Port 'rgb_led[0]' is located on BB_OD pad '39'. Its IO buffer is mapped to BB_OD accordingly. Please notice PULLMODE is not applicable to BB_OD.Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of slice registers:  29 out of  5280 (1%)
+   Number of I/O registers:      0 out of   117 (0%)
+   Number of LUT4s:            59 out of  5280 (1%)
+      Number of logic LUT4s:              28
+      Number of inserted feedthru LUT4s:   1
+      Number of ripple logic:             15 (30 LUT4s)
+   Number of IO sites used:   5 out of 39 (13%)
+      Number of IO sites used for general PIO: 2
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 2 out of 36 (6%)
+      Number of IO sites used for OD+RGB IO buffers: 3 out of 3 (100%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 5 out of 39 (13%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  0 out of 1 (0%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             0 out of 30 (0%)
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  1
+      Net clk_c: 19 loads, 19 rising, 0 falling (Driver: Port clk)
+   Number of Clock Enables:  2
+      Net pwm.n178: 5 loads, 5 SLICEs
+      Net pwm.n160: 3 loads, 3 SLICEs
+   Number of LSRs:  2
+      Net pwm.n234: 5 loads, 5 SLICEs
+      Net pwm.rst_N_6: 14 loads, 14 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net pwm.rst_N_6: 14 loads
+      Net pwm.n178: 6 loads
+      Net pwm.n19[2]: 6 loads
+      Net pwm.n234: 5 loads
+      Net pwm.counter_7__N_40: 4 loads
+      Net pwm.n19[1]: 4 loads
+      Net pwm.times[8]: 4 loads
+      Net pwm.high[5]: 3 loads
+      Net pwm.high[6]: 3 loads
+      Net pwm.n38: 3 loads
+Running physical design DRC...
+
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 54 MB
+
+
+timing -sethld -sp High-Performance_1.2V -hsp m -v 10 -u 10 -endpoints 10 -nperend 1  -html -rpt "RGB_led_lattice_impl_1.tw1" "RGB_led_lattice_impl_1_map.udb" 
+timing -sethld -sp High-Performance_1.2V -hsp m -v 10 -u 10 -endpoints 10 -nperend 1 -html -rpt RGB_led_lattice_impl_1.tw1 RGB_led_lattice_impl_1_map.udb -gui
+Starting design reading...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: D:/lscc/radiant/3.0/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Loading udb::Database ...
+Design:  RGB_LED
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+
+
+
+Successfully loading udb, 0.03 seconds
+
+Initializing timer
+Starting design annotation....
+23 pins removed from timing;  check file physicalTimingIgnoredPins.log
+High-Performance_1.2V
+
+Starting full timing analysis...
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Connections ignored  19  counted  210  covered  0
+Changing speed to m
+
+Starting full timing analysis...
+
+STA Runtime and Peak Memory Usage :
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 62 MB
+
+ 0.663407s wall, 0.265625s user + 0.125000s system = 0.390625s CPU (58.9%)
+
+
+par -f "RGB_led_lattice_impl_1.p2t" "RGB_led_lattice_impl_1_map.udb" "RGB_led_lattice_impl_1.udb"
+
+Lattice Place and Route Report for Design "RGB_led_lattice_impl_1_map.udb"
+Mon Jan  9 16:17:43 2023
+
+PAR: Place And Route Radiant Software (64-bit) 3.0.0.24.1.
+Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON \
+	RGB_led_lattice_impl_1_map.udb RGB_led_lattice_impl_1_par.dir/5_1.udb 
+
+Loading RGB_led_lattice_impl_1_map.udb ...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: D:/lscc/radiant/3.0/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+
+
+
+Design:  RGB_LED
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+Number of Signals: 112
+Number of Connections: 243
+Device utilization summary:
+
+   SLICE (est.)      32/2640          1% used
+     LUT             59/5280          1% used
+     REG             29/5280         <1% used
+   PIO                2/56            3% used
+                      2/36            5% bonded
+   IOLOGIC            0/56            0% used
+   DSP                0/8             0% used
+   I2C                0/2             0% used
+   HFOSC              0/1             0% used
+   LFOSC              0/1             0% used
+   LEDDA_IP           0/1             0% used
+   RGBA_DRV           0/1             0% used
+   FILTER             0/2             0% used
+   SRAM               0/4             0% used
+   WARMBOOT           0/1             0% used
+   SPI                0/2             0% used
+   EBR                0/30            0% used
+   PLL                0/1             0% used
+   RGBOUTBUF          0/3             0% used
+   I3C                0/2             0% used
+   OPENDRAIN          3/3           100% used
+
+Pin Constraint Summary:
+   2 out of 2 pins locked (100% locked).
+
+Finished Placer Phase 0 (HIER). CPU time: 0 secs , REAL time: 0 secs 
+
+
+................
+Finished Placer Phase 0 (AP).  CPU time: 0 secs , REAL time: 0 secs 
+
+Starting Placer Phase 1. CPU time: 0 secs , REAL time: 0 secs 
+..  ..
+....................
+
+Placer score = 5940.
+
+Device SLICE utilization summary after final SLICE packing:
+   SLICE             31/2640          1% used
+
+Finished Placer Phase 1. CPU time: 3 secs , REAL time: 4 secs 
+
+Starting Placer Phase 2.
+.
+
+Placer score =  23664
+Finished Placer Phase 2.  CPU time: 3 secs , REAL time: 4 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clocks :
+  PRIMARY "clk_c" from comp "clk" on CLK_PIN site "44 (PL7B)", clk load = 18, ce load = 0, sr load = 0
+
+  PRIMARY  : 1 out of 8 (12%)
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   2 out of 56 (3.6%) I/O sites used.
+   2 out of 36 (5.6%) bonded I/O sites used.
+   Number of I/O comps: 2; differential: 0
+   Number of Vref pins used: 0
+
+I/O Bank Usage Summary:
++----------+---------------+------------+------------+------------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+---------------+------------+------------+------------+
+| 0        | 1 / 14 (  7%) | 3.3V       |            |            |
+| 1        | 0 / 14 (  0%) | OFF        |            |            |
+| 2        | 1 / 8 ( 12%)  | 3.3V       |            |            |
++----------+---------------+------------+------------+------------+
+
+Total Placer CPU time: 3 secs , REAL time: 4 secs 
+
+Writing design to file RGB_led_lattice_impl_1_par.dir/5_1.udb ...
+
+
+-----------------------------------------------------------------
+INFO - par: ASE feature is off due to non timing-driven settings.  
+-----------------------------------------------------------------
+
+
+Start NBR router at 16:17:47 01/09/23
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in timing report. You should always run the timing    
+      tool to verify your design.                                
+*****************************************************************
+
+Starting routing resource preassignment
+Preassignment Summary:
+--------------------------------------------------------------------------------
+53 connections routed with dedicated routing resources
+1 global clock signals routed
+71 connections routed (of 240 total) (29.58%)
+---------------------------------------------------------
+Clock routing summary:
+Primary clocks (1 used out of 8 available):
+#1  Signal "clk_c"
+       Clock   loads: 18    out of    18 routed (100.00%)
+---------------------------------------------------------
+--------------------------------------------------------------------------------
+Completed routing resource preassignment
+
+Start NBR section for initial routing at 16:17:47 01/09/23
+Level 4, iteration 1
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
+
+Info: Initial congestion level at 75.00% usage is 0
+Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 16:17:47 01/09/23
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
+
+Start NBR section for post-routing at 16:17:47 01/09/23
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : <n/a>
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only.
+
+
+Total CPU time 0 secs 
+Total REAL time: 0 secs 
+Completely routed.
+End of route.  240 routed (100.00%); 0 unrouted.
+
+Writing design to file RGB_led_lattice_impl_1_par.dir/5_1.udb ...
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = <n/a>
+PAR_SUMMARY::Timing score<setup/<ns>> = <n/a>
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  Time: 3 secs 
+Total REAL Time: 4 secs 
+Peak Memory Usage: 94 MB
+
+
+par done!
+
+Note: user must run 'timing' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
+
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m  -pwrprd -html -rpt "RGB_led_lattice_impl_1.twr" "RGB_led_lattice_impl_1.udb" 
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt RGB_led_lattice_impl_1.twr RGB_led_lattice_impl_1.udb -gui
+Starting design reading...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: D:/lscc/radiant/3.0/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Loading udb::Database ...
+Design:  RGB_LED
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+
+
+
+Successfully loading udb, 0.03 seconds
+
+Initializing timer
+Starting design annotation....
+23 pins removed from timing;  check file physicalTimingIgnoredPins.log
+High-Performance_1.2V
+
+Starting full timing analysis...
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Connections ignored  18  counted  208  covered  0
+Changing speed to m
+
+Starting full timing analysis...
+
+STA Runtime and Peak Memory Usage :
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 87 MB
+
+ 0.931329s wall, 0.625000s user + 0.046875s system = 0.671875s CPU (72.1%)
+
+
+tmcheck -par "RGB_led_lattice_impl_1.par" 
+
+bitgen -w "RGB_led_lattice_impl_1.udb" -f "RGB_led_lattice_impl_1.t2b" 
+Loading RGB_led_lattice_impl_1.udb ...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: D:/lscc/radiant/3.0/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+
+
+
+Design:  RGB_LED
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+Successfully loading design udb and device data from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
+
+
+
+BITGEN: Bitstream Generator Radiant Software (64-bit) 3.0.0.24.1
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+Saving bit stream in "E:\back\fpgaproject\ice40\RGB_led_lattice\impl_1\RGB_led_lattice_impl_1.rbt".
+Bitstream generation complete!
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 105 MB
+
+
+ibisgen "RGB_led_lattice_impl_1.udb" "D:/lscc/radiant/3.0/cae_library/ibis/iCE40UP.ibs"
+IBIS Models Generator: Lattice Radiant Software (64-bit) 3.0.0.24.1
+
+Mon Jan  9 16:17:49 2023
+
+Loading RGB_led_lattice_impl_1.udb ...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: D:/lscc/radiant/3.0/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+
+
+
+Design:  RGB_LED
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+Successfully loading design udb and device data from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
+
+Created design models.
+
+
+Generating: E:\back\fpgaproject\ice40\RGB_led_lattice\impl_1\IBIS\RGB_led_lattice_impl_1.ibs
+
+
+INFO - Design IBIS models are generated for board level analysis.
+
+backanno "RGB_led_lattice_impl_1.udb"  -o "RGB_led_lattice_impl_1_vo.vo"      -sp "High-Performance_1.2V"  -w -neg
+backanno: version Radiant Software (64-bit) 3.0.0.24.1
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading device for application GENERIC from file 'itpa08.nph' in environment: D:/lscc/radiant/3.0/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Loading udb::Database ...
+Design:  RGB_LED
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+Performance Hardware Data Status:   Advanced       Version 1.0.
+
+
+
+Writing a verilog netlist based on the RGB_led_lattice_impl_1 design file.
+
+Writing Verilog netlist to file RGB_led_lattice_impl_1_vo.vo
+Writing SDF timing to file RGB_led_lattice_impl_1_vo.sdf
+Backanno finished with 0 posted error messages.
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 81 MB

@@ -1,0 +1,107 @@
+PAD Specification File
+***************************
+
+PART TYPE:        iCE40UP3K
+Performance Grade:      High-Performance_1.2V
+PACKAGE:          UWG30
+Package Status:                     Preliminary    Version 1.5
+
+Wed Feb 15 21:21:23 2023
+
+Pinout by Port Name:
++-----------+----------+--------------+-------+------------------------------------------+
+| Port Name | Pin/Bank | Buffer Type  | Site  | Properties                               |
++-----------+----------+--------------+-------+------------------------------------------+
+| c[0]      | F1/1     | LVCMOS33_OUT | PL24A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| c[1]      | F2/1     | LVCMOS33_OUT | PL20B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| c[2]      | E1/1     | LVCMOS33_OUT | PL24B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| clk       | C1/1     | LVCMOS33_IN  | PL25B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| rst       | D1/1     | LVCMOS33_IN  | PL25A | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
++-----------+----------+--------------+-------+------------------------------------------+
+
+Vccio by Bank:
++------+-------+
+| Bank | Vccio |
++------+-------+
+| 1    | 3.3V  |
++------+-------+
+
+Pinout by Pin Number:
++----------+---------------------+------------+--------------+-------+------------------+
+| Pin/Bank | Pin Info            | Constraint | Buffer Type  | Site  | Dual Function    |
++----------+---------------------+------------+--------------+-------+------------------+
+| A1/0     |     unused, PULL:UP |            |              | PR20B |                  |
+| A2/0     |     unused, PULL:UP |            |              | PR20A |                  |
+| A4/0     |     unused, PULL:UP |            |              | PR13A |                  |
+| A5/0     |                     |            |              | PR5A  | RGB0             |
+| B1/1     |     unused, PULL:UP |            |              | PL20A |                  |
+| B3/0     |     unused, PULL:UP |            |              | PR13B | GPLL_IN/PCLKT0_1 |
+| B5/0     |                     |            |              | PR6A  | RGB1             |
+| C1/1     | clk                 |            | LVCMOS33_IN  | PL25B | SPI_SS           |
+| C3/1     |     unused, PULL:UP |            |              | PL13A |                  |
+| C5/0     |                     |            |              | PR7A  | RGB2             |
+| D1/1     | rst                 |            | LVCMOS33_IN  | PL25A | SPISCK           |
+| D3/1     |     unused, PULL:UP |            |              | PL14A | PCLKT1_1         |
+| D5/2     |     unused, PULL:UP |            |              | PL7A  |                  |
+| E1/1     | c[2]                |            | LVCMOS33_OUT | PL24B | SPI_SI           |
+| E3/1     |     unused, PULL:UP |            |              | PL14B |                  |
+| E4/2     |     unused, PULL:UP |            |              | PL10B |                  |
+| E5/2     |     unused, PULL:UP |            |              | PL6A  |                  |
+| F1/1     | c[0]                |            | LVCMOS33_OUT | PL24A | SPI_SO           |
+| F2/1     | c[1]                |            | LVCMOS33_OUT | PL20B | PCLKT1_0         |
+| F4/1     |     unused, PULL:UP |            |              | PL13B | PCLKT1_2         |
+| F5/2     |     unused, PULL:UP |            |              | PL7B  | PCLKT2_0         |
+| PL6B/2   |     unused, PULL:UP |            |              | PL6B  |                  |
+| PL8A/2   |     unused, PULL:UP |            |              | PL8A  |                  |
+| PL8B/2   |     unused, PULL:UP |            |              | PL8B  |                  |
+| PL9A/2   |     unused, PULL:UP |            |              | PL9A  |                  |
+| PL9B/2   |     unused, PULL:UP |            |              | PL9B  |                  |
+| PL10A/2  |     unused, PULL:UP |            |              | PL10A |                  |
+| PL15A/1  |     unused, PULL:UP |            |              | PL15A |                  |
+| PL15B/1  |     unused, PULL:UP |            |              | PL15B |                  |
+| PL16A/1  |     unused, PULL:UP |            |              | PL16A |                  |
+| PL16B/1  |     unused, PULL:UP |            |              | PL16B |                  |
+| PL17A/1  |     unused, PULL:UP |            |              | PL17A |                  |
+| PL17B/1  |     unused, PULL:UP |            |              | PL17B |                  |
+| PL18A/1  |     unused, PULL:UP |            |              | PL18A |                  |
+| PL18B/1  |     unused, PULL:UP |            |              | PL18B |                  |
+| PL19A/1  |     unused, PULL:UP |            |              | PL19A |                  |
+| PL19B/1  |     unused, PULL:UP |            |              | PL19B |                  |
+| PL21A/1  |     unused, PULL:UP |            |              | PL21A |                  |
+| PL21B/1  |     unused, PULL:UP |            |              | PL21B |                  |
+| PL22A/1  |     unused, PULL:UP |            |              | PL22A |                  |
+| PL22B/1  |     unused, PULL:UP |            |              | PL22B |                  |
+| PL23A/1  |     unused, PULL:UP |            |              | PL23A |                  |
+| PL23B/1  |     unused, PULL:UP |            |              | PL23B |                  |
+| PR9A/0   |     unused, PULL:UP |            |              | PR9A  |                  |
+| PR9B/0   |     unused, PULL:UP |            |              | PR9B  |                  |
+| PR10A/0  |     unused, PULL:UP |            |              | PR10A |                  |
+| PR10B/0  |     unused, PULL:UP |            |              | PR10B |                  |
+| PR14A/0  |     unused, PULL:UP |            |              | PR14A | PCLKT0_0         |
+| PR14B/0  |     unused, PULL:UP |            |              | PR14B |                  |
+| PR17A/0  |     unused, PULL:UP |            |              | PR17A |                  |
+| PR17B/0  |     unused, PULL:UP |            |              | PR17B |                  |
+| PR18A/0  |     unused, PULL:UP |            |              | PR18A |                  |
+| PR18B/0  |     unused, PULL:UP |            |              | PR18B |                  |
+| PR19A/0  |     unused, PULL:UP |            |              | PR19A |                  |
+| PR19B/0  |     unused, PULL:UP |            |              | PR19B |                  |
+| PR22A/0  |     unused, PULL:UP |            |              | PR22A |                  |
++----------+---------------------+------------+--------------+-------+------------------+
+
+
+Locate Constraints for each Pin: 
+
+ldc_set_location -site {F1} [ get_ports {c[0]} ]
+ldc_set_location -site {F2} [ get_ports {c[1]} ]
+ldc_set_location -site {E1} [ get_ports {c[2]} ]
+ldc_set_location -site {C1} [ get_ports {clk} ]
+ldc_set_location -site {D1} [ get_ports {rst} ]
+
+
+
+
+
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Wed Feb 15 21:21:23 2023
+

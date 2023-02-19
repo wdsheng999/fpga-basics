@@ -1,0 +1,503 @@
+<HTML>
+<HEAD>
+<TITLE>Timing Report</TITLE>
+<link href="file:///C:/lscc/radiant/2022.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2022.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+tapath {
+  display: none;
+}
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" class="Child" onclick="hideTocList()"><PRE>
+<A name="timing_rpt_top">Timing Report</A><B><U><big></big></U></B>
+Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
+
+Mon Jan  9 16:17:48 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:    timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt RGB_led_lattice_impl_1.twr RGB_led_lattice_impl_1.udb -gui
+
+-----------------------------------------
+Design:          RGB_LED
+Family:          iCE40UP
+Device:          iCE40UP5K
+Package:         SG48
+Performance:     High-Performance_1.2V
+Package Status:                     Preliminary    Version 1.5
+*Performance Hardware Data Status :   Advanced Version 1.0
+-----------------------------------------
+
+
+=====================================================================
+                    Table of Contents
+=====================================================================
+<LI>    <A href=#Timing_rpt_DesignChecking>1  DESIGN CHECKING</A></LI>
+<LI>        <A href=#Timing_rpt_SDCConstraints>1.1  SDC Constraints</A></LI>
+<LI>        <A href=#Timing_rpt_CombinationalLoop>1.2  Combinational Loop</A></LI>
+<LI>    <A href=#Timing_rpt_ClockSummary>2  CLOCK SUMMARY</A></LI>
+<LI>    <A href=#Timing_rpt_AnalysisSummary>3  TIMING ANALYSIS SUMMARY</A></LI>
+<LI>        <A href=#Timing_rpt_Overall>3.1  Overall (Setup and Hold)</A></LI>
+<LI>            <A href=#Timing_rpt_ConstraintCoverage>3.1.1  Constraint Coverage</A></LI>
+<LI>            <A href=#Timing_rpt_Errors>3.1.2  Timing Errors</A></LI>
+<LI>            <A href=#Timing_rpt_TotalScore>3.1.3  Total Timing Score</A></LI>
+<LI>        <A href=#Timing_rpt_SetupSummary>3.2  Setup Summary Report</A></LI>
+<LI>        <A href=#Timing_rpt_HoldSummary>3.3  Hold Summary Report</A></LI>
+<LI>        <A href=#Timing_rpt_UnconstrainedReport>3.4  Unconstrained Report</A></LI>
+<LI>            <A href=#Timing_rpt_UnconstrainedEndpoints>3.4.1  Unconstrained Start/End Points</A></LI>
+<LI>            <A href=#Timing_rpt_StartEndPointsWithoutTimingConstraints>3.4.2  Start/End Points Without Timing Constraints</A></LI>
+<LI>    <A href=#Timing_rpt_DetailedReport>4  DETAILED REPORT</A></LI>
+<LI>        <A href=#Timing_rpt_SetupDetailedReport>4.1  Setup Detailed Report</A></LI>
+<LI>        <A href=#Timing_rpt_HoldDetailedReport>4.2  Hold Detailed Report</A></LI>
+
+=====================================================================
+                    End of Table of Contents
+=====================================================================
+
+
+<A name="Timing_rpt_DesignChecking"></A><B><U><big>1  DESIGN CHECKING</big></U></B>
+
+<A name="Timing_rpt_SDCConstraints"></A><B><U><big>1.1  SDC Constraints</big></U></B>
+
+
+Operating conditions:
+--------------------
+    Temperature: 85C
+    Core voltage: 1.14 V
+
+<A name="Timing_rpt_CombinationalLoop"></A><B><U><big>1.2  Combinational Loop</big></U></B>
+
+
+<A name="Timing_rpt_ClockSummary"></A><B><U><big>2  CLOCK SUMMARY</big></U></B>
+
+
+
+<A name="Timing_rpt_AnalysisSummary"></A><B><U><big>3  TIMING ANALYSIS SUMMARY</big></U></B>
+
+<A name="Timing_rpt_Overall"></A><B><U><big>3.1  Overall (Setup and Hold)</big></U></B>
+
+<A name="Timing_rpt_ConstraintCoverage"></A><B><U><big>3.1.1  Constraint Coverage</big></U></B>
+
+Constraint Coverage: 0%
+
+<A name="Timing_rpt_Errors"></A><B><U><big>3.1.2  Timing Errors</big></U></B>
+
+Timing Errors: 0 endpoints (setup), 0 endpoints (hold)
+
+<A name="Timing_rpt_TotalScore"></A><B><U><big>3.1.3  Total Timing Score</big></U></B>
+
+Total Negative Slack: 0.000 ns (setup), 0.000 ns (hold)
+
+<A name="Timing_rpt_SetupSummary"></A><B><U><big>3.2  Setup Summary Report</big></U></B>
+
+--------------------------------------------------
+There is no end point satisfying reporting criteria
+
+Total Negative Slack: 0
+
+
+<A name="Timing_rpt_HoldSummary"></A><B><U><big>3.3  Hold Summary Report</big></U></B>
+
+--------------------------------------------------
+There is no end point satisfying reporting criteria
+
+Total Negative Slack: 0
+
+
+<A name="Timing_rpt_UnconstrainedReport"></A><B><U><big>3.4  Unconstrained Report</big></U></B>
+
+<A name="Timing_rpt_UnconstrainedEndpoints"></A><B><U><big>3.4.1  Unconstrained Start/End Points</big></U></B>
+
+Clocked but unconstrained timing start points
+--------------------------------------------------
+There is no start point satisfying reporting criteria
+
+
+Clocked but unconstrained timing end points
+--------------------------------------------------
+There is no end point satisfying reporting criteria
+
+
+<A name="Timing_rpt_StartEndPointsWithoutTimingConstraints"></A><B><U><big>3.4.2  Start/End Points Without Timing Constraints</big></U></B>
+
+I/O ports without constraint
+----------------------------
+Possible constraints to use on I/O ports are:
+set_input_delay,
+set_output_delay,
+set_max_delay,
+create_clock,
+create_generated_clock,
+...
+
+-------------------------------------------------------------------
+     Listing 5 Start or End Points      |           Type           
+-------------------------------------------------------------------
+clk                                     |                     input
+rst                                     |                     input
+rgb_led[0]                              |                    output
+rgb_led[1]                              |                    output
+rgb_led[2]                              |                    output
+-------------------------------------------------------------------
+                                        |                          
+Number of I/O ports without constraint  |                         5
+                                        |                          
+-------------------------------------------------------------------
+
+Registers without clock definition
+Define the clock for these registers.
+-------------------------------------------------------------------
+         Listing 10 Instance(s)         |           Type           
+-------------------------------------------------------------------
+pwm/high_71__i4                         |                  No Clock
+pwm/high_71__i2                         |                  No Clock
+pwm/high_71__i6                         |                  No Clock
+pwm/times_72__i2                        |                  No Clock
+pwm/times_72__i4                        |                  No Clock
+pwm/times_72__i8                        |                  No Clock
+pwm/high_71__i0                         |                  No Clock
+pwm/counter_73__i6                      |                  No Clock
+pwm/counter_73__i2                      |                  No Clock
+pwm/counter_73__i4                      |                  No Clock
+-------------------------------------------------------------------
+                                        |                          
+Number of registers without clock defin |                          
+ition                                   |                        75
+                                        |                          
+-------------------------------------------------------------------
+
+<A name="Timing_rpt_DetailedReport"></A><B><U><big>4  DETAILED REPORT</big></U></B>
+<A name="Timing_rpt_SetupDetailedReport"></A><B><U><big>4.1  Setup Detailed Report</big></U></B>
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Detail report of critical paths
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                    Detailed Report for timing paths 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                    End of Detailed Report for timing paths 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+
+##########################################################
+
+<A name="Timing_rpt_HoldDetailedReport"></A><B><U><big>4.2  Hold Detailed Report</big></U></B>
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Detail report of critical paths
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                    Detailed Report for timing paths 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                    End of Detailed Report for timing paths 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+
+##########################################################
+
+
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></DIV>
+
+<DIV id="toc" class="radiant"<span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#timing_rpt_top>Timing Report</A></LI>
+<LI><A href=#Timing_rpt_DesignChecking>1  DESIGN CHECKING</A></LI>
+<UL>
+<LI><A href=#Timing_rpt_SDCConstraints>1.1  SDC Constraints</A></LI>
+<LI><A href=#Timing_rpt_CombinationalLoop>1.2  Combinational Loop</A></LI>
+</UL>
+<LI><A href=#Timing_rpt_ClockSummary>2  CLOCK SUMMARY</A></LI>
+<LI><A href=#Timing_rpt_AnalysisSummary>3  TIMING ANALYSIS SUMMARY</A></LI>
+<UL>
+<LI><A href=#Timing_rpt_Overall>3.1  Overall (Setup and Hold)</A></LI>
+<LI><A href=#Timing_rpt_SetupSummary>3.2  Setup Summary Report</A></LI>
+<LI><A href=#Timing_rpt_HoldSummary>3.3  Hold Summary Report</A></LI>
+<LI><A href=#Timing_rpt_UnconstrainedReport>3.4  Unconstrained Report</A></LI>
+</UL>
+<LI><A href=#Timing_rpt_DetailedReport>4  DETAILED REPORT</A></LI>
+<UL>
+<LI><A href=#Timing_rpt_SetupDetailedReport>4.1  Setup Detailed Report</A></LI>
+<LI><A href=#Timing_rpt_HoldDetailedReport>4.2  Hold Detailed Report</A></LI>
+</UL>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+   var funScroll = function() {
+      var top = document.body.scrollTop;
+      if (top == 0) {
+         scrollStep = 0;
+         return;
+      }
+      if (scrollStep == 0)
+         scrollStep = top/20 + 1;
+      top -= scrollStep;
+      if (top < 0)
+         top = 0;
+      document.body.scrollTop = top;
+      requestAnimationFrame(funScroll);
+   };
+   funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+   var backToTop = document.getElementById('back_to_top')
+   if (document.body.scrollTop > 0) {
+      backToTop.style.display = 'block';
+   } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+   bottom:20px; right:20px;
+   width:30px; height:30px;
+   font-size: 20px;
+   padding: 2px 5px 2px 5px;
+   position:fixed;
+   background-color:rgba(210,210,210,0.1);
+   border-style: solid;
+   border-color: rgba(192,192,192,0.8);
+   border-width:1px;
+   display:none;
+   -webkit-transform: rotate(90deg);
+   -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+   outline-width:0px;
+}
+</style>
+
+<style type='text/css'>
+pre {
+  margin-left: 2em;
+}
+tapath {
+  display: none;
+}
+.tools {
+  font-family: arial;
+  font-size: 0.8em;
+  text-align: center;
+  display: inline-block;
+}
+.tools:before{
+  content: "Shown in: ";
+  color: #1c79ec;
+  text-align: center;
+  padding-left: 0.5em;
+}
+.tools a {
+  color: rgb(192, 192, 192);
+  cursor: pointer;
+}
+.tools a:link {
+  text-decoration: none;
+}
+.tools a:hover {
+  color: #1c79ec;
+}
+.tools a:before {
+  content: " ";
+  width: 20px;
+  display: inline-block;
+  text-align: center;
+  padding-right: 5px;
+  padding-left: 2px;
+}
+.tools a:after {
+  text-align: center;
+  padding-right: 5px;
+}
+.na:before {
+  background: url("qrc:///report-view-html/images/netlist_analyzer_16.png") no-repeat center;
+}
+.na:after {
+  content: "Netlist Analyzer";
+}
+.fp:before {
+  background: url("qrc:///report-view-html/images/floorplanview_16.png") no-repeat center;
+}
+.fp:after {
+  content: "Physical Designer Placement Mode";
+}
+.phv:before {
+  background: url("qrc:///report-view-html/images/epic_16.png") no-repeat center;
+}
+.phv:after {
+  content: "Physical Designer Routing Mode";
+}
+</style>
+<script type='text/javascript'>
+<!--
+var show_log = 1; var show_phy = 1;
+function createTool(cls, path_obj) {
+  var tool = document.createElement('a');
+  tool.className = cls;
+  tool.onclick = (function(tool, path) {
+    return function() {
+      var tool_name;
+      var logical = false;
+      if (typeof path !== 'string' || path === null || path.length == 0)
+        return;
+      switch (cls) {
+        case 'na':
+          tool_name = 'SCHEMATIC_VIEW';
+          logical = true;
+          break;
+        case 'fp':
+          tool_name = 'FLOORPLANNER';
+          break;
+        case 'phv':
+          tool_name = 'PHYSICAL_VIEW';
+          break;
+      }
+      var url = 'NGView://' + tool_name + '/tapath?' + (logical?'view_type=tech&':'') + 'path=' +
+                encodeURIComponent(path);
+      this.href = url;
+    }
+  })(cls, path_obj).bind(tool);
+  return tool;
+}
+function createTools(path_element) {
+  var tools = document.createElement('span');
+  tools.className = 'tools';
+  var path = path_element.textContent;
+  if (show_log) 
+    tools.appendChild(createTool('na', path));
+  if (show_phy) {
+    tools.appendChild(createTool('fp', path));
+    tools.appendChild(createTool('phv', path));
+  }
+  var p = path_element.parentNode;
+  p.insertBefore(tools, path_element);
+}
+function handleLeftpaths(left_paths, index) {
+    if (left_paths.length > index) {
+      setTimeout(function(paths, i) {
+        return function() {
+          var path = paths[i];
+          createTools(path);
+          handleLeftpaths(paths, i+1);
+        }
+      }(left_paths, index));
+    }
+}
+window.onload = function() {
+  if (!show_log && !show_phy) return; 
+  if (typeof window._$radiant !== 'undefined') {
+    var all_paths = document.getElementsByTagName('tapath');
+    handleLeftpaths(all_paths, 0);
+  }
+}
+//-->
+</script>
+</BODY>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.2" title="RGB_led_lattice" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" default_implementation="impl_1">
+    <Options/>
+    <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="RGB_LED"/>
+        <Source name="source/impl_1/PWM_loop.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/LED_top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="RGB_LED"/>
+        </Source>
+        <Source name="source/impl_1/constraint.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="RGB_led_lattice1.sty"/>
+</RadiantProject>
