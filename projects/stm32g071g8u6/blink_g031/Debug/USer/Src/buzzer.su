@@ -1,3 +1,0 @@
-buzzer.c:5:6:Buzzer_Play	16	static
-buzzer.c:11:6:Buzzer_Beep	16	static
-buzzer.c:24:6:Buzzeer_TIM_PeriodElapsedCallback	16	static

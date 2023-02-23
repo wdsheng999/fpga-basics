@@ -1,8 +1,0 @@
-sample1.c:14:13:Clear_Flag	16	static
-sample1.c:26:13:Spectrum_Sample_Handle_Sub	80	static
-sample1.c:101:6:Spectrum_Sample_Init	24	static
-sample1.c:111:6:Spectrum_Sample_DeInit	16	static
-sample1.c:125:6:Spectrum_Sample_Refresh_Sample_Rate	8	static
-sample1.c:136:6:Spectrum_Sample_Try_Process	16	static
-sample1.c:151:6:Spectrum_Sample_Try_Start_New_ADC	16	static
-sample1.c:177:6:Spectrum_Sample_ADC_ConvCpltCallback	24	static

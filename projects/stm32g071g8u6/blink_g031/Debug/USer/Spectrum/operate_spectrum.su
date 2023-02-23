@@ -1,3 +1,0 @@
-operate_spectrum.c:3:6:Spectrum_Operate_Init	8	static
-operate_spectrum.c:8:6:Spectrum_Operate_DeInit	8	static
-operate_spectrum.c:13:6:Spectrum_Operate_Try_Process	24	static

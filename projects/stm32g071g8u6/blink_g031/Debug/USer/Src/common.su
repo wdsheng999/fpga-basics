@@ -1,5 +1,0 @@
-common.c:14:7:toVoltage	16	static
-common.c:18:7:toData	16	static
-common.c:22:6:Set_TIM_Freq	24	static
-common.c:35:20:invert	32	static
-common.c:44:9:floatToStr	56	static

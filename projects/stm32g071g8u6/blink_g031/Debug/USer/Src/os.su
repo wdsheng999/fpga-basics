@@ -1,7 +1,0 @@
-os.c:11:13:ShowLogo	16	static
-os.c:31:6:Start_Init	8	static
-os.c:50:6:Main_Loop	8	static
-os.c:59:6:HAL_ADC_ConvCpltCallback	16	static
-os.c:63:6:HAL_TIM_PeriodElapsedCallback	16	static
-os.c:68:6:HAL_GPIO_EXTI_Rising_Callback	16	static
-os.c:72:6:HAL_GPIO_EXTI_Falling_Callback	16	static

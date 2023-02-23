@@ -1,9 +1,0 @@
-UI1.c:8:13:Draw_Dotted_Line_X	32	static
-UI1.c:14:13:Draw_Dotted_Line_Y	32	static
-UI1.c:19:13:Show_Framework	32	static
-UI1.c:49:13:Show_Wave	64	static
-UI1.c:76:13:Show_Information	48	static
-UI1.c:110:13:Spectrum_UI_Refresh_Sub	16	static
-UI1.c:120:6:Spectrum_UI_Init	8	static
-UI1.c:126:6:Spectrum_UI_DeInit	8	static
-UI1.c:131:6:Spectrum_UI_Try_Refresh	32	static
