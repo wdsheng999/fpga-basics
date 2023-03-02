@@ -1,0 +1,118 @@
+synthesis:  version Radiant Software (64-bit) 2022.1.0.52.3
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Mar  1 16:48:51 2023
+
+
+Command Line:  C:\lscc\radiant\2022.1\ispfpga\bin\nt64\synthesis.exe -f spi_slave_impl_1_lattice.synproj -gui -msgset E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/spi_slave/promote.xml 
+
+Synthesis options:
+The -top option is not used.
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+                                                          
+
+
+##########################################################
+
+
+### Lattice Family     : iCE40UP
+
+
+### Device             : iCE40UP5K
+
+
+### Package            : SG48
+
+
+### Performance Grade  : High-Performance_1.2V
+
+
+                                                         
+
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Area
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output HDL file name = spi_slave_impl_1.vm.
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-path C:/lscc/radiant/2022.1/ispfpga/ice40tp/data (searchpath added)
+-path E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/spi_slave (searchpath added)
+-path E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/spi_slave/impl_1 (searchpath added)
+Mixed language design
+WARNING - synthesis: A top-level module has not been specified for the mixed language design.
+Verilog design file = C:/lscc/radiant/2022.1/ip/pmi/pmi_iCE40UP.v
+Verilog design file = E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/spi_slave/source/impl_1/spi_slave.v
+Verilog design file = E:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/spi_slave/source/impl_1/main.v
+VHDL library = pmi
+VHDL design file = C:/lscc/radiant/2022.1/ip/pmi/pmi_iCE40UP.vhd
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v. VERI-1482
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v(1): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/pmi_addsub.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_addsub.v(40): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v(2): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/pmi_add.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_add.v(50): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v(3): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v(4): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/pmi_counter.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_counter.v(39): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v(5): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/pmi_fifo.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_fifo.v(44): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v(6): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v(7): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/pmi_mac.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_mac.v(52): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v(8): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v(9): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v(10): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/pmi_mult.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_mult.v(51): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v(11): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v(12): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v(13): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/pmi_rom.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_rom.v(45): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/../avant/rom/rtl/lscc_rom.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v(14): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/pmi_sub.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_sub.v(50): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v(15): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/2022.1/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2022.1/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file e:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/spi_slave/source/impl_1/spi_slave.v. VERI-1482
+ERROR - synthesis: e:/embeded/fpga learning/fpga-basics/projects/eetree_fpga/ice40/new/spi_slave/source/impl_1/spi_slave.v(19): spi_sck is not declared. VERI-1128

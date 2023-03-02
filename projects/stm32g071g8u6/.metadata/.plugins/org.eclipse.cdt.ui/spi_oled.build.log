@@ -1,0 +1,21 @@
+10:53:21 **** Incremental Build of configuration Debug for project spi_oled ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/oled.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/oled.d" -MT"Core/Src/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/oled.o"
+../Core/Src/oled.c: In function 'OLED_WR_Byte':
+../Core/Src/oled.c:22:5: warning: unused variable 'i' [-Wunused-variable]
+   22 |  u8 i;
+      |     ^
+arm-none-eabi-gcc -o "spi_oled.elf" @"objects.list"   -mcpu=cortex-m0plus -T"E:\embeded\fpga learning\fpga-basics\projects\stm32g071g8u6\spi_oled\STM32G031G8UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="spi_oled.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: spi_oled.elf
+ 
+arm-none-eabi-size   spi_oled.elf 
+arm-none-eabi-objdump -h -S  spi_oled.elf  > "spi_oled.list"
+   text	   data	    bss	    dec	    hex	filename
+  15648	     20	   3972	  19640	   4cb8	spi_oled.elf
+Finished building: default.size.stdout
+ 
+Finished building: spi_oled.list
+ 
+
+10:53:25 Build Finished. 0 errors, 1 warnings. (took 4s.59ms)
+
